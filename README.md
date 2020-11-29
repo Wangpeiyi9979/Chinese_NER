@@ -23,9 +23,11 @@ python test --path=checkpoints/xxx
 ```
 xxx为具体模型的checkpoint
 
+test的badcase以及相关记录可以参考`badcase`文件夹下的文件
+
 # 实验结果
 训练过程中的F1值是自己较为严格的评测脚本得到的。要求如果一个实体出现多次，那么每一次都会参与到准确率的计算中
-参考`evaluate.py`文件中的`f1_score`函数，因此train.log中记录的f1值会比最终报告的f1值低1.3个点左右(当然也有数据分布问题)。
+参考`evaluate.py`文件中的`f1_score`函数，因此train.log中记录的f1值会比最终报告的f1值低1个点左右(当然也有数据分布问题)。
 
 最后的F1值，如下所示，是根据助教给的评测得到的。
 参考`evaluate_reference.py`中的`get_f1_score`函数
