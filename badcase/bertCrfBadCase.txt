@@ -69,8 +69,8 @@ k I-nam I-nam
 住 O O
 他 O O
 的 O O
-赏 B-pos O
-金 I-pos O
+赏 O O
+金 O O
 猎 I-pos O
 人 I-pos O
 j B-nam B-nam
@@ -285,9 +285,9 @@ sen pred gold
 
 raw: 组委会对中国区预选赛进行了抽签分组，并且对本次抽签进行了全程直播。
 sen pred gold
-组 O B-gov
-委 O I-gov
-会 O I-gov
+组 B-org B-gov
+委 I-org I-gov
+会 I-org I-gov
 对 O O
 中 O O
 国 O O
@@ -318,6 +318,57 @@ sen pred gold
 直 O O
 播 O O
 。 O O
+
+
+raw: 本报讯（记者王吉瑛）双色球即将出台新规，一等奖最高奖金可达到1000万元。昨天，中彩中心透露，
+sen pred gold
+本 O O
+报 O O
+讯 O O
+（ O O
+记 B-pos B-pos
+者 I-pos I-pos
+王 B-nam B-nam
+吉 I-nam I-nam
+瑛 I-nam I-nam
+） O O
+双 O O
+色 O O
+球 O O
+即 O O
+将 O O
+出 O O
+台 O O
+新 O O
+规 O O
+， O O
+一 O O
+等 O O
+奖 O O
+最 O O
+高 O O
+奖 O O
+金 O O
+可 O O
+达 O O
+到 O O
+1 O O
+0 O O
+0 O O
+0 O O
+万 O O
+元 O O
+。 O O
+昨 O O
+天 O O
+， O O
+中 B-org B-org
+彩 I-org I-org
+中 I-org I-org
+心 I-com I-org
+透 O O
+露 O O
+， O O
 
 
 raw: 是目前表现最好的锋线组合之一，而沃尔科特往往能够让对手的整个左边肋疲于防守，以目前枪手的能力和状态，
@@ -395,9 +446,9 @@ sen pred gold
 化 O O
 和 O O
 环 O O
-首 B-add O
+首 O O
 都 I-add O
-经 I-add O
+经 O O
 济 I-add O
 圈 I-add O
 的 O O
@@ -514,43 +565,6 @@ s O O
 ， O O
 
 
-raw: 这也让很多业主据此认为，雅清苑是政府公务员挤对了国家的经适房政策。
-sen pred gold
-这 O O
-也 O O
-让 O O
-很 O O
-多 O O
-业 O O
-主 O O
-据 O O
-此 O O
-认 O O
-为 O O
-， O O
-雅 B-add B-add
-清 I-add I-add
-苑 I-add I-add
-是 O O
-政 B-gov O
-府 O O
-公 B-pos B-pos
-务 I-pos I-pos
-员 I-pos I-pos
-挤 O O
-对 O O
-了 O O
-国 O O
-家 O O
-的 O O
-经 O O
-适 O O
-房 O O
-政 O O
-策 O O
-。 O O
-
-
 raw: 至大约2008年5月，san-hothk在星展银行的账户内的资金已不足以让san-hot
 sen pred gold
 至 O O
@@ -590,61 +604,13 @@ k I-nam I-com
 足 O O
 以 O O
 让 O O
-s B-com B-com
-a I-com I-com
-n I-com I-com
-- I-com I-com
-h I-com I-com
-o I-com I-com
-t I-com I-com
-
-
-raw: 市住建委相关负责人昨天表示，《北京市公共租赁房管理办法》已经获得市委常委会审议原则通过，
-sen pred gold
-市 B-gov B-gov
-住 I-gov I-gov
-建 I-gov I-gov
-委 I-gov I-gov
-相 O O
-关 O O
-负 O B-pos
-责 O I-pos
-人 O I-pos
-昨 O O
-天 O O
-表 O O
-示 O O
-， O O
-《 B-boo B-boo
-北 I-boo I-boo
-京 I-boo I-boo
-市 I-boo I-boo
-公 I-boo I-boo
-共 I-boo I-boo
-租 I-boo I-boo
-赁 I-boo I-boo
-房 I-boo I-boo
-管 I-boo I-boo
-理 I-boo I-boo
-办 I-boo I-boo
-法 I-boo I-boo
-》 I-boo I-boo
-已 O O
-经 O O
-获 O O
-得 O O
-市 B-gov B-gov
-委 I-gov I-gov
-常 I-gov I-gov
-委 I-gov I-gov
-会 I-gov I-gov
-审 O O
-议 O O
-原 O O
-则 O O
-通 O O
-过 O O
-， O O
+s B-nam B-com
+a I-nam I-com
+n I-nam I-com
+- I-nam I-com
+h I-nam I-com
+o I-nam I-com
+t I-nam I-com
 
 
 raw: 一边是羊群散布的牧场荒原，等过了阿波罗湾apollobay进入雨林，
@@ -669,7 +635,7 @@ sen pred gold
 波 I-add I-sce
 罗 I-add I-sce
 湾 I-add I-sce
-a I-add I-sce
+a B-add I-sce
 p I-add I-sce
 o I-add I-sce
 l I-add I-sce
@@ -712,14 +678,14 @@ o O O
 一 O O
 影 O O
 魔 O O
-p B-nam B-nam
-i I-nam I-nam
-s I-nam I-nam
-（ B-nam I-nam
+p O B-nam
+i O I-nam
+s O I-nam
+（ O I-nam
 卜 B-nam I-nam
 严 I-nam I-nam
 骏 I-nam I-nam
-） I-nam I-nam
+） O I-nam
 ， O O
 
 
@@ -798,6 +764,60 @@ sen pred gold
 ， O O
 
 
+raw: 记者随后致电该校财务处求证，但一名工作人员却表示完全不知道学生办信用卡一事，更否认办卡与财务处有关。
+sen pred gold
+记 B-pos B-pos
+者 I-pos I-pos
+随 O O
+后 O O
+致 O O
+电 O O
+该 O O
+校 O O
+财 O O
+务 O O
+处 O O
+求 O O
+证 O O
+， O O
+但 O O
+一 O O
+名 O O
+工 O O
+作 O O
+人 O O
+员 O O
+却 O O
+表 O O
+示 O O
+完 O O
+全 O O
+不 O O
+知 O O
+道 O O
+学 B-pos B-pos
+生 I-pos I-pos
+办 O O
+信 O O
+用 O O
+卡 O O
+一 O O
+事 O O
+， O O
+更 O O
+否 O O
+认 O O
+办 O O
+卡 O O
+与 O O
+财 B-org O
+务 O O
+处 I-gov O
+有 O O
+关 O O
+。 O O
+
+
 raw: 腾讯新闻昨天金庸逝世江湖再无金大侠订阅号消息昨天【15条】王者荣耀福利抢鲜看!队友的京东京东jd.
 sen pred gold
 腾 B-com B-com
@@ -844,11 +864,64 @@ sen pred gold
 的 O O
 京 B-com B-com
 东 I-com I-com
-京 I-com B-com
-东 I-com I-com
+京 O B-com
+东 O I-com
 j O O
 d O O
 . O O
+
+
+raw: 下面再来看看这个动了《机器人瓦力》的奶酪的《通缉》（wanted）。本片以超过劲敌的约16100＄
+sen pred gold
+下 O O
+面 O O
+再 O O
+来 O O
+看 O O
+看 O O
+这 O O
+个 O O
+动 O O
+了 O O
+《 B-mov B-mov
+机 I-mov I-mov
+器 I-mov I-mov
+人 I-mov I-mov
+瓦 I-mov I-mov
+力 I-mov I-mov
+》 I-mov I-mov
+的 O O
+奶 O O
+酪 O O
+的 O O
+《 B-mov B-mov
+通 I-mov I-mov
+缉 I-mov I-mov
+》 I-mov I-mov
+（ I-mov B-mov
+w I-mov I-mov
+a I-mov I-mov
+n I-mov I-mov
+t I-mov I-mov
+e I-mov I-mov
+d I-mov I-mov
+） I-mov I-mov
+。 O O
+本 O O
+片 O O
+以 O O
+超 O O
+过 O O
+劲 O O
+敌 O O
+的 O O
+约 O O
+1 O O
+6 O O
+1 O O
+0 O O
+0 O O
+＄ O O
 
 
 raw: 现在的阿森纳恐怕不能再给人以强队的信心，但教授的神经也真是够硬，在英超夺冠几无希望的情况下，
@@ -874,8 +947,8 @@ sen pred gold
 心 O O
 ， O O
 但 O O
-教 B-pos B-pos
-授 I-pos I-pos
+教 B-nam B-pos
+授 I-nam I-pos
 的 O O
 神 O O
 经 O O
@@ -934,7 +1007,7 @@ sen pred gold
 军 I-gam I-gam
 3 I-gam I-gam
 》 I-gam I-gam
-( B-gam B-gam
+( I-gam B-gam
 a B-gam I-gam
 m I-gam I-gam
 e I-gam I-gam
@@ -944,52 +1017,6 @@ c I-gam I-gam
 a I-gam I-gam
 ' I-gam I-gam
 s I-gam I-gam
-
-
-raw: 欧美知名游戏开发公司“Relic”，继成功推出史上最畅销的二战即时战略游戏《英雄连》
-sen pred gold
-欧 O O
-美 O O
-知 O O
-名 O O
-游 O O
-戏 O O
-开 O O
-发 O O
-公 O O
-司 O O
-[UNK] B-com O
-r I-com B-com
-e I-com I-com
-l I-com I-com
-i I-com I-com
-c I-com I-com
-[UNK] I-com O
-， O O
-继 O O
-成 O O
-功 O O
-推 O O
-出 O O
-史 O O
-上 O O
-最 O O
-畅 O O
-销 O O
-的 O O
-二 O O
-战 O O
-即 O O
-时 O O
-战 O O
-略 O O
-游 O O
-戏 O O
-《 B-gam B-gam
-英 I-gam I-gam
-雄 I-gam I-gam
-连 I-gam I-gam
-》 I-gam I-gam
 
 
 raw: 更感谢各位媒体的朋友给我们精品和乐成中心捧场。我一向很少在官方的场面讲话，因为我背不了开场白，
@@ -1007,10 +1034,10 @@ sen pred gold
 给 O O
 我 O O
 们 O O
-精 B-add O
-品 I-add O
-和 O O
-乐 B-add B-add
+精 O O
+品 O O
+和 B-add O
+乐 I-add B-add
 成 I-add I-add
 中 I-add I-add
 心 I-add I-add
@@ -1074,12 +1101,105 @@ r I-nam O
 e I-nam O
 的 O O
 [UNK] O O
-f O O
-o O O
+f B-nam O
+o I-nam O
 [UNK] O O
 字 O O
 样 O O
 。 O O
+
+
+raw: 此次共有314件书画作品上拍。陆俨少1977年作品《雁荡瀑布》就将以80万起拍。“
+sen pred gold
+此 O O
+次 O O
+共 O O
+有 O O
+3 O O
+1 O O
+4 O O
+件 O O
+书 O O
+画 O O
+作 O O
+品 O O
+上 O O
+拍 O O
+。 O O
+陆 B-nam B-nam
+俨 I-nam I-nam
+少 O I-nam
+1 O O
+9 O O
+7 O O
+7 O O
+年 O O
+作 O O
+品 O O
+《 B-boo B-boo
+雁 I-boo I-boo
+荡 I-boo I-boo
+瀑 I-boo I-boo
+布 I-boo I-boo
+》 I-boo I-boo
+就 O O
+将 O O
+以 O O
+8 O O
+0 O O
+万 O O
+起 O O
+拍 O O
+。 O O
+[UNK] O O
+
+
+raw: 曾参与打击私彩行动的一位长春警官告诉记者，过去公开销售非法彩票出具打印或手写的书面凭证，
+sen pred gold
+曾 O O
+参 O O
+与 O O
+打 O O
+击 O O
+私 O O
+彩 O O
+行 O O
+动 O O
+的 O O
+一 O O
+位 O O
+长 B-add B-add
+春 I-add I-add
+警 O B-pos
+官 O I-pos
+告 O O
+诉 O O
+记 B-pos B-pos
+者 I-pos I-pos
+， O O
+过 O O
+去 O O
+公 O O
+开 O O
+销 O O
+售 O O
+非 O O
+法 O O
+彩 O O
+票 O O
+出 O O
+具 O O
+打 O O
+印 O O
+或 O O
+手 O O
+写 O O
+的 O O
+书 O O
+面 O O
+凭 O O
+证 O O
+， O O
 
 
 raw: 阳光社区记者宁彪/摄影报道
@@ -1118,7 +1238,7 @@ a I-gam I-gam
 在 O O
 游 O O
 戏 O O
-开 O O
+开 B-pos O
 发 O O
 者 O O
 t O O
@@ -1227,11 +1347,11 @@ sen pred gold
 [UNK] B-add B-sce
 溪 I-add I-sce
 - O O
-古 B-add B-sce
+古 B-sce B-sce
 生 I-add I-sce
 - O O
-海 B-add B-sce
-舌 I-add I-sce
+海 B-sce B-sce
+舌 I-sce I-sce
 - O O
 沙 B-add B-sce
 村 I-add I-sce
@@ -1310,8 +1430,8 @@ raw: 侵蚀洱海边其他水泵站的岸基台阶，最后只留下这一个记
 sen pred gold
 侵 O O
 蚀 O O
-洱 B-add B-sce
-海 I-add I-sce
+洱 B-sce B-sce
+海 I-sce I-sce
 边 I-add O
 其 O O
 他 O O
@@ -1439,6 +1559,41 @@ sen pred gold
 ， O O
 
 
+raw: 其他俱乐部笔者都是亲自查看了俱乐部最新官方资料后给出的结论）。
+sen pred gold
+其 O O
+他 O O
+俱 O O
+乐 O O
+部 O O
+笔 O B-pos
+者 O I-pos
+都 O O
+是 O O
+亲 O O
+自 O O
+查 O O
+看 O O
+了 O O
+俱 O O
+乐 O O
+部 O O
+最 O O
+新 O O
+官 O O
+方 O O
+资 O O
+料 O O
+后 O O
+给 O O
+出 O O
+的 O O
+结 O O
+论 O O
+） O O
+。 O O
+
+
 raw: 三部无意过问奥斯卡奖的新片异常冷场，《卷土重来》（thecomebacks）、《萨拉和神秘时辰》（
 sen pred gold
 三 O O
@@ -1466,7 +1621,7 @@ sen pred gold
 来 I-mov I-mov
 》 I-mov I-mov
 （ I-mov O
-t B-mov B-mov
+t I-mov B-mov
 h I-mov I-mov
 e I-mov I-mov
 c I-mov I-mov
@@ -1558,7 +1713,7 @@ sen pred gold
 曦 I-add I-add
 店 I-add I-add
 吧 I-add O
-台 O O
+台 I-add O
 填 O O
 写 O O
 报 O O
@@ -1596,55 +1751,6 @@ sen pred gold
 的 O O
 罗 B-org O
 马 I-org O
-， O O
-
-
-raw: 而哈文则去了天津电视台。每次做完节目，李咏就马不停蹄地往天津赶，朋友和同事们有事要找李咏，
-sen pred gold
-而 O O
-哈 B-nam B-nam
-文 I-nam I-nam
-则 O O
-去 O O
-了 O O
-天 B-com B-org
-津 I-com I-org
-电 I-com I-org
-视 I-com I-org
-台 I-com I-org
-。 O O
-每 O O
-次 O O
-做 O O
-完 O O
-节 O O
-目 O O
-， O O
-李 B-nam B-nam
-咏 I-nam I-nam
-就 O O
-马 O O
-不 O O
-停 O O
-蹄 O O
-地 O O
-往 O O
-天 B-add B-add
-津 I-add I-add
-赶 O O
-， O O
-朋 O O
-友 O O
-和 O O
-同 O O
-事 O O
-们 O O
-有 O O
-事 O O
-要 O O
-找 O O
-李 B-nam B-nam
-咏 I-nam I-nam
 ， O O
 
 
@@ -1744,10 +1850,10 @@ sen pred gold
 在 O O
 公 B-sce O
 园 I-sce O
-入 O O
-口 O O
-大 O O
-厅 O O
+入 I-add O
+口 I-add O
+大 I-add O
+厅 I-add O
 可 O O
 以 O O
 乘 O O
@@ -1762,9 +1868,9 @@ sen pred gold
 二 O O
 站 O O
 是 O O
-迷 O B-sce
-你 O I-sce
-小 B-sce I-sce
+迷 B-sce B-sce
+你 I-sce I-sce
+小 I-sce I-sce
 农 I-sce I-sce
 场 I-sce I-sce
 ， O O
@@ -1832,44 +1938,55 @@ sen pred gold
 。 O O
 
 
-raw: 电子艺界在向美国证券交易委员会(SEC)提交的监管文件中称：“有基于此，
+raw: 内地分行也可以申请（除了深圳总行，广州的招行广州分行营业部也有授权）。他们收取了你的《申请表》
 sen pred gold
-电 O O
-子 O O
-艺 O O
-界 O O
-在 O O
-向 O O
-美 B-gov B-gov
-国 I-gov I-gov
-证 I-gov I-gov
-券 I-gov I-gov
-交 I-gov I-gov
-易 I-gov I-gov
-委 I-gov I-gov
-员 I-gov I-gov
-会 I-gov I-gov
-( B-gov I-gov
-s B-gov I-gov
-e I-gov I-gov
-c I-gov I-gov
-) I-gov I-gov
-提 O O
-交 O O
-的 O O
-监 O O
-管 O O
-文 O O
-件 O O
-中 O O
-称 O O
-： O O
-[UNK] O O
-有 O O
-基 O O
-于 O O
-此 O O
+内 O O
+地 O O
+分 O O
+行 O O
+也 O O
+可 O O
+以 O O
+申 O O
+请 O O
+（ O O
+除 O O
+了 O O
+深 B-com B-com
+圳 I-com I-com
+总 O I-com
+行 I-com I-com
 ， O O
+广 B-add B-add
+州 I-add I-add
+的 O O
+招 B-com B-com
+行 I-com I-com
+广 I-com I-com
+州 I-com I-com
+分 I-com I-com
+行 I-com I-com
+营 I-com O
+业 I-com O
+部 I-com O
+也 O O
+有 O O
+授 O O
+权 O O
+） O O
+。 O O
+他 O O
+们 O O
+收 O O
+取 O O
+了 O O
+你 O O
+的 O O
+《 O O
+申 O O
+请 O O
+表 O O
+》 O O
 
 
 raw: 首先恭喜《色，戒》突破重围，跃上龙门，李安“奥斯卡最佳导演”的桂冠果然没白戴。同时提名最佳导演的《
@@ -1897,8 +2014,8 @@ sen pred gold
 安 I-nam I-nam
 [UNK] O O
 奥 B-org O
-斯 O O
-卡 O O
+斯 I-org O
+卡 I-org O
 最 O O
 佳 O O
 导 B-pos B-pos
@@ -2145,48 +2262,6 @@ sen pred gold
 博 O O
 
 
-raw: 他是星际2有史以来最为嚣张的选手，他也是星际2中战术最多变操作最细腻的选手。
-sen pred gold
-他 O O
-是 O O
-星 B-gam B-gam
-际 I-gam I-gam
-2 I-gam I-gam
-有 O O
-史 O O
-以 O O
-来 O O
-最 O O
-为 O O
-嚣 O O
-张 O O
-的 O O
-选 B-pos O
-手 I-pos O
-， O O
-他 O O
-也 O O
-是 O O
-星 B-gam B-gam
-际 I-gam I-gam
-2 I-gam I-gam
-中 O O
-战 O O
-术 O O
-最 O O
-多 O O
-变 O O
-操 O O
-作 O O
-最 O O
-细 O O
-腻 O O
-的 O O
-选 B-pos O
-手 I-pos O
-。 O O
-
-
 raw: 对成钢作出解除取保候审的决定。由于银行拒绝恢复劳动关系，成钢诉至法院，
 sen pred gold
 对 O O
@@ -2235,16 +2310,16 @@ sen pred gold
 象 O O
 。 O O
 [UNK] B-com O
-链 I-com B-com
+链 B-com B-com
 家 I-com I-com
 地 I-com I-com
 产 I-com I-com
 [UNK] I-com O
-市 O O
-场 O O
-研 O O
-究 O O
-部 O O
+市 I-com O
+场 I-com O
+研 I-com O
+究 I-com O
+部 I-com O
 认 O O
 为 O O
 ， O O
@@ -2287,12 +2362,12 @@ sen pred gold
 可 O O
 以 O O
 去 O O
-m B-add B-add
-a I-add I-add
-- I-add I-add
-j I-add I-add
-o I-add I-add
-y I-add I-add
+m B-sce B-add
+a I-sce I-add
+- I-sce I-add
+j I-sce I-add
+o I-sce I-add
+y I-sce I-add
 ， O O
 喝 O O
 咖 O O
@@ -2300,16 +2375,16 @@ y I-add I-add
 可 O O
 以 O O
 去 O O
-d B-com B-add
-e I-com I-add
-l I-com I-add
-i I-com I-add
-b I-com I-add
-i I-com I-add
-s I-com I-add
-t I-com I-add
-r I-com I-add
-o I-com I-add
+d B-sce B-add
+e I-sce I-add
+l I-sce I-add
+i I-sce I-add
+b I-sce I-add
+i I-sce I-add
+s I-sce I-add
+t I-sce I-add
+r I-sce I-add
+o I-sce I-add
 ， O O
 
 
@@ -2472,9 +2547,9 @@ sen pred gold
 下 O O
 午 O O
 在 O O
-石 B-com B-com
-川 I-com I-com
-岛 I-com I-com
+石 B-add B-com
+川 I-add I-com
+岛 I-add I-com
 播 I-com I-com
 磨 I-com I-com
 重 I-com I-com
@@ -2625,7 +2700,7 @@ sen pred gold
 命 I-gam I-gam
 人 I-gam I-gam
 质 I-gam I-gam
-版 I-gam I-gam
+版 O I-gam
 》 I-gam I-gam
 的 O O
 反 O B-gam
@@ -2679,35 +2754,11 @@ a B-nam B-nam
 l I-nam I-nam
 e I-nam I-nam
 x I-nam I-nam
-（ B-nam O
+（ I-nam O
 卞 B-nam B-nam
 正 I-nam I-nam
 伟 I-nam I-nam
-） I-nam O
-
-
-raw: 命名系统也都充分考虑到了西山文化的底蕴。
-sen pred gold
-命 O O
-名 O O
-系 O O
-统 O O
-也 O O
-都 O O
-充 O O
-分 O O
-考 O O
-虑 O O
-到 O O
-了 O O
-西 B-sce B-add
-山 I-sce I-add
-文 O O
-化 O O
-的 O O
-底 O O
-蕴 O O
-。 O O
+） O O
 
 
 raw: 泡泡1000评论商城狄仁杰Q版徽章钥匙扣购买49.969狄仁杰之异虫谜案简介热度4489
@@ -2722,9 +2773,9 @@ sen pred gold
 论 O O
 商 O O
 城 O O
-狄 B-nam B-nam
-仁 I-nam I-nam
-杰 I-nam I-nam
+狄 B-mov B-nam
+仁 I-mov I-nam
+杰 I-mov I-nam
 q O O
 版 O O
 徽 O O
@@ -2740,14 +2791,14 @@ q O O
 9 O O
 6 O O
 9 O O
-狄 B-boo B-mov
-仁 I-boo I-mov
-杰 I-boo I-mov
-之 I-boo I-mov
-异 I-boo I-mov
-虫 I-boo I-mov
-谜 I-boo I-mov
-案 I-boo I-mov
+狄 B-mov B-mov
+仁 I-mov I-mov
+杰 I-mov I-mov
+之 I-mov I-mov
+异 I-mov I-mov
+虫 I-mov I-mov
+谜 I-mov I-mov
+案 I-mov I-mov
 简 O O
 介 O O
 热 O O
@@ -2794,7 +2845,60 @@ sen pred gold
 。 O O
 米 B-nam B-add
 拉 I-nam I-add
-· O O
+· I-nam O
+
+
+raw: 往往却忽略了高额的成本。交通银行深圳分行信用卡部相关人士建议持卡人在选择前谨慎考虑自己的还款能力，
+sen pred gold
+往 O O
+往 O O
+却 O O
+忽 O O
+略 O O
+了 O O
+高 O O
+额 O O
+的 O O
+成 O O
+本 O O
+。 O O
+交 B-com B-com
+通 I-com I-com
+银 I-com I-com
+行 I-com I-com
+深 I-com I-com
+圳 I-com I-com
+分 I-com I-com
+行 I-com I-com
+信 I-com O
+用 O O
+卡 I-com O
+部 I-com O
+相 O O
+关 O O
+人 O O
+士 O O
+建 O O
+议 O O
+持 O O
+卡 O O
+人 O O
+在 O O
+选 O O
+择 O O
+前 O O
+谨 O O
+慎 O O
+考 O O
+虑 O O
+自 O O
+己 O O
+的 O O
+还 O O
+款 O O
+能 O O
+力 O O
+， O O
 
 
 raw: 全国人大财政经济委员会主任委员石秀诗向第十一届全国人大常委会作《
@@ -2857,7 +2961,7 @@ sen pred gold
 街 O I-add
 区 O I-add
 什 B-sce B-sce
-刹 I-sce I-sce
+刹 I-add I-sce
 海 I-sce I-sce
 ， O O
 游 O O
@@ -2865,7 +2969,7 @@ sen pred gold
 府 I-sce I-sce
 、 O O
 观 O O
-故 B-sce B-sce
+故 O B-sce
 居 I-sce I-sce
 、 O O
 逛 O O
@@ -2955,8 +3059,8 @@ sen pred gold
 了 O O
 案 O O
 。 O O
-案 B-pos O
-侦 I-pos O
+案 O O
+侦 O O
 民 B-pos B-pos
 警 I-pos I-pos
 立 O O
@@ -2987,8 +3091,8 @@ sen pred gold
 限 I-com I-com
 公 I-com I-com
 司 I-com I-com
-公 B-pos B-pos
-关 I-pos I-pos
+公 O B-pos
+关 O I-pos
 部 O I-pos
 经 B-pos I-pos
 理 I-pos I-pos
@@ -3021,8 +3125,8 @@ sen pred gold
 裕 I-nam I-nam
 能 I-nam I-nam
 ： O O
-贝 B-nam B-nam
-宁 I-nam I-nam
+贝 O B-nam
+宁 O I-nam
 先 O O
 生 O O
 在 O O
@@ -3141,10 +3245,10 @@ sen pred gold
 周 O O
 末 O O
 的 O O
-曼 B-org B-add
-城 I-org I-add
+曼 B-add B-add
+城 I-add I-add
 德 O O
-比 O O
+比 I-org O
 之 O O
 中 O O
 ， O O
@@ -3274,10 +3378,10 @@ sen pred gold
 主 O O
 办 O O
 ， O O
-广 B-com B-com
-电 I-com I-com
-运 I-com I-com
-通 I-com I-com
+广 B-org B-com
+电 I-org I-com
+运 I-org I-com
+通 I-org I-com
 协 O O
 办 O O
 ， O O
@@ -3383,6 +3487,50 @@ s O O
 ， O O
 
 
+raw: 给人创造一个很好的环境，是为了赚钱的，为什么像李总和张总的当代moma很特别呢？
+sen pred gold
+给 O O
+人 O O
+创 O O
+造 O O
+一 O O
+个 O O
+很 O O
+好 O O
+的 O O
+环 O O
+境 O O
+， O O
+是 O O
+为 O O
+了 O O
+赚 O O
+钱 O O
+的 O O
+， O O
+为 O O
+什 O O
+么 O O
+像 O O
+李 O O
+总 O O
+和 O O
+张 O O
+总 O O
+的 O O
+当 B-sce O
+代 I-sce O
+m I-sce B-sce
+o I-sce I-sce
+m I-sce I-sce
+a I-sce I-sce
+很 O O
+特 O O
+别 O O
+呢 O O
+？ O O
+
+
 raw: 如果WCG2011有魔兽争霸3和星际争霸2两个项目，你会参加哪个？
 sen pred gold
 如 O O
@@ -3390,7 +3538,7 @@ sen pred gold
 w B-org B-org
 c I-org I-org
 g I-org I-org
-2 I-org I-org
+2 O I-org
 0 O I-org
 1 O I-org
 1 O I-org
@@ -3418,6 +3566,88 @@ g I-org I-org
 哪 O O
 个 O O
 ？ O O
+
+
+raw: 上个主场1比1逼平米兰更令人刮目相看。罗马德比战胜拉齐奥，结束了3场不胜的尴尬境地。
+sen pred gold
+上 O O
+个 O O
+主 O O
+场 O O
+1 O O
+比 O O
+1 O O
+逼 O O
+平 O O
+米 B-org B-org
+兰 I-org I-org
+更 O O
+令 O O
+人 O O
+刮 O O
+目 O O
+相 O O
+看 O O
+。 O O
+罗 B-add B-org
+马 I-add I-org
+德 O O
+比 O O
+战 O O
+胜 O O
+拉 B-org B-org
+齐 I-org I-org
+奥 I-org I-org
+， O O
+结 O O
+束 O O
+了 O O
+3 O O
+场 O O
+不 O O
+胜 O O
+的 O O
+尴 O O
+尬 O O
+境 O O
+地 O O
+。 O O
+
+
+raw: 紧张的美军士兵会做些什么——在这种情况下你还会换用AK47？)，
+sen pred gold
+紧 O O
+张 O O
+的 O O
+美 B-gov B-gov
+军 I-gov I-gov
+士 O B-pos
+兵 I-pos I-pos
+会 O O
+做 O O
+些 O O
+什 O O
+么 O O
+[UNK] O O
+[UNK] O O
+在 O O
+这 O O
+种 O O
+情 O O
+况 O O
+下 O O
+你 O O
+还 O O
+会 O O
+换 O O
+用 O O
+a O O
+k O O
+4 O O
+7 O O
+？ O O
+) O O
+， O O
 
 
 raw: 就是因为这些不断出现的血腥和暴力内容充斥着游戏过程，才让BBFC无法以“15”
@@ -3450,10 +3680,10 @@ sen pred gold
 ， O O
 才 O O
 让 O O
-b B-gam B-gov
-b I-gam I-gov
-f I-gam I-gov
-c I-gam I-gov
+b B-org B-gov
+b I-org I-gov
+f I-org I-gov
+c I-org I-gov
 无 O O
 法 O O
 以 O O
@@ -3567,6 +3797,55 @@ sen pred gold
 盒 O O
 
 
+raw: 比勒菲尔德近年在主场对多特蒙德保持比较明显的战绩优势，此战仍有不败的本钱。足彩推荐平胆1。
+sen pred gold
+比 B-org B-org
+勒 I-org I-org
+菲 I-org I-org
+尔 I-org I-org
+德 I-org I-org
+近 O O
+年 O O
+在 O O
+主 O O
+场 O O
+对 O O
+多 B-org B-org
+特 I-org I-org
+蒙 I-org I-org
+德 I-org I-org
+保 O O
+持 O O
+比 O O
+较 O O
+明 O O
+显 O O
+的 O O
+战 O O
+绩 O O
+优 O O
+势 O O
+， O O
+此 O O
+战 O O
+仍 O O
+有 O O
+不 O O
+败 O O
+的 O O
+本 O O
+钱 O O
+。 O O
+足 B-org O
+彩 I-org O
+推 O O
+荐 O O
+平 O O
+胆 O O
+1 O O
+。 O O
+
+
 raw: 如今李晨洋香港账户的资金没有外汇管制，可以随时通过网银往全世界调汇。
 sen pred gold
 如 O O
@@ -3602,6 +3881,69 @@ sen pred gold
 界 O O
 调 O O
 汇 O O
+。 O O
+
+
+raw: 梅塔利斯在乌克兰联赛、杯赛及联盟杯中保持9场不败，状态相当出色；
+sen pred gold
+梅 B-org B-org
+塔 I-org I-org
+利 I-org I-org
+斯 I-org I-org
+在 O O
+乌 B-org B-org
+克 I-org I-org
+兰 I-org I-org
+联 I-org I-org
+赛 I-org I-org
+、 O O
+杯 O B-org
+赛 O I-org
+及 O O
+联 B-org B-org
+盟 I-org I-org
+杯 I-org I-org
+中 O O
+保 O O
+持 O O
+9 O O
+场 O O
+不 O O
+败 O O
+， O O
+状 O O
+态 O O
+相 O O
+当 O O
+出 O O
+色 O O
+； O O
+
+
+raw: 德国复兴信贷银行和美国国际集团（aig）投资。
+sen pred gold
+德 B-com B-com
+国 I-com I-com
+复 I-com I-com
+兴 I-com I-com
+信 I-com I-com
+贷 I-com I-com
+银 I-com I-com
+行 I-com I-com
+和 O O
+美 B-com B-com
+国 I-com I-com
+国 I-com I-com
+际 I-com I-com
+集 I-com I-com
+团 I-com I-com
+（ B-com I-com
+a I-com I-com
+i I-com I-com
+g I-com I-com
+） I-com I-com
+投 O O
+资 O O
 。 O O
 
 
@@ -3653,6 +3995,49 @@ sen pred gold
 ， O O
 
 
+raw: Assembly开发的RTS作品《风暴骤起》(Stormrise)于日前上市。
+sen pred gold
+a B-com B-com
+s I-com I-com
+s I-com I-com
+e I-com I-com
+m I-com I-com
+b I-com I-com
+l I-com I-com
+y I-com I-com
+开 O O
+发 O O
+的 O O
+r O O
+t O O
+s O O
+作 O O
+品 O O
+《 B-gam B-gam
+风 I-gam I-gam
+暴 I-gam I-gam
+骤 I-gam I-gam
+起 I-gam I-gam
+》 I-gam I-gam
+( I-gam B-gam
+s I-gam I-gam
+t I-gam I-gam
+o I-gam I-gam
+r I-gam I-gam
+m I-gam I-gam
+r I-gam I-gam
+i I-gam I-gam
+s I-gam I-gam
+e I-gam I-gam
+) I-gam I-gam
+于 O O
+日 O O
+前 O O
+上 O O
+市 O O
+。 O O
+
+
 raw: 但卡卡和加图索的回归会给红黑军团带回些信心。立博相同赔率下，2006-07赛季至今意甲主队7胜2平，
 sen pred gold
 但 O O
@@ -3667,8 +4052,8 @@ sen pred gold
 归 O O
 会 O O
 给 O O
-红 B-org O
-黑 I-org O
+红 O O
+黑 O O
 军 O O
 团 O O
 带 O O
@@ -3747,13 +4132,13 @@ sen pred gold
 1 I-add I-add
 7 I-add I-add
 号 I-add I-add
-韩 B-com I-add
+韩 I-add I-add
 亚 I-com I-add
 银 I-com I-add
 行 I-com I-add
-营 I-com I-add
-业 I-com I-add
-部 I-com I-add
+营 I-add I-add
+业 I-add I-add
+部 I-add I-add
 ， O O
 
 
@@ -3783,8 +4168,8 @@ sen pred gold
 但 O O
 是 O O
 到 O O
-希 B-org B-add
-腊 I-org I-add
+希 B-add B-add
+腊 I-add I-add
 打 O O
 客 O O
 场 O O
@@ -3792,9 +4177,9 @@ sen pred gold
 时 O O
 候 O O
 ， O O
-俱 O B-org
-乐 O I-org
-部 O I-org
+俱 B-pos B-org
+乐 I-pos I-org
+部 I-pos I-org
 主 B-pos B-pos
 席 I-pos I-pos
 都 O O
@@ -3828,7 +4213,7 @@ sen pred gold
 失 O O
 去 O O
 小 B-nam B-nam
-曼 B-nam I-nam
+曼 I-nam I-nam
 奇 I-nam I-nam
 尼 I-nam I-nam
 和 O O
@@ -3859,42 +4244,6 @@ sen pred gold
 难 O O
 免 O O
 。 O O
-
-
-raw: 把头目都干掉就过关了，不过这款《蝙蝠侠：阿甘精神病院》很不一样，
-sen pred gold
-把 O O
-头 B-pos O
-目 I-pos O
-都 O O
-干 O O
-掉 O O
-就 O O
-过 O O
-关 O O
-了 O O
-， O O
-不 O O
-过 O O
-这 O O
-款 O O
-《 B-gam B-gam
-蝙 I-gam I-gam
-蝠 I-gam I-gam
-侠 I-gam I-gam
-： I-gam I-gam
-阿 I-gam I-gam
-甘 I-gam I-gam
-精 I-gam I-gam
-神 I-gam I-gam
-病 I-gam I-gam
-院 I-gam I-gam
-》 I-gam I-gam
-很 O O
-不 O O
-一 O O
-样 O O
-， O O
 
 
 raw: 也就是说，被暴雪的虚假信息和尚未开始开发的游戏所骗，Sonokong在《魔兽争霸3》
@@ -4076,49 +4425,6 @@ sen pred gold
 。 O O
 
 
-raw: 国基地产工作人员求被告帮忙在一份空白买卖合同及一份招行个人购房借款合同上签字，
-sen pred gold
-国 O B-com
-基 O I-com
-地 O I-com
-产 O I-com
-工 O O
-作 O O
-人 O O
-员 O O
-求 O O
-被 O O
-告 O O
-帮 O O
-忙 O O
-在 O O
-一 O O
-份 O O
-空 O O
-白 O O
-买 O O
-卖 O O
-合 O O
-同 O O
-及 O O
-一 O O
-份 O O
-招 B-com B-com
-行 I-com I-com
-个 O O
-人 O O
-购 O O
-房 O O
-借 O O
-款 O O
-合 O O
-同 O O
-上 O O
-签 O O
-字 O O
-， O O
-
-
 raw: 也只是一款最多时只有400人同时在线的网络游戏。而在由久游网引进中国之后，《劲舞团》
 sen pred gold
 也 O O
@@ -4207,9 +4513,9 @@ sen pred gold
 一 O O
 直 O O
 是 O O
-央 B-add O
-产 I-add O
-房 I-add O
+央 O O
+产 I-com O
+房 O O
 上 O O
 市 O O
 的 O O
@@ -4245,7 +4551,7 @@ sen pred gold
 去 O O
 到 O O
 渡 B-sce B-sce
-嘉 I-sce I-sce
+嘉 B-sce I-sce
 敷 I-sce I-sce
 岛 I-sce I-sce
 的 O O
@@ -4259,8 +4565,8 @@ sen pred gold
 港 I-add I-sce
 渡 O I-sce
 嘉 B-add I-sce
-敷 I-add I-sce
-港 I-add I-sce
+敷 I-sce I-sce
+港 I-sce I-sce
 始 O O
 发 O O
 的 O O
@@ -4306,17 +4612,17 @@ sen pred gold
 彩 O O
 民 O O
 ， O O
-北 B-com B-org
-京 I-com I-org
-市 I-com I-org
-福 I-com I-org
-利 I-com I-org
-彩 I-com I-org
-票 I-com I-org
-发 I-com I-org
-行 I-com I-org
-中 I-com I-org
-心 I-com I-org
+北 B-gov B-org
+京 I-gov I-org
+市 I-gov I-org
+福 I-gov I-org
+利 I-gov I-org
+彩 I-gov I-org
+票 I-gov I-org
+发 I-gov I-org
+行 I-gov I-org
+中 I-gov I-org
+心 I-gov I-org
 将 O O
 在 O O
 节 O O
@@ -4380,52 +4686,51 @@ sen pred gold
 ， O O
 
 
-raw: 本次促销活动赠送的周边产品全部都是限量版啊！值得一提的是《红楼梦》精美人物主题书签A组、
+raw: 这也是为什么志愿军空军靠敢打敢拼的狠劲，在与世界空军强国对抗的时候丝毫不落下风的原因。
 sen pred gold
-本 O O
-次 O O
-促 O O
-销 O O
-活 O O
-动 O O
-赠 O O
-送 O O
-的 O O
-周 O O
-边 O O
-产 O O
-品 O O
-全 O O
-部 O O
-都 O O
+这 O O
+也 O O
 是 O O
-限 O O
-量 O O
-版 O O
-啊 O O
-！ O O
-值 O O
-得 O O
-一 O O
-提 O O
+为 O O
+什 O O
+么 O O
+志 B-gov B-gov
+愿 I-gov I-gov
+军 I-gov I-gov
+空 I-gov I-gov
+军 I-gov I-gov
+靠 O O
+敢 O O
+打 O O
+敢 O O
+拼 O O
 的 O O
-是 O O
-《 B-gam B-boo
-红 I-gam I-boo
-楼 I-gam I-boo
-梦 I-gam I-boo
-》 I-gam I-boo
-精 O O
-美 O O
-人 O O
-物 O O
-主 O O
-题 O O
-书 O O
-签 O O
-a O O
-组 O O
-、 O O
+狠 O O
+劲 O O
+， O O
+在 O O
+与 O O
+世 O O
+界 O O
+空 O B-gov
+军 O I-gov
+强 O O
+国 O O
+对 O O
+抗 O O
+的 O O
+时 O O
+候 O O
+丝 O O
+毫 O O
+不 O O
+落 O O
+下 O O
+风 O O
+的 O O
+原 O O
+因 O O
+。 O O
 
 
 raw: 近日，曾被称为“青春残酷”一代艺术家代表人物之一的尹朝阳，在上海美术馆举办了由朱朱为其策划的个展《
@@ -4469,8 +4774,8 @@ sen pred gold
 办 O O
 了 O O
 由 O O
-朱 B-nam B-nam
-朱 I-nam I-nam
+朱 O B-nam
+朱 O I-nam
 为 O O
 其 O O
 策 O O
@@ -4506,7 +4811,7 @@ sen pred gold
 前 O O
 她 O O
 在 O O
-广 B-add O
+广 O O
 州 I-add O
 一 O O
 家 O O
@@ -4520,49 +4825,6 @@ sen pred gold
 款 O O
 时 O O
 ， O O
-
-
-raw: 玩dota，你会发现人会变的沉稳而又大菊观玩imba，你会发现人都会变成救世主
-sen pred gold
-玩 O O
-d B-gam B-gam
-o I-gam I-gam
-t I-gam I-gam
-a I-gam I-gam
-， O O
-你 O O
-会 O O
-发 O O
-现 O O
-人 O O
-会 O O
-变 O O
-的 O O
-沉 O O
-稳 O O
-而 O O
-又 O O
-大 O O
-菊 O O
-观 O O
-玩 O O
-i B-gam O
-m I-gam O
-b I-gam O
-a I-gam O
-， O O
-你 O O
-会 O O
-发 O O
-现 O O
-人 O O
-都 O O
-会 O O
-变 O O
-成 O O
-救 O O
-世 O O
-主 O O
 
 
 raw: 在原有CS项目的基础上先后成立了魔兽3，星际2，FIFA以及Dota分队。TyLoo(
@@ -4643,6 +4905,55 @@ s O O
 3 O O
 
 
+raw: 凉山奇石资源最为富集，石种最为多样，其中不乏优质玉石。沿着西昌市太和镇安宁河方向驱车行驶，
+sen pred gold
+凉 B-add B-sce
+山 I-add I-sce
+奇 O O
+石 O O
+资 O O
+源 O O
+最 O O
+为 O O
+富 O O
+集 O O
+， O O
+石 O O
+种 O O
+最 O O
+为 O O
+多 O O
+样 O O
+， O O
+其 O O
+中 O O
+不 O O
+乏 O O
+优 O O
+质 O O
+玉 O O
+石 O O
+。 O O
+沿 O O
+着 O O
+西 B-add B-add
+昌 I-add I-add
+市 I-add I-add
+太 I-add I-add
+和 I-add I-add
+镇 I-add I-add
+安 I-add I-add
+宁 I-add I-add
+河 I-add I-add
+方 O O
+向 O O
+驱 O O
+车 O O
+行 O O
+驶 O O
+， O O
+
+
 raw: 夜幕降临前》震动业界，还成就了哈维尔·巴尔顿入围当年的奥斯卡影帝；《潜水钟与蝴蝶》
 sen pred gold
 夜 B-mov B-mov
@@ -4690,8 +5001,8 @@ sen pred gold
 
 raw: 快客等超市便利店及金象大药房、我爱我家中介等各营业点。其除了支持四大行还款外，
 sen pred gold
-快 B-com B-com
-客 I-com I-com
+快 B-add B-com
+客 I-add I-com
 等 O O
 超 O O
 市 O O
@@ -4709,7 +5020,7 @@ sen pred gold
 爱 I-com O
 我 I-com O
 家 I-com O
-中 I-com O
+中 O O
 介 I-com O
 等 O O
 各 O O
@@ -4777,8 +5088,8 @@ d I-com O
 
 raw: 棉花堡附近的古迹远远不止这一处白色宫殿，位于棉花堡上方的希拉波里斯hierapolis
 sen pred gold
-棉 B-sce B-sce
-花 I-sce I-sce
+棉 B-add B-sce
+花 I-add I-sce
 堡 I-sce I-sce
 附 O O
 近 O O
@@ -4810,16 +5121,16 @@ sen pred gold
 波 I-add I-sce
 里 I-add I-sce
 斯 I-add I-sce
-h I-add I-sce
-i I-add I-sce
-e I-add I-sce
-r I-add I-sce
-a I-add I-sce
-p I-add I-sce
-o I-add I-sce
-l I-add I-sce
-i I-add I-sce
-s I-add I-sce
+h I-sce I-sce
+i I-sce I-sce
+e I-sce I-sce
+r I-sce I-sce
+a I-sce I-sce
+p I-sce I-sce
+o I-sce I-sce
+l I-sce I-sce
+i I-sce I-sce
+s I-sce I-sce
 
 
 raw: 点题：美版“喋血孤城”
@@ -4830,7 +5141,7 @@ sen pred gold
 美 O O
 版 O O
 [UNK] B-mov O
-喋 B-mov B-mov
+喋 I-mov B-mov
 血 I-mov I-mov
 孤 I-mov I-mov
 城 I-mov I-mov
@@ -4946,38 +5257,38 @@ sen pred gold
 [UNK] O O
 大 O O
 作 O O
-《 B-gam B-mov
-在 I-gam I-mov
-恶 I-gam I-mov
-魔 I-gam I-mov
-知 I-gam I-mov
-道 I-gam I-mov
-你 I-gam I-mov
-死 I-gam I-mov
-前 I-gam I-mov
-》 I-gam I-mov
+《 B-mov B-mov
+在 I-mov I-mov
+恶 I-mov I-mov
+魔 I-mov I-mov
+知 I-mov I-mov
+道 I-mov I-mov
+你 I-mov I-mov
+死 I-mov I-mov
+前 I-mov I-mov
+》 I-mov I-mov
 （ O O
-b B-gam B-mov
-e I-gam I-mov
-f I-gam I-mov
-o I-gam I-mov
-r I-gam I-mov
-e I-gam I-mov
-t I-gam I-mov
-h I-gam I-mov
-e I-gam I-mov
-d I-gam I-mov
-e I-gam I-mov
-v I-gam I-mov
-i I-gam I-mov
-l I-gam I-mov
+b I-mov B-mov
+e I-mov I-mov
+f I-mov I-mov
+o I-mov I-mov
+r I-mov I-mov
+e I-mov I-mov
+t I-mov I-mov
+h I-mov I-mov
+e I-mov I-mov
+d I-mov I-mov
+e I-mov I-mov
+v I-mov I-mov
+i I-mov I-mov
+l I-mov I-mov
 
 
 raw: 南至长阳大街，北至纬五路。包括住宅、公共服务设施、商业设施和文化设施。
 sen pred gold
 南 B-add O
 至 I-add O
-长 B-add B-add
+长 I-add B-add
 阳 I-add I-add
 大 I-add I-add
 街 I-add I-add
@@ -5010,6 +5321,59 @@ sen pred gold
 设 O O
 施 O O
 。 O O
+
+
+raw: 那不勒斯赢球就可保证上盘投注坐和望赢，这显然对那不勒斯不太看好。欧赔方面，立博主胜上调到1.62，
+sen pred gold
+那 B-org B-org
+不 I-org I-org
+勒 I-org I-org
+斯 I-org I-org
+赢 O O
+球 O O
+就 O O
+可 O O
+保 O O
+证 O O
+上 O O
+盘 O O
+投 O O
+注 O O
+坐 O O
+和 O O
+望 O O
+赢 O O
+， O O
+这 O O
+显 O O
+然 O O
+对 O O
+那 O B-org
+不 O I-org
+勒 O I-org
+斯 O I-org
+不 O O
+太 O O
+看 O O
+好 O O
+。 O O
+欧 O O
+赔 O O
+方 O O
+面 O O
+， O O
+立 B-com B-com
+博 I-com I-com
+主 O O
+胜 O O
+上 O O
+调 O O
+到 O O
+1 O O
+. O O
+6 O O
+2 O O
+， O O
 
 
 raw: 《次贷危机》一书作者、建行高级经济师孙兆东认为，贷款保增长必须注重全面协调可持续。要关注短周期特性，
@@ -5072,14 +5436,14 @@ sen pred gold
 过 O O
 受 O O
 到 O O
-s B-com B-com
-o I-com I-com
-n I-com I-com
-o I-com I-com
-k I-com I-com
-o I-com I-com
-n I-com I-com
-g I-com I-com
+s B-nam B-com
+o I-nam I-com
+n I-nam I-com
+o I-nam I-com
+k I-nam I-com
+o I-nam I-com
+n I-nam I-com
+g I-nam I-com
 拒 O O
 绝 O O
 的 O O
@@ -5193,9 +5557,9 @@ sen pred gold
 轮 O O
 无 O O
 帅 O O
-庞 B-org B-org
-贝 B-org I-org
-军 I-org I-org
+庞 O B-org
+贝 I-nam I-org
+军 I-nam I-org
 客 O O
 场 O O
 0 O O
@@ -5229,6 +5593,37 @@ sen pred gold
 。 O O
 
 
+raw: 只有到靠近香山的香泉环岛附件才转为山路，且坡度并不陡。
+sen pred gold
+只 O O
+有 O O
+到 O O
+靠 O O
+近 O O
+香 B-sce B-add
+山 I-sce I-add
+的 O O
+香 B-sce B-add
+泉 I-sce I-add
+环 I-sce I-add
+岛 I-sce I-add
+附 O O
+件 O O
+才 O O
+转 O O
+为 O O
+山 O O
+路 O O
+， O O
+且 O O
+坡 O O
+度 O O
+并 O O
+不 O O
+陡 O O
+。 O O
+
+
 raw: 奖品是面值900元的2010至2011万龙滑雪酒店标间一晚兼万龙滑雪场有优惠卷。
 sen pred gold
 奖 O O
@@ -5254,8 +5649,8 @@ sen pred gold
 龙 I-add I-sce
 滑 I-add I-sce
 雪 I-add I-sce
-酒 O I-sce
-店 O I-sce
+酒 I-add I-sce
+店 I-add I-sce
 标 O O
 间 O O
 一 O O
@@ -5353,60 +5748,16 @@ i O I-nam
 胆 O O
 
 
-raw: 《加勒比海岛：诅咒的舰队》这款游戏的故事背景是发生在《加勒比海岛》电影系列之前，
-sen pred gold
-《 B-gam B-gam
-加 I-gam I-gam
-勒 I-gam I-gam
-比 I-gam I-gam
-海 I-gam I-gam
-岛 I-gam I-gam
-： I-gam I-gam
-诅 I-gam I-gam
-咒 I-gam I-gam
-的 I-gam I-gam
-舰 I-gam I-gam
-队 I-gam I-gam
-》 I-gam I-gam
-这 O O
-款 O O
-游 O O
-戏 O O
-的 O O
-故 O O
-事 O O
-背 O O
-景 O O
-是 O O
-发 O O
-生 O O
-在 O O
-《 B-gam B-mov
-加 I-gam I-mov
-勒 I-gam I-mov
-比 I-gam I-mov
-海 I-gam I-mov
-岛 I-gam I-mov
-》 I-gam I-mov
-电 O O
-影 O O
-系 O O
-列 O O
-之 O O
-前 O O
-， O O
-
-
 raw: 政治体制小组负责人之一，基本法咨询委员会执行委员会委员，以及香港特别行政区筹备委员会委员。
 sen pred gold
 政 O O
-治 O O
+治 I-gov O
 体 O O
 制 O O
 小 O O
 组 O O
-负 O O
-责 O O
+负 B-pos O
+责 I-pos O
 人 O O
 之 O O
 一 O O
@@ -5526,7 +5877,7 @@ sen pred gold
 象 O O
 ， O O
 在 O O
-商 B-pos O
+商 O O
 人 I-pos O
 的 O O
 眼 O O
@@ -5580,8 +5931,8 @@ k B-com B-com
 祥 I-nam I-nam
 树 I-nam I-nam
 、 O O
-白 B-nam B-nam
-族 I-nam I-nam
+白 O B-nam
+族 O I-nam
 华 O I-nam
 诠 O O
 释 O O
@@ -5593,6 +5944,56 @@ k B-add B-add
 湾 I-add I-add
 
 
+raw: 日本女人永远不会原谅你！”）往往奠定胜局。所以，成功效法《明日之后》“集所有灾难元素于一身”
+sen pred gold
+日 O O
+本 O O
+女 O O
+人 O O
+永 O O
+远 O O
+不 O O
+会 O O
+原 O O
+谅 O O
+你 O O
+！ O O
+[UNK] O O
+） O O
+往 O O
+往 O O
+奠 O O
+定 O O
+胜 O O
+局 O O
+。 O O
+所 O O
+以 O O
+， O O
+成 O O
+功 O O
+效 O O
+法 O O
+《 B-mov B-gam
+明 I-mov I-gam
+日 I-mov I-gam
+之 I-mov I-gam
+后 I-mov I-gam
+》 I-mov I-gam
+[UNK] O O
+集 O O
+所 O O
+有 O O
+灾 O O
+难 O O
+元 O O
+素 O O
+于 O O
+一 O O
+身 O O
+[UNK] O O
+
+
 raw: 马里布的盖蒂别墅并没有因为盖蒂中心的闻名遐迩而隐形，经过一番整修，
 sen pred gold
 马 B-add B-add
@@ -5600,9 +6001,9 @@ sen pred gold
 布 I-add I-add
 的 O I-add
 盖 B-sce I-add
-蒂 I-sce I-add
-别 I-sce I-add
-墅 I-sce I-add
+蒂 I-add I-add
+别 I-add I-add
+墅 I-add I-add
 并 O O
 没 O O
 有 O O
@@ -5656,7 +6057,7 @@ sen pred gold
 到 O O
 街 B-gov B-gov
 道 I-gov I-gov
-办 I-gov I-gov
+办 I-add I-gov
 事 I-gov I-gov
 处 I-gov I-gov
 申 O O
@@ -5696,9 +6097,9 @@ m I-org I-org
 年 O O
 年 O O
 初 O O
-e B-nam B-org
-c I-nam I-org
-l I-nam I-org
+e O B-org
+c O I-org
+l O I-org
 之 O O
 后 O O
 有 O O
@@ -5817,7 +6218,7 @@ n I-org I-org
 a I-org I-org
 j I-org I-org
 o I-org I-org
-y O I-org
+y I-org I-org
 于 O O
 2 O O
 0 O O
@@ -5899,7 +6300,7 @@ sen pred gold
 董 B-pos I-pos
 事 I-pos I-pos
 会 I-pos I-pos
-主 B-pos I-pos
+主 I-pos I-pos
 席 I-pos I-pos
 兼 O O
 c B-pos B-pos
@@ -5976,6 +6377,57 @@ sen pred gold
 ， O O
 
 
+raw: 我不是网吧，我enternet”为主题，生动说明了其经营特色。广州市绝顶高手网吧以良好的环境，
+sen pred gold
+我 O O
+不 O O
+是 O O
+网 O O
+吧 O O
+， O O
+我 O O
+e B-add O
+n I-add O
+t I-add O
+e I-add O
+r I-add O
+n I-add O
+e I-add O
+t I-add O
+[UNK] O O
+为 O O
+主 O O
+题 O O
+， O O
+生 O O
+动 O O
+说 O O
+明 O O
+了 O O
+其 O O
+经 O O
+营 O O
+特 O O
+色 O O
+。 O O
+广 B-add B-add
+州 I-add I-add
+市 I-add I-add
+绝 I-add I-add
+顶 I-add I-add
+高 I-add I-add
+手 I-add I-add
+网 I-add I-add
+吧 I-add I-add
+以 O O
+良 O O
+好 O O
+的 O O
+环 O O
+境 O O
+， O O
+
+
 raw: 盖茨13日在国会山与共和党国会议员就法案举行闭门会谈。
 sen pred gold
 盖 B-nam B-nam
@@ -5988,9 +6440,9 @@ sen pred gold
 会 I-add I-add
 山 I-add I-add
 与 O O
-共 B-gov O
-和 I-gov O
-党 I-gov O
+共 O O
+和 O O
+党 O O
 国 B-pos O
 会 I-pos B-pos
 议 I-pos I-pos
@@ -6040,13 +6492,13 @@ sen pred gold
 节 O O
 ， O O
 而 O O
-香 B-sce O
-港 I-sce O
-电 I-sce O
-影 I-sce O
-资 I-sce O
-料 I-sce O
-馆 I-sce O
+香 B-add O
+港 I-add O
+电 I-add O
+影 I-add O
+资 I-add O
+料 I-add O
+馆 I-add O
 则 O O
 在 O O
 此 O O
@@ -6088,8 +6540,8 @@ sen pred gold
 淘 O O
 汰 O O
 了 O O
-波 B-org O
-兰 O O
+波 B-add O
+兰 I-add O
 的 O O
 克 B-org B-org
 拉 I-org I-org
@@ -6109,8 +6561,8 @@ sen pred gold
 
 raw: 嘉宾：中信地产营销管理部副经理梁丽红
 sen pred gold
-嘉 O O
-宾 O O
+嘉 B-pos O
+宾 I-pos O
 ： O O
 中 B-com B-com
 信 I-com I-com
@@ -6193,8 +6645,8 @@ sen pred gold
 市 O O
 赛 O O
 区 O O
-长 O O
-沙 O O
+长 B-add O
+沙 I-add O
 赛 O O
 区 O O
 在 O O
@@ -6223,7 +6675,7 @@ sen pred gold
 知 O O
 名 O O
 选 B-pos O
-手 I-pos O
+手 O O
 都 O O
 悉 O O
 数 O O
@@ -6232,93 +6684,6 @@ sen pred gold
 参 O O
 赛 O O
 。 O O
-
-
-raw: 美国国务院上周表示，美军此次访问将加强两国人民及军队间的关系。
-sen pred gold
-美 B-gov B-gov
-国 I-gov I-gov
-国 I-gov I-gov
-务 I-gov I-gov
-院 I-gov I-gov
-上 O O
-周 O O
-表 O O
-示 O O
-， O O
-美 B-gov B-gov
-军 I-gov I-gov
-此 O O
-次 O O
-访 O O
-问 O O
-将 O O
-加 O O
-强 O O
-两 O O
-国 O O
-人 O O
-民 O O
-及 O O
-军 B-gov O
-队 I-gov O
-间 O O
-的 O O
-关 O O
-系 O O
-。 O O
-
-
-raw: 为了让读者更加了解这种方式该如何使用，本刊记者特别对几种常用的第三方支付还款，如“银联在线”、“
-sen pred gold
-为 O O
-了 O O
-让 O O
-读 O O
-者 O O
-更 O O
-加 O O
-了 O O
-解 O O
-这 O O
-种 O O
-方 O O
-式 O O
-该 O O
-如 O O
-何 O O
-使 O O
-用 O O
-， O O
-本 O O
-刊 O O
-记 B-pos B-pos
-者 I-pos I-pos
-特 O O
-别 O O
-对 O O
-几 O O
-种 O O
-常 O O
-用 O O
-的 O O
-第 O O
-三 O O
-方 O O
-支 O O
-付 O O
-还 O O
-款 O O
-， O O
-如 O O
-[UNK] O O
-银 B-com B-com
-联 I-com I-com
-在 I-com O
-线 I-com O
-[UNK] O O
-、 O O
-[UNK] O O
 
 
 raw: 2015年浙江乌镇乌村旅游度假村民宿设计总负责人2016
@@ -6339,11 +6704,11 @@ sen pred gold
 度 I-add I-add
 假 I-add I-add
 村 I-add I-add
-民 O O
-宿 O O
-设 O O
-计 O O
-总 B-pos O
+民 I-add O
+宿 I-add O
+设 B-pos O
+计 I-pos O
+总 I-pos O
 负 I-pos O
 责 I-pos O
 人 I-pos O
@@ -6357,12 +6722,12 @@ raw: 也是北太平洋岛屿中最大最好的安全停泊港口之一，
 sen pred gold
 也 O O
 是 O O
-北 B-sce B-add
-太 I-sce I-add
-平 I-sce I-add
-洋 I-sce I-add
-岛 I-sce O
-屿 I-sce O
+北 B-add B-add
+太 I-add I-add
+平 I-add I-add
+洋 I-add I-add
+岛 I-add O
+屿 I-add O
 中 O O
 最 O O
 大 O O
@@ -6384,7 +6749,7 @@ raw: km红旗区骆驼湾新村53号2.4竹馨居河南省新乡市红旗区荣km
 sen pred gold
 k B-add O
 m I-add O
-红 B-add B-add
+红 I-add B-add
 旗 I-add I-add
 区 I-add I-add
 骆 I-add I-add
@@ -6401,7 +6766,7 @@ m I-add O
 竹 I-add I-add
 馨 I-add I-add
 居 I-add I-add
-河 B-add B-add
+河 I-add B-add
 南 I-add I-add
 省 I-add I-add
 新 I-add I-add
@@ -6515,9 +6880,9 @@ sen pred gold
 
 raw: 夏威夷当然不止火山，除了火山，你还可以从空中俯看热带雨林和美丽的瀑布，这里是好莱坞大片的拍摄地，
 sen pred gold
-夏 B-sce B-add
-威 I-sce I-add
-夷 I-sce I-add
+夏 B-add B-add
+威 I-add I-add
+夷 I-add I-add
 当 O O
 然 O O
 不 O O
@@ -6539,10 +6904,10 @@ sen pred gold
 中 O O
 俯 O O
 看 O O
-热 B-sce O
-带 I-sce O
-雨 I-sce O
-林 I-sce O
+热 O O
+带 O O
+雨 O O
+林 O O
 和 O O
 美 O O
 丽 O O
@@ -6567,21 +6932,21 @@ sen pred gold
 
 raw: 中山市红木家具发展研究开发中心总工程师曹新民表示，行业最不景气的时间应该为2008年。据他介绍，
 sen pred gold
-中 B-com B-com
-山 I-com I-com
-市 I-com I-com
-红 I-com I-com
-木 I-com I-com
-家 I-com I-com
-具 I-com I-com
-发 I-com I-com
-展 I-com I-com
-研 I-com I-com
-究 I-com I-com
-开 I-com I-com
-发 I-com I-com
-中 I-com I-com
-心 I-com I-com
+中 B-org B-com
+山 I-org I-com
+市 I-org I-com
+红 I-org I-com
+木 I-org I-com
+家 I-org I-com
+具 I-org I-com
+发 I-org I-com
+展 I-org I-com
+研 I-org I-com
+究 I-org I-com
+开 I-org I-com
+发 I-org I-com
+中 I-org I-com
+心 I-org I-com
 总 B-pos O
 工 I-pos B-pos
 程 I-pos I-pos
@@ -6614,6 +6979,59 @@ sen pred gold
 他 O O
 介 O O
 绍 O O
+， O O
+
+
+raw: 2公里，建议从斗兽场到西班牙广场步行，回来的时候，坐马车游览入乡随俗，在千年左右的街道，坐着马车，
+sen pred gold
+2 O O
+公 O O
+里 O O
+， O O
+建 O O
+议 O O
+从 O O
+斗 B-add B-sce
+兽 I-sce I-sce
+场 I-add I-sce
+到 O O
+西 B-add B-sce
+班 I-add I-sce
+牙 I-add I-sce
+广 I-add I-sce
+场 I-add I-sce
+步 O O
+行 O O
+， O O
+回 O O
+来 O O
+的 O O
+时 O O
+候 O O
+， O O
+坐 O O
+马 O O
+车 O O
+游 O O
+览 O O
+入 O O
+乡 O O
+随 O O
+俗 O O
+， O O
+在 O O
+千 O O
+年 O O
+左 O O
+右 O O
+的 O O
+街 O O
+道 O O
+， O O
+坐 O O
+着 O O
+马 O O
+车 O O
 ， O O
 
 
@@ -6681,8 +7099,8 @@ sen pred gold
 里 O O
 的 O O
 古 O O
-惑 O O
-仔 O O
+惑 I-nam O
+仔 I-nam O
 ， O O
 在 O O
 人 O O
@@ -6697,12 +7115,12 @@ sen pred gold
 情 I-mov I-mov
 》 I-mov I-mov
 里 O O
-庙 B-add O
-街 I-add O
+庙 O O
+街 O O
 街 O B-pos
 头 O I-pos
-艺 B-pos I-pos
-人 I-pos I-pos
+艺 O I-pos
+人 O I-pos
 的 O O
 女 O O
 儿 O O
@@ -6761,8 +7179,8 @@ sen pred gold
 燕 I-nam I-nam
 燕 I-nam I-nam
 ） O O
-智 O B-add
-利 O I-add
+智 B-add B-add
+利 I-add I-add
 《 B-boo B-boo
 信 I-boo I-boo
 使 I-boo I-boo
@@ -6814,8 +7232,8 @@ sen pred gold
 园 I-sce I-sce
 林 I-sce I-sce
 和 O O
-京 B-add B-sce
-城 I-add I-sce
+京 B-sce B-sce
+城 I-sce I-sce
 民 I-add I-sce
 宅 I-add I-sce
 的 O O
@@ -6906,7 +7324,7 @@ sen pred gold
 灾 I-mov I-mov
 》 I-mov I-mov
 （ B-mov O
-t B-mov B-mov
+t I-mov B-mov
 h I-mov I-mov
 e I-mov I-mov
 h I-mov I-mov
@@ -6925,6 +7343,51 @@ g I-mov I-mov
 木 I-nam O
 / O O
 文 O O
+
+
+raw: iG的目标之一是打造全球顶级电竞俱乐部。目前iG已整合前CCM电竞俱乐部DotA、
+sen pred gold
+i B-org B-org
+g I-org I-org
+的 O O
+目 O O
+标 O O
+之 O O
+一 O O
+是 O O
+打 O O
+造 O O
+全 O O
+球 O O
+顶 O O
+级 O O
+电 O O
+竞 O O
+俱 O O
+乐 O O
+部 O O
+。 O O
+目 O O
+前 O O
+i O B-org
+g I-org I-org
+已 O O
+整 O O
+合 O O
+前 O O
+c B-org B-org
+c I-org I-org
+m I-org I-org
+电 I-org I-org
+竞 I-org I-org
+俱 I-org I-org
+乐 I-org I-org
+部 I-org I-org
+d B-gam B-gam
+o I-gam I-gam
+t I-gam I-gam
+a I-gam I-gam
+、 O O
 
 
 raw: 与此同时，过去一年房市的低迷也尽显于此。央行上海总部的数据显示，中资金融机构个人房贷增加57.
@@ -6994,8 +7457,8 @@ sen pred gold
 博 B-com O
 彩 I-com O
 创 O O
-台 O B-add
-湾 O I-add
+台 B-add B-add
+湾 I-add I-add
 最 O O
 快 O O
 封 O O
@@ -7058,21 +7521,21 @@ e O O
 功 O O
 通 O O
 知 O O
-恒 B-com O
-晟 I-com O
-超 I-com O
-市 I-com O
+恒 B-add O
+晟 I-add O
+超 I-add O
+市 I-add O
 1 O O
 6 O O
 : O O
 0 O O
 5 O O
-恒 B-com B-add
-晟 I-com I-add
-超 I-com I-add
-市 I-com I-add
+恒 B-add B-add
+晟 I-add I-add
+超 I-add I-add
+市 I-add I-add
 【 O O
-福 B-add B-add
+福 I-add B-add
 建 I-add I-add
 区 I-add I-add
 1 O O
@@ -7185,52 +7648,6 @@ sen pred gold
 。 O O
 
 
-raw: 昨天，巴南区法院公布了这起案例。“台湾富商”因诈骗罪和盗窃罪数罪并罚判刑7年6个月。
-sen pred gold
-昨 O O
-天 O O
-， O O
-巴 B-gov B-gov
-南 I-gov I-gov
-区 I-gov I-gov
-法 I-gov I-gov
-院 I-gov I-gov
-公 O O
-布 O O
-了 O O
-这 O O
-起 O O
-案 O O
-例 O O
-。 O O
-[UNK] O O
-台 O B-add
-湾 O I-add
-富 O O
-商 O O
-[UNK] O O
-因 O O
-诈 O O
-骗 O O
-罪 O O
-和 O O
-盗 O O
-窃 O O
-罪 O O
-数 O O
-罪 O O
-并 O O
-罚 O O
-判 O O
-刑 O O
-7 O O
-年 O O
-6 O O
-个 O O
-月 O O
-。 O O
-
-
 raw: 我们荣幸地邀请索维娅国际艺术村的艺术总监许俊杰先生为大家解答一下。
 sen pred gold
 我 O O
@@ -7247,7 +7664,7 @@ sen pred gold
 际 I-add I-add
 艺 I-add I-add
 术 I-add I-add
-村 I-add I-add
+村 I-com I-add
 的 O O
 艺 B-pos O
 术 I-pos O
@@ -7421,42 +7838,6 @@ sen pred gold
 。 O O
 
 
-raw: 已于上周经银监会主席办公会原则通过，但部分内容可能还要进行修改。
-sen pred gold
-已 O O
-于 O O
-上 O O
-周 O O
-经 O O
-银 B-gov B-gov
-监 I-gov I-gov
-会 I-gov I-gov
-主 I-gov B-pos
-席 I-gov I-pos
-办 I-gov O
-公 O O
-会 O O
-原 O O
-则 O O
-通 O O
-过 O O
-， O O
-但 O O
-部 O O
-分 O O
-内 O O
-容 O O
-可 O O
-能 O O
-还 O O
-要 O O
-进 O O
-行 O O
-修 O O
-改 O O
-。 O O
-
-
 raw: 拍摄时出现事故，这在不少影片的拍摄过程里都曾经出现过，包括前不久的最新一集“007铁金刚”，
 sen pred gold
 拍 O O
@@ -7496,7 +7877,7 @@ sen pred gold
 新 O O
 一 O O
 集 O O
-[UNK] B-mov B-mov
+[UNK] O B-mov
 0 B-mov I-mov
 0 I-mov I-mov
 7 I-mov I-mov
@@ -7527,50 +7908,6 @@ l I-boo O
 刊 O O
 上 O O
 市 O O
-
-
-raw: 游戏叫做《CallofPripyat（普里皮亚季的召唤）》，本作计划在秋季发售。
-sen pred gold
-游 O O
-戏 O O
-叫 O O
-做 O O
-《 B-gam B-gam
-c I-gam I-gam
-a I-gam I-gam
-l I-gam I-gam
-l I-gam I-gam
-o I-gam I-gam
-f I-gam I-gam
-p I-gam I-gam
-r I-gam I-gam
-i I-gam I-gam
-p I-gam I-gam
-y I-gam I-gam
-a I-gam I-gam
-t I-gam I-gam
-（ B-gam I-gam
-普 I-gam I-gam
-里 I-gam I-gam
-皮 I-gam I-gam
-亚 I-gam I-gam
-季 I-gam I-gam
-的 I-gam I-gam
-召 I-gam I-gam
-唤 I-gam I-gam
-） I-gam I-gam
-》 I-gam I-gam
-， O O
-本 O O
-作 O O
-计 O O
-划 O O
-在 O O
-秋 O O
-季 O O
-发 O O
-售 O O
-。 O O
 
 
 raw: 维拉公园的优势较大。博彩公司的平均赔率1.613.515.61无疑是对维拉青睐有加，
@@ -7809,6 +8146,55 @@ sen pred gold
 ） O O
 
 
+raw: 平手初盘下，本赛季3场德甲都是客队获胜，足彩0不可少。bwin早早降低了主胜赔，同赔率下，
+sen pred gold
+平 O O
+手 O O
+初 O O
+盘 O O
+下 O O
+， O O
+本 O O
+赛 O O
+季 O O
+3 O O
+场 O O
+德 B-org B-org
+甲 I-org I-org
+都 O O
+是 O O
+客 O O
+队 O O
+获 O O
+胜 O O
+， O O
+足 O B-org
+彩 O I-org
+0 O O
+不 O O
+可 O O
+少 O O
+。 O O
+b B-com B-com
+w I-com I-com
+i I-com I-com
+n I-com I-com
+早 O O
+早 O O
+降 O O
+低 O O
+了 O O
+主 O O
+胜 O O
+赔 O O
+， O O
+同 O O
+赔 O O
+率 O O
+下 O O
+， O O
+
+
 raw: 微软公司不久前曾在宣布将在结束《光环战争》的开发后，关闭开发小组Ensemble
 sen pred gold
 微 B-com B-com
@@ -7975,7 +8361,7 @@ sen pred gold
 变 O O
 成 O O
 画 B-sce O
-廊 I-sce O
+廊 O O
 太 O O
 多 O O
 了 O O
@@ -8138,7 +8524,7 @@ sen pred gold
 区 B-pos B-pos
 政 I-pos I-pos
 协 I-pos I-pos
-委 I-pos I-pos
+委 B-pos I-pos
 员 I-pos I-pos
 、 O O
 社 O O
@@ -8155,8 +8541,8 @@ sen pred gold
 参 O O
 与 O O
 ， O O
-公 B-gov O
-证 I-gov O
+公 O O
+证 O O
 部 O O
 门 O O
 进 O O
@@ -8307,7 +8693,7 @@ sen pred gold
 景 O O
 点 O O
 和 O O
-水 B-add B-add
+水 O B-add
 坑 O I-add
 尾 O I-add
 购 O I-add
@@ -8368,7 +8754,7 @@ sen pred gold
 
 raw: merchantsbank等为首的金融机构，以及来自全国各地的媒体记者的强烈关注。
 sen pred gold
-m B-com B-com
+m B-org B-com
 e I-com I-com
 r I-com I-com
 c I-com I-com
@@ -8399,9 +8785,9 @@ k I-com I-com
 各 O O
 地 O O
 的 O O
-媒 B-pos O
-体 I-pos O
-记 I-pos B-pos
+媒 O O
+体 O O
+记 B-pos B-pos
 者 I-pos I-pos
 的 O O
 强 O O
@@ -8411,57 +8797,20 @@ k I-com I-com
 。 O O
 
 
-raw: 发言人表示，德国北部的一名收藏家买下了这半枚保存良好的邮票。邮票最初来源地是德国北部城镇syke。
+raw: 图为润泽地产常务副总封屹
 sen pred gold
-发 O O
-言 O O
-人 O O
-表 O O
-示 O O
-， O O
-德 B-add B-add
-国 I-add I-add
-北 O I-add
-部 O I-add
-的 O O
-一 O O
-名 O O
-收 B-pos B-pos
-藏 I-pos I-pos
-家 I-pos I-pos
-买 O O
-下 O O
-了 O O
-这 O O
-半 O O
-枚 O O
-保 O O
-存 O O
-良 O O
-好 O O
-的 O O
-邮 O O
-票 O O
-。 O O
-邮 O O
-票 O O
-最 O O
-初 O O
-来 O O
-源 O O
-地 O O
-是 O O
-德 B-add B-add
-国 I-add I-add
-北 I-add I-add
-部 I-add I-add
-城 I-add I-add
-镇 I-add I-add
-s B-add I-add
-y I-add I-add
-k I-add I-add
-e I-add I-add
-。 O O
+图 O O
+为 O O
+润 B-pos B-com
+泽 I-pos I-com
+地 I-pos I-com
+产 I-pos I-com
+常 I-pos B-pos
+务 I-pos I-pos
+副 I-pos I-pos
+总 I-pos I-pos
+封 B-nam B-nam
+屹 I-nam I-nam
 
 
 raw: 招行银行储户一次性还房贷被索违约金
@@ -8502,20 +8851,20 @@ sen pred gold
 者 O I-pos
 痴 B-nam B-nam
 冬 I-nam I-nam
-书 O I-nam
+书 I-nam I-nam
 亦 O I-nam
 来 O O
 源 O O
-阅 B-boo B-com
-文 I-boo I-com
-集 I-boo I-com
-团 I-boo I-com
-军 B-boo O
-事 I-boo O
-战 I-boo O
-争 I-boo O
-幻 I-boo O
-想 I-boo O
+阅 O B-com
+文 O I-com
+集 O I-com
+团 O I-com
+军 O O
+事 O O
+战 O O
+争 O O
+幻 O O
+想 O O
 谍 B-boo O
 战 I-boo O
 特 I-boo B-pos
@@ -8534,104 +8883,11 @@ sen pred gold
 . O O
 
 
-raw: 切尔西本赛季主场迄今全胜，曼联新赛季只在朴茨茅斯身上取胜过，主队队长特里在上轮吃到的红牌被取消，
+raw: 阿凡达
 sen pred gold
-切 B-org B-org
-尔 I-org I-org
-西 I-org I-org
-本 O O
-赛 O O
-季 O O
-主 O O
-场 O O
-迄 O O
-今 O O
-全 O O
-胜 O O
-， O O
-曼 B-org B-org
-联 I-org I-org
-新 O O
-赛 O O
-季 O O
-只 O O
-在 O O
-朴 B-org B-org
-茨 I-org I-org
-茅 I-org I-org
-斯 I-org I-org
-身 O O
-上 O O
-取 O O
-胜 O O
-过 O O
-， O O
-主 O O
-队 O O
-队 B-pos O
-长 I-pos O
-特 B-nam B-nam
-里 I-nam I-nam
-在 O O
-上 O O
-轮 O O
-吃 O O
-到 O O
-的 O O
-红 O O
-牌 O O
-被 O O
-取 O O
-消 O O
-， O O
-
-
-raw: 半球高水盘于客军不利。本场澳彩标盘的平局赔率低于切沃vs罗马一战，足彩推荐平胆，单选1。
-sen pred gold
-半 O O
-球 O O
-高 O O
-水 O O
-盘 O O
-于 O O
-客 O O
-军 O O
-不 O O
-利 O O
-。 O O
-本 O O
-场 O O
-澳 B-org O
-彩 I-org O
-标 O O
-盘 O O
-的 O O
-平 O O
-局 O O
-赔 O O
-率 O O
-低 O O
-于 O O
-切 B-org B-org
-沃 I-org I-org
-v O O
-s O O
-罗 B-org B-org
-马 I-org I-org
-一 O O
-战 O O
-， O O
-足 O O
-彩 O O
-推 O O
-荐 O O
-平 O O
-胆 O O
-， O O
-单 O O
-选 O O
-1 O O
-。 O O
+阿 B-gam B-mov
+凡 I-mov I-mov
+达 I-mov I-mov
 
 
 raw: 5家国有银行中只有交通银行暂时不收这笔费用，其余银行每年都收取12元。中国银行还特别规定，
@@ -8738,9 +8994,9 @@ sen pred gold
 
 raw: 杂志社和新浪网联合主办，新浪乐居承办，《中国摄影报》协办的我的城市我的家”全国摄影大展活动启幕。
 sen pred gold
-杂 O O
-志 O O
-社 O O
+杂 B-org O
+志 I-org O
+社 I-org O
 和 O O
 新 B-com B-com
 浪 I-com I-com
@@ -8868,62 +9124,12 @@ sen pred gold
 4 O O
 拿 O O
 下 O O
-s B-org O
-f I-org O
+s B-gam O
+f I-gam O
 的 O O
 胜 O O
 利 O O
 ， O O
-
-
-raw: 终于到了《黑暗物质：黄金罗盘》（thegoldencompass）的首映周，也许是因为涉嫌“
-sen pred gold
-终 O O
-于 O O
-到 O O
-了 O O
-《 B-mov B-mov
-黑 I-mov I-mov
-暗 I-mov I-mov
-物 I-mov I-mov
-质 I-mov I-mov
-： I-mov I-mov
-黄 I-mov I-mov
-金 I-mov I-mov
-罗 I-mov I-mov
-盘 I-mov I-mov
-》 I-mov I-mov
-（ O B-mov
-t B-mov I-mov
-h I-mov I-mov
-e I-mov I-mov
-g I-mov I-mov
-o I-mov I-mov
-l I-mov I-mov
-d I-mov I-mov
-e I-mov I-mov
-n I-mov I-mov
-c I-mov I-mov
-o I-mov I-mov
-m I-mov I-mov
-p I-mov I-mov
-a I-mov I-mov
-s I-mov I-mov
-s I-mov I-mov
-） O I-mov
-的 O O
-首 O O
-映 O O
-周 O O
-， O O
-也 O O
-许 O O
-是 O O
-因 O O
-为 O O
-涉 O O
-嫌 O O
-[UNK] O O
 
 
 raw: 影片上映后大获成功，斯图尔特塑造的慈祥刚毅的老年女性形象征服了观众，获得奥斯卡最佳女配角奖提名，
@@ -8971,7 +9177,7 @@ sen pred gold
 佳 O O
 女 O O
 配 O O
-角 O O
+角 I-pos O
 奖 O O
 提 O O
 名 O O
@@ -9060,6 +9266,38 @@ x I-mov I-mov
 ( O I-mov
 
 
+raw: 曾将惊奇公司旗下漫画《蜘蛛侠》系列和《X战警》《绿巨人》
+sen pred gold
+曾 O O
+将 O O
+惊 B-com B-com
+奇 O I-com
+公 I-com I-com
+司 I-com I-com
+旗 O O
+下 O O
+漫 O O
+画 O O
+《 B-boo B-boo
+蜘 I-boo I-boo
+蛛 I-boo I-boo
+侠 I-boo I-boo
+》 I-boo I-boo
+系 O O
+列 O O
+和 O O
+《 B-boo B-boo
+x I-boo I-boo
+战 I-boo I-boo
+警 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+绿 I-boo I-boo
+巨 I-boo I-boo
+人 I-boo I-boo
+》 I-boo I-boo
+
+
 raw: 联盟杯积分榜：四支球队已出线热刺维拉形势大好
 sen pred gold
 联 B-org O
@@ -9132,46 +9370,6 @@ sen pred gold
 ， O O
 
 
-raw: 想要在人仙魔三界混杂的西游世界里，构筑属于自己的温馨小窝吗？《逍遥传说》
-sen pred gold
-想 O O
-要 O O
-在 O O
-人 O O
-仙 O O
-魔 O O
-三 O O
-界 O O
-混 O O
-杂 O O
-的 O O
-西 B-gam O
-游 I-gam O
-世 O O
-界 O O
-里 O O
-， O O
-构 O O
-筑 O O
-属 O O
-于 O O
-自 O O
-己 O O
-的 O O
-温 O O
-馨 O O
-小 O O
-窝 O O
-吗 O O
-？ O O
-《 B-gam B-gam
-逍 I-gam I-gam
-遥 I-gam I-gam
-传 I-gam I-gam
-说 I-gam I-gam
-》 I-gam I-gam
-
-
 raw: 最多的一家将三居室隔成9个房间分别出租。3户涉嫌群租的业主名单已交市住房保障办和海淀区有关部门，
 sen pred gold
 最 O O
@@ -9229,7 +9427,7 @@ sen pred gold
 统 B-pos B-pos
 计 I-pos I-pos
 学 I-pos I-pos
-专 B-pos I-pos
+专 I-pos I-pos
 家 I-pos I-pos
 谈 O O
 武 B-add O
@@ -9266,9 +9464,9 @@ sen pred gold
 拉 I-nam I-nam
 多 I-nam I-nam
 夫 I-nam I-nam
-海 B-pos B-gov
-军 I-pos I-gov
-上 I-pos B-pos
+海 I-gov B-gov
+军 I-gov I-gov
+上 B-pos B-pos
 将 I-pos I-pos
 [UNK] O O
 和 O O
@@ -9281,7 +9479,7 @@ sen pred gold
 夫 I-nam I-nam
 元 B-pos B-pos
 帅 I-pos I-pos
-[UNK] O O
+[UNK] I-pos O
 
 
 raw: 晨报讯沪上某银行员工成钢（化名）为从事非法买卖外汇的黄牛介绍客户而被辞退，
@@ -9323,6 +9521,30 @@ sen pred gold
 辞 O O
 退 O O
 ， O O
+
+
+raw: 通州区住保办回应廉租申请人“0”号身份证
+sen pred gold
+通 B-add B-gov
+州 I-add I-gov
+区 I-add I-gov
+住 I-add I-gov
+保 I-add I-gov
+办 I-add I-gov
+回 O O
+应 O O
+廉 O O
+租 O O
+申 O O
+请 O O
+人 O O
+[UNK] O O
+0 O O
+[UNK] O O
+号 O O
+身 O O
+份 O O
+证 O O
 
 
 raw: 直升飞机观光地与自由女神像相距不远，因此可以放在同一天游玩，
@@ -9498,53 +9720,6 @@ sen pred gold
 。 O O
 
 
-raw: 每个岛的侧重点不同，比如库拉玛蒂、可可亚岛cocoa、微拉瓦鲁岛av岛、大小四季等等，
-sen pred gold
-每 O O
-个 O O
-岛 O O
-的 O O
-侧 O O
-重 O O
-点 O O
-不 O O
-同 O O
-， O O
-比 O O
-如 O O
-库 B-sce B-sce
-拉 I-sce I-sce
-玛 I-sce I-sce
-蒂 I-sce I-sce
-、 O O
-可 B-sce B-sce
-可 I-sce I-sce
-亚 I-sce I-sce
-岛 I-sce I-sce
-c I-sce I-sce
-o I-sce I-sce
-c I-sce I-sce
-o I-sce I-sce
-a I-sce I-sce
-、 O O
-微 B-sce B-sce
-拉 I-sce I-sce
-瓦 I-sce I-sce
-鲁 I-sce I-sce
-岛 I-sce I-sce
-a B-sce I-sce
-v I-sce I-sce
-岛 I-sce I-sce
-、 O O
-大 B-sce B-sce
-小 I-sce I-sce
-四 I-sce I-sce
-季 I-sce I-sce
-等 O O
-等 O O
-， O O
-
-
 raw: 中国境内进藏共有八条线路之多，最具代表性的有川藏线,滇藏线,青藏线,新藏线，每条线都有不同的特点。
 sen pred gold
 中 O O
@@ -9658,7 +9833,7 @@ sen pred gold
 岸 I-add O
 区 I-add O
 以 I-add O
-南 I-add B-add
+南 B-add B-add
 滨 I-add I-add
 路 I-add I-add
 喜 B-sce B-sce
@@ -9702,11 +9877,60 @@ sen pred gold
 ， O O
 
 
+raw: 在3月24日的法国文化开放日活动的留学专题讲座中，法驻穗总领事馆文化处文化教育领事穆沙琳、
+sen pred gold
+在 O O
+3 O O
+月 O O
+2 O O
+4 O O
+日 O O
+的 O O
+法 O O
+国 O O
+文 O O
+化 O O
+开 O O
+放 O O
+日 O O
+活 O O
+动 O O
+的 O O
+留 O O
+学 O O
+专 O O
+题 O O
+讲 O O
+座 O O
+中 O O
+， O O
+法 B-gov B-gov
+驻 I-gov I-gov
+穗 I-gov I-gov
+总 I-gov I-gov
+领 I-gov I-gov
+事 I-gov I-gov
+馆 I-gov I-gov
+文 I-gov I-gov
+化 I-gov I-gov
+处 I-gov I-gov
+文 B-pos O
+化 O O
+教 O O
+育 I-pos O
+领 B-pos B-pos
+事 I-pos I-pos
+穆 B-nam B-nam
+沙 I-nam I-nam
+琳 I-nam I-nam
+、 O O
+
+
 raw: 连保加利亚的贝尔巴托夫都说，意大利没有布丰实在是保加利亚的机会，他有信心带队击败意大利！本场做客，
 sen pred gold
 连 O O
-保 B-org B-org
-加 I-org I-org
+保 B-add B-org
+加 I-add I-org
 利 I-org I-org
 亚 I-org I-org
 的 O O
@@ -9755,6 +9979,159 @@ sen pred gold
 ， O O
 
 
+raw: 中新网12月24日电据法新社报道，俄罗斯国防部24日表示，在该国远东地区成功试射一枚rs-
+sen pred gold
+中 B-boo B-com
+新 I-org I-com
+网 I-boo I-com
+1 O O
+2 O O
+月 O O
+2 O O
+4 O O
+日 O O
+电 O O
+据 O O
+法 B-org B-org
+新 I-org I-org
+社 I-org I-org
+报 O O
+道 O O
+， O O
+俄 B-gov B-gov
+罗 I-gov I-gov
+斯 I-gov I-gov
+国 I-gov I-gov
+防 I-gov I-gov
+部 I-gov I-gov
+2 O O
+4 O O
+日 O O
+表 O O
+示 O O
+， O O
+在 O O
+该 O O
+国 O O
+远 O B-add
+东 O I-add
+地 O I-add
+区 O I-add
+成 O O
+功 O O
+试 O O
+射 O O
+一 O O
+枚 O O
+r O O
+s O O
+- O O
+
+
+raw: 1。没有正规“身份”。这些学校大多只在美国某地区登记注册，其办学资质和文凭未经美国教育部备案核准。
+sen pred gold
+1 O O
+。 O O
+没 O O
+有 O O
+正 O O
+规 O O
+[UNK] O O
+身 O O
+份 O O
+[UNK] O O
+。 O O
+这 O O
+些 O O
+学 O O
+校 O O
+大 O O
+多 O O
+只 O O
+在 O O
+美 B-add O
+国 I-add O
+某 O O
+地 O O
+区 O O
+登 O O
+记 O O
+注 O O
+册 O O
+， O O
+其 O O
+办 O O
+学 O O
+资 O O
+质 O O
+和 O O
+文 O O
+凭 O O
+未 O O
+经 O O
+美 B-gov B-gov
+国 I-gov I-gov
+教 I-gov I-gov
+育 I-gov I-gov
+部 I-gov I-gov
+备 O O
+案 O O
+核 O O
+准 O O
+。 O O
+
+
+raw: 16古耽《青龙图腾》《帝王攻略》《权宦》《妻为上》《相见欢》《鹰奴》《十大酷刑》《乱世为王》《
+sen pred gold
+1 O O
+6 O O
+古 O O
+耽 I-nam O
+《 B-boo B-boo
+青 I-boo I-boo
+龙 I-boo I-boo
+图 I-boo I-boo
+腾 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+帝 I-boo I-boo
+王 I-boo I-boo
+攻 I-boo I-boo
+略 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+权 I-boo I-boo
+宦 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+妻 I-boo I-boo
+为 I-boo I-boo
+上 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+相 I-boo I-boo
+见 I-boo I-boo
+欢 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+鹰 I-boo I-boo
+奴 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+十 I-boo I-boo
+大 I-boo I-boo
+酷 I-boo I-boo
+刑 I-boo I-boo
+》 I-boo I-boo
+《 B-boo B-boo
+乱 I-boo I-boo
+世 I-boo I-boo
+为 I-boo I-boo
+王 I-boo I-boo
+》 I-boo I-boo
+《 O O
+
+
 raw: GL在WCG2007亚洲锦标赛上夺得中国首个DotA项目的世界冠军。而FIFA选手杨正(
 sen pred gold
 g B-nam B-org
@@ -9792,10 +10169,10 @@ a I-gam I-gam
 军 O O
 。 O O
 而 O O
-f B-org B-org
-i I-org I-org
-f I-org I-org
-a I-org I-org
+f O B-org
+i O I-org
+f O I-org
+a I-gam I-org
 选 B-pos B-pos
 手 I-pos I-pos
 杨 B-nam B-nam
@@ -9830,7 +10207,7 @@ sen pred gold
 光 I-gam I-gam
 》 I-gam I-gam
 ( B-gam I-gam
-b B-gam I-gam
+b I-gam I-gam
 l I-gam I-gam
 a I-gam I-gam
 c I-gam I-gam
@@ -9840,7 +10217,7 @@ i I-gam I-gam
 g I-gam I-gam
 h I-gam I-gam
 t I-gam I-gam
-) O I-gam
+) I-gam I-gam
 ， O O
 游 O O
 戏 O O
@@ -9855,7 +10232,7 @@ c O O
 raw: 【赛迪网讯】7月1日，据悉，网易于昨日发内部邮件，邀请全体员工测试《魔兽世界》(下称“
 sen pred gold
 【 O O
-赛 B-com O
+赛 I-com O
 迪 I-com O
 网 I-com O
 讯 O O
@@ -9949,42 +10326,6 @@ sen pred gold
 （ O O
 
 
-raw: 纽卡斯尔队vs斯托克城队两队在英超联赛近18个赛季中无交锋战绩。
-sen pred gold
-纽 B-org B-org
-卡 I-org I-org
-斯 I-org I-org
-尔 I-org I-org
-队 I-org I-org
-v O O
-s O O
-斯 B-org B-org
-托 I-org I-org
-克 I-org I-org
-城 I-org I-org
-队 I-org I-org
-两 O O
-队 O O
-在 O O
-英 B-org B-org
-超 I-org I-org
-联 O I-org
-赛 O I-org
-近 O O
-1 O O
-8 O O
-个 O O
-赛 O O
-季 O O
-中 O O
-无 O O
-交 O O
-锋 O O
-战 O O
-绩 O O
-。 O O
-
-
 raw: 在《南京！南京！》片场，有五位操着标准南京方言的女性始终活跃在群众演员的最前方，尤其是一位面容清瘦，
 sen pred gold
 在 O O
@@ -10041,8 +10382,8 @@ sen pred gold
 
 raw: 联盟很可能会在下一季举办CS1.6或者CSOnline的职业联赛，也许Boxer、
 sen pred gold
-联 B-org O
-盟 I-org O
+联 O O
+盟 O O
 很 O O
 可 O O
 能 O O
@@ -10055,16 +10396,16 @@ sen pred gold
 办 O O
 c B-gam B-gam
 s I-gam I-gam
-1 I-gam O
+1 I-org O
 . I-gam O
-6 I-gam O
+6 O O
 或 O O
 者 O O
-c B-gam B-gam
-s I-gam I-gam
+c B-org B-gam
+s I-org I-gam
 o I-gam I-gam
 n I-gam I-gam
-l I-gam I-gam
+l I-org I-gam
 i I-gam I-gam
 n I-gam I-gam
 e I-gam I-gam
@@ -10082,6 +10423,49 @@ x I-org O
 e I-org O
 r I-org O
 、 O O
+
+
+raw: 老挝家具协会会长育亭·维沙蓬先生介绍说：“很多人说，老挝现在没木头了，事实上，
+sen pred gold
+老 B-org B-org
+挝 I-org I-org
+家 I-org I-org
+具 I-org I-org
+协 I-org I-org
+会 I-org I-org
+会 B-pos B-pos
+长 I-pos I-pos
+育 B-nam B-nam
+亭 I-nam I-nam
+· I-nam I-nam
+维 I-nam I-nam
+沙 I-nam I-nam
+蓬 I-nam I-nam
+先 O O
+生 O O
+介 O O
+绍 O O
+说 O O
+： O O
+[UNK] O O
+很 O O
+多 O O
+人 O O
+说 O O
+， O O
+老 B-add O
+挝 I-add O
+现 O O
+在 O O
+没 O O
+木 O O
+头 O O
+了 O O
+， O O
+事 O O
+实 O O
+上 O O
+， O O
 
 
 raw: 由西伯利亚军区参谋部和军事检察院人员组成的调查委员会正在现场进行调查。
@@ -10149,6 +10533,49 @@ a I-com I-gov
 闷 O O
 
 
+raw: 中国房地产及住宅研究会副会长顾云昌认为，经济适用房建设进度主要取决于三个因素：
+sen pred gold
+中 B-pos B-org
+国 I-pos I-org
+房 I-pos I-org
+地 I-pos I-org
+产 I-pos I-org
+及 I-pos I-org
+住 I-pos I-org
+宅 I-pos I-org
+研 I-pos I-org
+究 I-pos I-org
+会 I-pos I-org
+副 B-pos B-pos
+会 I-pos I-pos
+长 I-pos I-pos
+顾 B-nam B-nam
+云 I-nam I-nam
+昌 I-nam I-nam
+认 O O
+为 O O
+， O O
+经 O O
+济 O O
+适 O O
+用 O O
+房 O O
+建 O O
+设 O O
+进 O O
+度 O O
+主 O O
+要 O O
+取 O O
+决 O O
+于 O O
+三 O O
+个 O O
+因 O O
+素 O O
+： O O
+
+
 raw: 拉科鲁尼亚队vs马拉加队两队在西甲联赛近15个赛季中只交战过14场，
 sen pred gold
 拉 B-org B-org
@@ -10184,51 +10611,6 @@ s O O
 1 O O
 4 O O
 场 O O
-， O O
-
-
-raw: 刺杀卡斯特罗的638种方法》的原著者。正是这位将军，从上个世纪70年代到90年代，
-sen pred gold
-刺 B-boo B-boo
-杀 I-boo I-boo
-卡 B-boo I-boo
-斯 I-boo I-boo
-特 I-boo I-boo
-罗 I-boo I-boo
-的 I-boo I-boo
-6 I-boo I-boo
-3 I-boo I-boo
-8 I-boo I-boo
-种 I-boo I-boo
-方 I-boo I-boo
-法 I-boo I-boo
-》 I-boo I-boo
-的 O O
-原 O O
-著 O O
-者 O O
-。 O O
-正 O O
-是 O O
-这 O O
-位 O O
-将 B-pos B-pos
-军 I-pos I-pos
-， O O
-从 O O
-上 O O
-个 O O
-世 O O
-纪 O O
-7 O O
-0 O O
-年 O O
-代 O O
-到 O O
-9 O O
-0 O O
-年 O O
-代 O O
 ， O O
 
 
@@ -10428,8 +10810,8 @@ sen pred gold
 道 O O
 称 O O
 ， O O
-重 B-add O
-庆 I-add O
+重 O O
+庆 O O
 [UNK] O O
 两 O O
 会 O O
@@ -10439,13 +10821,13 @@ sen pred gold
 ， O O
 重 B-pos B-pos
 庆 I-pos I-pos
-市 I-pos I-pos
-第 I-pos I-pos
-三 I-pos I-pos
+市 I-gov I-pos
+第 I-gov I-pos
+三 I-gov I-pos
 届 I-pos I-pos
-人 I-pos I-pos
-大 I-pos I-pos
-代 I-pos I-pos
+人 I-gov I-pos
+大 I-gov I-pos
+代 B-pos I-pos
 表 I-pos I-pos
 、 O O
 重 B-com B-com
@@ -10454,7 +10836,7 @@ sen pred gold
 创 I-com I-com
 置 I-com I-com
 业 I-com I-com
-（ O O
+（ I-com O
 
 
 raw: 安博塞利国家公园amboselipark位于肯尼亚边境地区，amboseli翻译过来就是“
@@ -10510,9 +10892,9 @@ raw: 这位WCG魔兽世界冠军表示自己将和TH000一同参加WCG广州站�
 sen pred gold
 这 O O
 位 O O
-w B-org O
-c I-org O
-g I-org O
+w O O
+c O O
+g O O
 魔 B-gam B-gam
 兽 I-gam I-gam
 世 O I-gam
@@ -10538,8 +10920,8 @@ w B-org O
 c I-org O
 g I-org O
 广 O O
-州 O O
-站 O O
+州 I-org O
+站 I-org O
 的 O O
 星 B-gam B-gam
 际 I-gam I-gam
@@ -10570,8 +10952,8 @@ sen pred gold
 共 O O
 4 O O
 本 O O
-作 B-pos O
-者 I-pos O
+作 O O
+者 O O
 : O O
 金 B-nam B-nam
 庸 I-nam I-nam
@@ -10598,10 +10980,10 @@ sen pred gold
 关 O O
 于 O O
 《 B-mov B-mov
-英 I-mov I-mov
-雄 I-mov I-mov
-无 I-mov I-mov
-敌 I-mov I-mov
+英 I-gam I-mov
+雄 I-gam I-mov
+无 I-gam I-mov
+敌 I-gam I-mov
 》 I-mov I-mov
 电 O O
 影 O O
@@ -10614,7 +10996,7 @@ sen pred gold
 这 O O
 位 O O
 高 B-pos O
-管 O O
+管 I-pos O
 只 O O
 透 O O
 露 O O
@@ -10672,6 +11054,98 @@ n O O
 . O O
 
 
+raw: 摩根大通在改制后派遣亚太区的首席行政官和首席运营官分别担任子行董事会的非执行董事和监事，
+sen pred gold
+摩 B-com B-com
+根 I-com I-com
+大 I-com I-com
+通 I-com I-com
+在 O O
+改 O O
+制 O O
+后 O O
+派 O O
+遣 O O
+亚 B-add O
+太 I-add O
+区 O O
+的 O O
+首 B-pos B-pos
+席 I-pos I-pos
+行 I-pos I-pos
+政 I-pos I-pos
+官 I-pos I-pos
+和 O O
+首 B-pos B-pos
+席 I-pos I-pos
+运 I-pos I-pos
+营 I-pos I-pos
+官 I-pos I-pos
+分 O O
+别 O O
+担 O O
+任 O O
+子 O O
+行 O O
+董 O O
+事 O O
+会 O O
+的 O O
+非 O B-pos
+执 B-pos I-pos
+行 I-pos I-pos
+董 I-pos I-pos
+事 I-pos I-pos
+和 O O
+监 B-pos B-pos
+事 I-pos I-pos
+， O O
+
+
+raw: 后经医院诊断为右手臂粉碎性骨折。随后，朝天门派出所民警赶到现场。陈玉华的妻子说，
+sen pred gold
+后 O O
+经 O O
+医 O O
+院 O O
+诊 O O
+断 O O
+为 O O
+右 O O
+手 O O
+臂 O O
+粉 O O
+碎 O O
+性 O O
+骨 O O
+折 O O
+。 O O
+随 O O
+后 O O
+， O O
+朝 B-gov B-gov
+天 I-gov I-gov
+门 I-gov I-gov
+派 I-gov I-gov
+出 I-gov I-gov
+所 I-gov I-gov
+民 B-pos B-pos
+警 I-pos I-pos
+赶 O O
+到 O O
+现 O O
+场 O O
+。 O O
+陈 B-nam B-nam
+玉 I-nam I-nam
+华 O I-nam
+的 O O
+妻 O O
+子 O O
+说 O O
+， O O
+
+
 raw: 日前，菲律宾的卡加延德奥罗市发生了一起越狱事件，5位犯人逃出监狱。他们可没有像《越狱》
 sen pred gold
 日 O O
@@ -10680,7 +11154,7 @@ sen pred gold
 菲 B-add O
 律 I-add O
 宾 I-add O
-的 I-add O
+的 O O
 卡 I-add B-add
 加 I-add I-add
 延 I-add I-add
@@ -10734,8 +11208,8 @@ sen pred gold
 的 O O
 w B-org O
 e I-org O
-战 O O
-队 O O
+战 I-org O
+队 I-org O
 只 O O
 出 O O
 现 O O
@@ -10773,11 +11247,11 @@ sen pred gold
 在 O O
 接 O O
 受 O O
-中 B-gov B-gov
-央 I-gov I-gov
-电 I-gov I-gov
-视 I-gov I-gov
-台 I-gov I-gov
+中 B-org B-gov
+央 I-org I-gov
+电 I-org I-gov
+视 I-org I-gov
+台 I-org I-gov
 采 O O
 访 O O
 时 O O
@@ -10866,9 +11340,9 @@ sen pred gold
 事 O I-pos
 体 O I-pos
 能 O I-pos
-训 O I-pos
-练 O I-pos
-家 O I-pos
+训 B-pos I-pos
+练 I-pos I-pos
+家 I-pos I-pos
 ， O O
 接 O O
 受 O O
@@ -10929,10 +11403,10 @@ sen pred gold
 股 I-com O
 份 I-com O
 行 I-com O
-信 O O
-用 O O
-卡 O O
-总 B-pos B-pos
+信 B-pos O
+用 I-pos O
+卡 I-pos O
+总 I-pos B-pos
 裁 I-pos I-pos
 吴 B-nam B-nam
 明 I-nam I-nam
@@ -10990,6 +11464,47 @@ sen pred gold
 。 O O
 
 
+raw: 你觉得星际争霸2的欧洲选手有实力和亚洲选手竞争么？在星际争霸1中不太可能。
+sen pred gold
+你 O O
+觉 O O
+得 O O
+星 B-gam B-gam
+际 I-gam I-gam
+争 I-gam I-gam
+霸 I-gam I-gam
+2 I-gam I-gam
+的 O O
+欧 O O
+洲 O O
+选 B-pos B-pos
+手 I-pos I-pos
+有 O O
+实 O O
+力 O O
+和 O O
+亚 O O
+洲 O O
+选 B-pos B-pos
+手 O I-pos
+竞 O O
+争 O O
+么 O O
+？ O O
+在 O O
+星 B-gam B-gam
+际 I-gam I-gam
+争 I-gam I-gam
+霸 I-gam I-gam
+1 I-gam I-gam
+中 O O
+不 O O
+太 O O
+可 O O
+能 O O
+。 O O
+
+
 raw: 为DotA冠军颁奖的嘉宾是来自中华人民共和国新闻出版总署科技与数字出版司副司长宋建新先生，
 sen pred gold
 为 O O
@@ -11036,6 +11551,54 @@ a I-gam I-gam
 新 I-nam I-nam
 先 O O
 生 O O
+， O O
+
+
+raw: 这个是外部的环境，我们无法改变的，但是，乐成中心在这个地理位置，在这个场合，在这个时机，
+sen pred gold
+这 O O
+个 O O
+是 O O
+外 O O
+部 O O
+的 O O
+环 O O
+境 O O
+， O O
+我 O O
+们 O O
+无 O O
+法 O O
+改 O O
+变 O O
+的 O O
+， O O
+但 O O
+是 O O
+， O O
+乐 B-sce B-add
+成 I-add I-add
+中 I-add I-add
+心 I-add I-add
+在 O O
+这 O O
+个 O O
+地 O O
+理 O O
+位 O O
+置 O O
+， O O
+在 O O
+这 O O
+个 O O
+场 O O
+合 O O
+， O O
+在 O O
+这 O O
+个 O O
+时 O O
+机 O O
 ， O O
 
 
@@ -11150,58 +11713,6 @@ s I-com I-com
 ( O I-gam
 
 
-raw: 多为单人车，根据车况30-50元/天，几大住宿区域都有，比如四川的泸沽湖镇走婚桥岔路口、博树村、
-sen pred gold
-多 O O
-为 O O
-单 O O
-人 O O
-车 O O
-， O O
-根 O O
-据 O O
-车 O O
-况 O O
-3 O O
-0 O O
-- O O
-5 O O
-0 O O
-元 O O
-/ O O
-天 O O
-， O O
-几 O O
-大 O O
-住 O O
-宿 O O
-区 O O
-域 O O
-都 O O
-有 O O
-， O O
-比 O O
-如 O O
-四 B-add B-add
-川 I-add I-add
-的 I-add O
-泸 I-add B-add
-沽 I-add I-add
-湖 I-add I-add
-镇 I-add I-add
-走 I-add I-add
-婚 I-add I-add
-桥 I-add I-add
-岔 I-add I-add
-路 I-add I-add
-口 I-add I-add
-、 O O
-博 B-add B-add
-树 I-add I-add
-村 I-add I-add
-、 O O
-
-
 raw: 昨日，省古典工艺家具协会会长黄福华表示，近几年，仙游县古典工艺家具发展十分迅速，
 sen pred gold
 昨 O O
@@ -11246,49 +11757,6 @@ sen pred gold
 ， O O
 
 
-raw: 各大主流博彩公司对于主队相对看好，凯比值最大值在主胜，与其他两项分差没有拉开，
-sen pred gold
-各 O O
-大 O O
-主 O O
-流 O O
-博 O B-com
-彩 O I-com
-公 O I-com
-司 O I-com
-对 O O
-于 O O
-主 O O
-队 O O
-相 O O
-对 O O
-看 O O
-好 O O
-， O O
-凯 O O
-比 O O
-值 O O
-最 O O
-大 O O
-值 O O
-在 O O
-主 O O
-胜 O O
-， O O
-与 O O
-其 O O
-他 O O
-两 O O
-项 O O
-分 O O
-差 O O
-没 O O
-有 O O
-拉 O O
-开 O O
-， O O
-
-
 raw: 他的手机号被更改，他的信用卡消费欠款1.4万余元，若不是本人，请致电银行客服。
 sen pred gold
 他 O O
@@ -11325,8 +11793,8 @@ sen pred gold
 请 O O
 致 O O
 电 O O
-银 O B-pos
-行 O I-pos
+银 B-pos B-pos
+行 I-pos I-pos
 客 B-pos I-pos
 服 I-pos I-pos
 。 O O
@@ -11436,7 +11904,7 @@ a I-gam I-gam
 在 O O
 暴 B-com B-com
 雪 I-com I-com
-d B-gam B-gam
+d I-gam B-gam
 o I-gam I-gam
 t I-gam I-gam
 a I-gam I-gam
@@ -11508,6 +11976,49 @@ sen pred gold
 ) O O
 
 
+raw: 游戏发售后被评级组织ESRB改评为AO(仅限成人)级，已经售出上百万份的游戏，
+sen pred gold
+游 O O
+戏 O O
+发 O O
+售 O O
+后 O O
+被 O O
+评 O O
+级 O O
+组 I-org O
+织 O O
+e B-org B-org
+s I-org I-org
+r I-org I-org
+b I-org I-org
+改 O O
+评 O O
+为 O O
+a O O
+o O O
+( O O
+仅 O O
+限 O O
+成 O O
+人 O O
+) O O
+级 O O
+， O O
+已 O O
+经 O O
+售 O O
+出 O O
+上 O O
+百 O O
+万 O O
+份 O O
+的 O O
+游 O O
+戏 O O
+， O O
+
+
 raw: 摩顿岛上有唯一的度假村天阁露玛，别以为唯一就没有什么选择，这里提供多达7种住宿，
 sen pred gold
 摩 B-sce B-sce
@@ -11549,6 +12060,55 @@ sen pred gold
 种 O O
 住 O O
 宿 O O
+， O O
+
+
+raw: “冰人奥茨”是目前世界上保存最完好、历史最长的木乃伊之一，保存在意大利博尔扎诺考古博物馆，
+sen pred gold
+[UNK] O O
+冰 O O
+人 O O
+奥 O O
+茨 O O
+[UNK] O O
+是 O O
+目 O O
+前 O O
+世 O O
+界 O O
+上 O O
+保 O O
+存 O O
+最 O O
+完 O O
+好 O O
+、 O O
+历 O O
+史 O O
+最 O O
+长 O O
+的 O O
+木 O O
+乃 O O
+伊 O O
+之 O O
+一 O O
+， O O
+保 O O
+存 O O
+在 O O
+意 B-add B-sce
+大 I-sce I-sce
+利 I-sce I-sce
+博 I-sce I-sce
+尔 I-sce I-sce
+扎 I-sce I-sce
+诺 I-sce I-sce
+考 I-sce I-sce
+古 I-sce I-sce
+博 I-sce I-sce
+物 I-sce I-sce
+馆 I-sce I-sce
 ， O O
 
 
@@ -11596,48 +12156,6 @@ sen pred gold
 ， O O
 
 
-raw: 这条骑行线路应该是北京最好骑，景色最美的一段路了，全程长安街非常宽阔的马路，
-sen pred gold
-这 O O
-条 O O
-骑 O O
-行 O O
-线 O O
-路 O O
-应 O O
-该 O O
-是 O O
-北 B-add B-add
-京 I-add I-add
-最 O O
-好 O O
-骑 O O
-， O O
-景 O O
-色 O O
-最 O O
-美 O O
-的 O O
-一 O O
-段 O O
-路 O O
-了 O O
-， O O
-全 O O
-程 O O
-长 B-sce B-add
-安 I-sce I-add
-街 I-sce I-add
-非 O O
-常 O O
-宽 O O
-阔 O O
-的 O O
-马 O O
-路 O O
-， O O
-
-
 raw: 六部新片同日开画，其中除了《色欲o先生》（thestoryofrichardo）
 sen pred gold
 六 O O
@@ -11661,7 +12179,7 @@ o I-mov I-mov
 生 I-mov I-mov
 》 I-mov I-mov
 （ I-mov B-mov
-t B-mov I-mov
+t I-mov I-mov
 h I-mov I-mov
 e I-mov I-mov
 s I-mov I-mov
@@ -11716,7 +12234,7 @@ sen pred gold
 名 O O
 的 O O
 采 B-pos O
-访 I-pos B-pos
+访 O B-pos
 者 I-pos I-pos
 说 O O
 ， O O
@@ -11878,14 +12396,14 @@ sen pred gold
 福 B-nam O
 缘 I-nam O
 、 O O
-刘 B-nam O
+刘 O O
 、 O O
 仲 O O
 、 O O
 文 O O
 、 O O
-四 B-nam O
-[UNK] I-nam O
+四 O O
+[UNK] O O
 等 O O
 ， O O
 考 O O
@@ -11971,6 +12489,49 @@ sen pred gold
 、 O O
 
 
+raw: 最终幻想》(FinalFantasy)和《永恒的任务》(EverQuest2)
+sen pred gold
+最 B-gam B-gam
+终 I-gam I-gam
+幻 I-gam I-gam
+想 I-gam I-gam
+》 I-gam I-gam
+( I-gam B-gam
+f I-gam I-gam
+i I-gam I-gam
+n I-gam I-gam
+a I-gam I-gam
+l I-gam I-gam
+f I-gam I-gam
+a I-gam I-gam
+n I-gam I-gam
+t I-gam I-gam
+a I-gam I-gam
+s I-gam I-gam
+y I-gam I-gam
+) I-gam I-gam
+和 O O
+《 B-gam B-gam
+永 I-gam I-gam
+恒 I-gam I-gam
+的 I-gam I-gam
+任 I-gam I-gam
+务 I-gam I-gam
+》 I-gam I-gam
+( I-gam B-gam
+e I-gam I-gam
+v I-gam I-gam
+e I-gam I-gam
+r I-gam I-gam
+q I-gam I-gam
+u I-gam I-gam
+e I-gam I-gam
+s I-gam I-gam
+t I-gam I-gam
+2 I-gam I-gam
+) I-gam I-gam
+
+
 raw: 新浪乐居大客户部主任邢晓利
 sen pred gold
 新 B-com B-com
@@ -11988,50 +12549,6 @@ sen pred gold
 利 I-nam I-nam
 
 
-raw: 而且每一幅都是自己非常满意的力作。其中一幅《竹舍》，是吴冠中到日本办展时丢失的。
-sen pred gold
-而 O O
-且 O O
-每 O O
-一 O O
-幅 O O
-都 O O
-是 O O
-自 O O
-己 O O
-非 O O
-常 O O
-满 O O
-意 O O
-的 O O
-力 O O
-作 O O
-。 O O
-其 O O
-中 O O
-一 O O
-幅 O O
-《 B-boo B-boo
-竹 I-boo I-boo
-舍 I-boo I-boo
-》 I-boo I-boo
-， O O
-是 O O
-吴 B-nam B-nam
-冠 I-nam I-nam
-中 I-nam I-nam
-到 O O
-日 O B-add
-本 O I-add
-办 O O
-展 O O
-时 O O
-丢 O O
-失 O O
-的 O O
-。 O O
-
-
 raw: 张传波来到广州白云区京溪街某综合市场在远亲陈某处打工，认识了陈某侄女阿霞，两人不久便确定了恋爱关系。
 sen pred gold
 张 B-nam B-nam
@@ -12047,11 +12564,11 @@ sen pred gold
 京 I-add I-add
 溪 I-add I-add
 街 I-add I-add
-某 O I-add
-综 O I-add
-合 O I-add
-市 O I-add
-场 O I-add
+某 I-add I-add
+综 I-add I-add
+合 I-add I-add
+市 I-add I-add
+场 I-add I-add
 在 O O
 远 O O
 亲 O O
@@ -12088,32 +12605,32 @@ sen pred gold
 
 raw: 战锤Online》(WarhammerOnline)首席设计师马克·雅各布(Mark
 sen pred gold
-战 B-mov B-gam
-锤 I-mov I-gam
-o I-mov I-gam
-n I-mov I-gam
-l I-mov I-gam
-i I-mov I-gam
-n I-mov I-gam
-e I-mov I-gam
-》 I-mov I-gam
+战 B-gam B-gam
+锤 I-gam I-gam
+o I-gam I-gam
+n I-gam I-gam
+l I-gam I-gam
+i I-gam I-gam
+n I-gam I-gam
+e I-gam I-gam
+》 I-gam I-gam
 ( O O
-w B-mov B-gam
-a I-mov I-gam
+w B-gam B-gam
+a I-gam I-gam
 r I-mov I-gam
 h I-mov I-gam
 a I-mov I-gam
 m I-mov I-gam
 m I-mov I-gam
-e I-mov I-gam
-r I-mov I-gam
-o I-mov I-gam
-n I-mov I-gam
-l I-mov I-gam
-i I-mov I-gam
-n I-mov I-gam
-e I-mov I-gam
-) I-mov O
+e I-gam I-gam
+r I-gam I-gam
+o I-gam I-gam
+n I-gam I-gam
+l I-gam I-gam
+i I-gam I-gam
+n I-gam I-gam
+e I-gam I-gam
+) O O
 首 B-pos B-pos
 席 I-pos I-pos
 设 I-pos I-pos
@@ -12125,7 +12642,7 @@ e I-mov I-gam
 雅 I-nam I-nam
 各 I-nam I-nam
 布 I-nam I-nam
-( O O
+( I-nam O
 m B-nam B-nam
 a I-nam I-nam
 r I-nam I-nam
@@ -12225,7 +12742,7 @@ sen pred gold
 南 B-add B-com
 京 I-add I-com
 正 O I-com
-大 O I-com
+大 I-com I-com
 秋 O O
 拍 O O
 宫 O O
@@ -12328,10 +12845,10 @@ sen pred gold
 么 O O
 样 O O
 把 O O
-乐 O B-add
-成 O I-add
-中 O I-add
-心 O I-add
+乐 B-sce B-add
+成 I-sce I-add
+中 I-sce I-add
+心 I-sce I-add
 的 O O
 生 O O
 活 O O
@@ -12362,17 +12879,17 @@ sen pred gold
 精 O O
 品 O O
 的 O O
-研 B-org O
-究 I-org O
-院 I-org O
+研 B-pos O
+究 I-pos O
+院 I-pos O
 ， O O
 
 
 raw: 据香港南华早报周四报导,中国银监会已通知国内银行停止为美国金融机构提供银行间借贷,
 sen pred gold
 据 O O
-香 B-boo O
-港 I-boo O
+香 O O
+港 I-com O
 南 I-boo B-boo
 华 I-boo I-boo
 早 I-boo I-boo
@@ -12466,51 +12983,6 @@ sen pred gold
 ， O O
 
 
-raw: 玩dota，你会发现线上是人间天堂，经验和钱多玩imba，你会发现线上是人间地狱，
-sen pred gold
-玩 O O
-d B-gam B-gam
-o I-gam I-gam
-t I-gam I-gam
-a I-gam I-gam
-， O O
-你 O O
-会 O O
-发 O O
-现 O O
-线 O O
-上 O O
-是 O O
-人 O O
-间 O O
-天 O O
-堂 O O
-， O O
-经 O O
-验 O O
-和 O O
-钱 O O
-多 O O
-玩 O O
-i B-gam O
-m I-gam O
-b I-gam O
-a I-gam O
-， O O
-你 O O
-会 O O
-发 O O
-现 O O
-线 O O
-上 O O
-是 O O
-人 O O
-间 O O
-地 O O
-狱 O O
-， O O
-
-
 raw: 作为一名美国殖民舰队的精英战士，你所拥有的除了《异形》中经典的武器，
 sen pred gold
 作 O O
@@ -12549,72 +13021,29 @@ sen pred gold
 ， O O
 
 
-raw: G联赛线下赛星际2冠军独得15万奖金
+raw: Take-Two称与FTC达成信息披露协议
 sen pred gold
-g O B-org
-联 O I-org
-赛 O I-org
-线 O O
-下 O O
-赛 O O
-星 B-gam B-gam
-际 I-gam I-gam
-2 I-gam I-gam
-冠 O O
-军 O O
-独 O O
-得 O O
-1 O O
-5 O O
-万 O O
-奖 O O
-金 O O
-
-
-raw: 随后又被香港佳士得以32.3亿港元的总成交额突破。加之，翰海秋拍总成交额逾19亿元，
-sen pred gold
-随 O O
-后 O O
-又 O O
-被 O O
-香 B-com B-com
-港 I-com I-com
-佳 I-com I-com
-士 I-com I-com
-得 I-com O
-以 O O
-3 O O
-2 O O
-. O O
-3 O O
-亿 O O
-港 O O
-元 O O
-的 O O
-总 O O
+t B-com B-com
+a I-com I-com
+k I-com I-com
+e I-com I-com
+- I-com I-com
+t I-com I-com
+w I-com I-com
+o I-com I-com
+称 O O
+与 O O
+f B-org B-gov
+t I-org I-gov
+c I-org I-gov
+达 O O
 成 O O
-交 O O
-额 O O
-突 O O
-破 O O
-。 O O
-加 O O
-之 O O
-， O O
-翰 B-com B-com
-海 I-com I-com
-秋 O O
-拍 O O
-总 O O
-成 O O
-交 O O
-额 O O
-逾 O O
-1 O O
-9 O O
-亿 O O
-元 O O
-， O O
+信 O O
+息 O O
+披 O O
+露 O O
+协 O O
+议 O O
 
 
 raw: 8公顷翡翠公园以及占地22.8公顷的滨河公园。
@@ -12728,15 +13157,15 @@ raw: 9.贫民窟里的百万富翁福克斯1383838电影
 sen pred gold
 9 O O
 . O O
-贫 O B-mov
-民 O I-mov
-窟 O I-mov
+贫 B-mov B-mov
+民 I-mov I-mov
+窟 I-mov I-mov
 里 O I-mov
-的 O I-mov
-百 O I-mov
-万 O I-mov
-富 O I-mov
-翁 O I-mov
+的 I-mov I-mov
+百 B-mov I-mov
+万 I-mov I-mov
+富 I-mov I-mov
+翁 I-mov I-mov
 福 O B-nam
 克 O I-nam
 斯 O I-nam
@@ -12828,7 +13257,7 @@ sen pred gold
 会 I-add I-add
 中 I-add I-add
 心 I-add I-add
-（ B-add O
+（ I-add O
 s I-add B-add
 e I-add I-add
 t I-add I-add
@@ -12840,6 +13269,81 @@ c I-add I-add
 。 O O
 
 
+raw: 海角七号》中荣获金马奖大奖的作曲功力，在《古剑奇谭》中有七十多首曲子的优异表现。
+sen pred gold
+海 B-mov B-mov
+角 I-mov I-mov
+七 I-mov I-mov
+号 I-mov I-mov
+》 I-mov I-mov
+中 O O
+荣 O O
+获 O O
+金 O O
+马 O O
+奖 O O
+大 O O
+奖 O O
+的 O O
+作 O O
+曲 O O
+功 O O
+力 O O
+， O O
+在 O O
+《 B-gam B-mov
+古 I-gam I-mov
+剑 I-gam I-mov
+奇 I-gam I-mov
+谭 I-gam I-mov
+》 I-gam I-mov
+中 O O
+有 O O
+七 O O
+十 O O
+多 O O
+首 O O
+曲 O O
+子 O O
+的 O O
+优 O O
+异 O O
+表 O O
+现 O O
+。 O O
+
+
+raw: 另一法国的游戏杂志《Consoles》公布了如下细节：
+sen pred gold
+另 O O
+一 O O
+法 B-add O
+国 O O
+的 O O
+游 O O
+戏 O O
+杂 O O
+志 O O
+《 B-boo B-boo
+c I-boo I-boo
+o I-boo I-boo
+n I-boo I-boo
+s I-boo I-boo
+o I-boo I-boo
+l I-boo I-boo
+e I-boo I-boo
+s I-boo I-boo
+》 I-boo I-boo
+公 O O
+布 O O
+了 O O
+如 O O
+下 O O
+细 O O
+节 O O
+： O O
+
+
 raw: 谁在李家沟呢撒东塬微帮信息交流群00:04【46条】龙行天下:【链接】董家河日噔群昨天【5条】付【
 sen pred gold
 谁 O O
@@ -12848,7 +13352,7 @@ sen pred gold
 家 I-add I-sce
 沟 I-add I-sce
 呢 O O
-撒 B-add O
+撒 O O
 东 B-add B-add
 塬 I-add I-add
 微 O O
@@ -12974,7 +13478,7 @@ sen pred gold
 师 I-boo I-boo
 木 B-nam B-nam
 士 I-nam I-nam
-著 O O
+著 I-nam O
 9 O O
 小 O O
 时 O O
@@ -12993,7 +13497,7 @@ sen pred gold
 关 I-com O
 媒 I-com O
 介 I-com O
-经 B-pos B-pos
+经 I-pos B-pos
 理 I-pos I-pos
 张 B-nam B-nam
 波 I-nam I-nam
@@ -13082,7 +13586,7 @@ sen pred gold
 陆 I-gam I-gam
 军 I-gam I-gam
 3 I-gam I-gam
-（ B-gam I-gam
+（ I-gam I-gam
 a I-gam I-gam
 m I-gam I-gam
 e I-gam I-gam
@@ -13112,11 +13616,11 @@ sen pred gold
 组 I-gov I-org
 织 I-gov I-org
 （ O O
-d B-gov B-org
+d I-gov B-org
 r I-gov I-org
 d I-gov I-org
 o I-gov I-org
-） O O
+） I-gov O
 有 O O
 关 O O
 人 O O
@@ -13151,7 +13655,7 @@ raw: cbd迅猛发展使东四环路成为了新的经济发展中心带。东四
 sen pred gold
 c O B-add
 b O I-add
-d O I-add
+d I-gov I-add
 迅 O O
 猛 O O
 发 O O
@@ -13284,7 +13788,7 @@ sen pred gold
 我 O O
 儿 O O
 子 O O
-小 B-nam O
+小 O O
 军 I-nam O
 。 O O
 [UNK] O O
@@ -13366,7 +13870,7 @@ sen pred gold
 这 O O
 边 O O
 是 O O
-艺 B-add B-add
+艺 B-com B-add
 苑 I-add I-add
 的 O O
 王 O O
@@ -13506,8 +14010,8 @@ sen pred gold
 是 O O
 台 B-add O
 湾 I-add O
-富 O O
-绅 O O
+富 B-pos O
+绅 I-add O
 林 B-nam B-nam
 尔 I-nam I-nam
 嘉 I-nam I-nam
@@ -13547,50 +14051,6 @@ sen pred gold
 以 O O
 及 O O
 ， O O
-
-
-raw: 可以说这几个女人就形成了一个立体的结构，一个可以包括整个沂蒙山女人的性格的图解。
-sen pred gold
-可 O O
-以 O O
-说 O O
-这 O O
-几 O O
-个 O O
-女 O O
-人 O O
-就 O O
-形 O O
-成 O O
-了 O O
-一 O O
-个 O O
-立 O O
-体 O O
-的 O O
-结 O O
-构 O O
-， O O
-一 O O
-个 O O
-可 O O
-以 O O
-包 O O
-括 O O
-整 O O
-个 O O
-沂 B-add B-sce
-蒙 I-add I-sce
-山 I-add I-sce
-女 O O
-人 O O
-的 O O
-性 O O
-格 O O
-的 O O
-图 O O
-解 O O
-。 O O
 
 
 raw: 就像江苏的这个徐悲鸿研究会，她也是满怀感恩。她写下了这样长的评价：徐研会是范保文教授成立的。
@@ -13691,6 +14151,58 @@ sen pred gold
 ， O O
 
 
+raw: 埃雷拉就接到了电话：“有人买了你的画！”此时埃雷拉已经89岁了，终于卖出了自己人生中的第一幅画。
+sen pred gold
+埃 B-nam B-nam
+雷 I-nam I-nam
+拉 I-nam I-nam
+就 O O
+接 O O
+到 O O
+了 O O
+电 O O
+话 O O
+： O O
+[UNK] O O
+有 O O
+人 O O
+买 O O
+了 O O
+你 O O
+的 O O
+画 O O
+！ O O
+[UNK] O O
+此 O O
+时 O O
+埃 O B-nam
+雷 O I-nam
+拉 O I-nam
+已 O O
+经 O O
+8 O O
+9 O O
+岁 O O
+了 O O
+， O O
+终 O O
+于 O O
+卖 O O
+出 O O
+了 O O
+自 O O
+己 O O
+人 O O
+生 O O
+中 O O
+的 O O
+第 O O
+一 O O
+幅 O O
+画 O O
+。 O O
+
+
 raw: Blizzcon等少数世界级大赛；而如今，更多诸如CF等网游也开始进军WCG，
 sen pred gold
 b B-org B-org
@@ -13734,6 +14246,54 @@ g I-gam I-org
 ， O O
 
 
+raw: hkinema》的创刊号上所说的：“电影一直有三种称谓：作为film，作为cinema，
+sen pred gold
+h B-boo B-boo
+k I-boo I-boo
+i I-boo I-boo
+n I-boo I-boo
+e I-boo I-boo
+m I-boo I-boo
+a I-boo I-boo
+》 I-boo I-boo
+的 O O
+创 O O
+刊 O O
+号 O O
+上 O O
+所 O O
+说 O O
+的 O O
+： O O
+[UNK] O O
+电 O O
+影 O O
+一 O O
+直 O O
+有 O O
+三 O O
+种 O O
+称 O O
+谓 O O
+： O O
+作 O O
+为 O O
+f O O
+i I-mov O
+l I-mov O
+m O O
+， O O
+作 O O
+为 O O
+c B-mov O
+i I-mov O
+n I-mov O
+e I-mov O
+m I-mov O
+a I-mov O
+， O O
+
+
 raw: 长安街cbd核心精装现房长安8号预计09年年底开盘
 sen pred gold
 长 B-add B-add
@@ -13748,10 +14308,10 @@ d I-add O
 装 O O
 现 O O
 房 O O
-长 O B-add
-安 O I-add
-8 O I-add
-号 O I-add
+长 B-add B-add
+安 I-add I-add
+8 I-add I-add
+号 I-add I-add
 预 O O
 计 O O
 0 O O
@@ -13908,45 +14468,6 @@ sen pred gold
 《 O O
 
 
-raw: 签到、参赛地址：动脉玩酷吧杭州下沙经济技术开发区2号大街22号十六街区
-sen pred gold
-签 O O
-到 O O
-、 O O
-参 O O
-赛 O O
-地 O O
-址 O O
-： O O
-动 B-add B-add
-脉 I-add I-add
-玩 I-add I-add
-酷 I-add I-add
-吧 I-add I-add
-杭 B-add I-add
-州 I-add I-add
-下 I-add I-add
-沙 I-add I-add
-经 I-add I-add
-济 I-add I-add
-技 I-add I-add
-术 I-add I-add
-开 I-add I-add
-发 I-add I-add
-区 I-add I-add
-2 I-add I-add
-号 I-add I-add
-大 I-add I-add
-街 I-add I-add
-2 I-add I-add
-2 I-add I-add
-号 I-add I-add
-十 I-add I-add
-六 I-add I-add
-街 I-add I-add
-区 I-add I-add
-
-
 raw: 格瓦拉帮助下率领古巴军队和民兵与入侵的美国雇佣军展开了殊死搏斗，经过72小时的战斗，
 sen pred gold
 格 B-nam B-nam
@@ -13962,7 +14483,7 @@ sen pred gold
 军 I-gov I-gov
 队 I-gov I-gov
 和 O O
-民 B-pos O
+民 O O
 兵 I-pos O
 与 O O
 入 O O
@@ -14016,6 +14537,56 @@ sen pred gold
 告 O O
 
 
+raw: 对盈利也是毫无帮助的。”彭小军透露，截至三季末，深发展信用卡中心人员比去年下降了15%以上，
+sen pred gold
+对 O O
+盈 O O
+利 O O
+也 O O
+是 O O
+毫 O O
+无 O O
+帮 O O
+助 O O
+的 O O
+。 O O
+[UNK] O O
+彭 B-nam B-nam
+小 I-nam I-nam
+军 I-nam I-nam
+透 O O
+露 O O
+， O O
+截 O O
+至 O O
+三 O O
+季 O O
+末 O O
+， O O
+深 B-com B-com
+发 I-com I-com
+展 I-com I-com
+信 I-com I-com
+用 O I-com
+卡 O I-com
+中 I-com I-com
+心 I-com I-com
+人 O O
+员 O O
+比 O O
+去 O O
+年 O O
+下 O O
+降 O O
+了 O O
+1 O O
+5 O O
+% O O
+以 O O
+上 O O
+， O O
+
+
 raw: 风扬数据提点：蓝军主场分胜负曼联拜仁继续追赶
 sen pred gold
 风 B-nam O
@@ -14025,8 +14596,8 @@ sen pred gold
 提 O O
 点 O O
 ： O O
-蓝 B-org O
-军 I-org O
+蓝 O O
+军 O O
 主 O O
 场 O O
 分 O O
@@ -14171,7 +14742,7 @@ e B-com B-com
 i I-com I-com
 d I-com I-com
 o I-com I-com
-s O I-com
+s I-gam I-com
 [UNK] O O
 传 O O
 家 O O
@@ -14184,6 +14755,47 @@ i I-gam I-gam
 e I-gam I-gam
 f I-gam I-gam
 》 I-gam I-gam
+
+
+raw: 《神曲》讲述了14世纪意大利诗人但丁和维吉尔受邀请参观地狱以及天界的故事，
+sen pred gold
+《 B-boo B-mov
+神 I-boo I-mov
+曲 I-boo I-mov
+》 I-boo I-mov
+讲 O O
+述 O O
+了 O O
+1 O O
+4 O O
+世 O O
+纪 O O
+意 O O
+大 O O
+利 O O
+诗 B-pos B-pos
+人 I-pos I-pos
+但 B-nam B-nam
+丁 I-nam I-nam
+和 O O
+维 B-nam B-nam
+吉 I-nam I-nam
+尔 I-nam I-nam
+受 O O
+邀 O O
+请 O O
+参 O O
+观 O O
+地 O O
+狱 O O
+以 O O
+及 O O
+天 O O
+界 O O
+的 O O
+故 O O
+事 O O
+， O O
 
 
 raw: *三国人物明信片设定集
@@ -14225,8 +14837,8 @@ sen pred gold
 数 O O
 中 B-com O
 资 I-com O
-银 I-com O
-行 I-com O
+银 O O
+行 O O
 已 O O
 开 O O
 始 O O
@@ -14239,6 +14851,60 @@ sen pred gold
 之 O O
 时 O O
 ， O O
+
+
+raw: 润泽地产总经理封屹做客新浪乐居，润泽地产携旗下润泽悦溪、润泽庄园项目与新浪乐居，就“我的城市我的家”
+sen pred gold
+润 B-com B-com
+泽 I-com I-com
+地 I-com I-com
+产 I-com I-com
+总 B-pos B-pos
+经 I-pos I-pos
+理 I-pos I-pos
+封 B-nam B-nam
+屹 I-nam I-nam
+做 O O
+客 O O
+新 B-com B-com
+浪 I-com I-com
+乐 I-com I-com
+居 I-com I-com
+， O O
+润 B-com B-com
+泽 I-com I-com
+地 O I-com
+产 I-com I-com
+携 O O
+旗 O O
+下 O O
+润 B-add B-add
+泽 I-add I-add
+悦 I-add I-add
+溪 I-add I-add
+、 O O
+润 B-add B-add
+泽 I-add I-add
+庄 I-add I-add
+园 I-add I-add
+项 O O
+目 O O
+与 O O
+新 B-com B-com
+浪 I-com I-com
+乐 I-com I-com
+居 I-com I-com
+， O O
+就 O O
+[UNK] O O
+我 O O
+的 O O
+城 O O
+市 O O
+我 O O
+的 O O
+家 O O
+[UNK] O O
 
 
 raw: 李明介绍说，对于刚刚进入紫砂圈的收藏爱好者来说，一般应从普通的壶入手。玩现代壶的，
@@ -14307,7 +14973,7 @@ e O O
 王 O O
 牌 O O
 车 B-pos B-pos
-长 I-pos I-pos
+长 O I-pos
 [UNK] B-nam B-nam
 卫 I-nam I-nam
 特 I-nam I-nam
@@ -14337,35 +15003,35 @@ sen pred gold
 曾 O O
 出 O O
 品 O O
-《 B-gam B-mov
-活 I-gam I-mov
-死 I-gam I-mov
-人 I-gam I-mov
-黎 I-gam I-mov
-明 I-gam I-mov
-》 I-gam I-mov
-( O B-mov
-d B-gam I-mov
-a I-gam I-mov
-w I-gam I-mov
-n I-gam I-mov
-o I-gam I-mov
-f I-gam I-mov
-t I-gam I-mov
-h I-gam I-mov
-e I-gam I-mov
-d I-gam I-mov
-e I-gam I-mov
-a I-gam I-mov
-d I-gam I-mov
-) I-gam I-mov
+《 B-mov B-mov
+活 I-mov I-mov
+死 I-mov I-mov
+人 I-mov I-mov
+黎 I-mov I-mov
+明 I-mov I-mov
+》 I-mov I-mov
+( I-mov B-mov
+d I-mov I-mov
+a I-mov I-mov
+w I-mov I-mov
+n I-mov I-mov
+o I-mov I-mov
+f I-mov I-mov
+t I-mov I-mov
+h I-mov I-mov
+e I-mov I-mov
+d I-mov I-mov
+e I-mov I-mov
+a I-mov I-mov
+d I-mov I-mov
+) I-mov I-mov
 和 O O
-《 B-gam B-mov
-人 I-gam I-mov
-类 I-gam I-mov
-之 I-gam I-mov
-子 I-gam I-mov
-》 I-gam I-mov
+《 B-mov B-mov
+人 I-mov I-mov
+类 I-mov I-mov
+之 I-mov I-mov
+子 I-mov I-mov
+》 I-mov I-mov
 ( O O
 
 
@@ -14469,57 +15135,33 @@ sen pred gold
 ， O O
 
 
-raw: 据一审法院认定的内容，2012年1月9日，雪山公司甲方与泰和友联公司乙方签订《
+raw: 多数人又称这座岛叫“洛克岛”。
 sen pred gold
-据 O O
-一 O O
-审 O O
-法 B-gov O
-院 I-gov O
-认 O O
-定 O O
-的 O O
-内 O O
-容 O O
-， O O
-2 O O
-0 O O
-1 O O
-2 O O
-年 O O
-1 O O
-月 O O
-9 O O
-日 O O
-， O O
-雪 B-com B-com
-山 I-com I-com
-公 I-com I-com
-司 I-com I-com
-甲 O O
-方 O O
-与 O O
-泰 B-com B-com
-和 I-com I-com
-友 I-com I-com
-联 I-com I-com
-公 I-com I-com
-司 I-com I-com
-乙 O O
-方 O O
-签 O O
-订 O O
-《 O O
+多 O O
+数 O O
+人 O O
+又 O O
+称 O O
+这 O O
+座 O O
+岛 O O
+叫 O O
+[UNK] O O
+洛 B-sce B-sce
+克 I-sce I-sce
+岛 I-sce I-sce
+[UNK] I-sce O
+。 O O
 
 
 raw: WCG组委会当然不会轻易就排除暴雪的游戏，
 sen pred gold
-w B-org B-gov
-c I-org I-gov
-g I-org I-gov
+w B-gov B-gov
+c I-gov I-gov
+g I-gov I-gov
 组 I-org I-gov
-委 I-org I-gov
-会 I-org I-gov
+委 I-gov I-gov
+会 I-gov I-gov
 当 O O
 然 O O
 不 O O
@@ -14737,7 +15379,7 @@ sen pred gold
 中 O B-pos
 国 O I-pos
 特 O I-pos
-级 O I-pos
+级 I-pos I-pos
 玉 B-pos I-pos
 雕 I-pos I-pos
 大 I-pos I-pos
@@ -14815,6 +15457,40 @@ a I-gam I-gam
 。 O O
 
 
+raw: 采光及大门定位的请示》获得了天柱县政府办公室的批复。吴秋香、
+sen pred gold
+采 O B-boo
+光 O I-boo
+及 O I-boo
+大 O I-boo
+门 O I-boo
+定 O I-boo
+位 O I-boo
+的 O I-boo
+请 O I-boo
+示 O I-boo
+》 O I-boo
+获 O O
+得 O O
+了 O O
+天 B-gov B-gov
+柱 I-gov I-gov
+县 I-gov I-gov
+政 I-gov I-gov
+府 I-gov I-gov
+办 I-gov I-gov
+公 I-gov I-gov
+室 I-gov I-gov
+的 O O
+批 O O
+复 O O
+。 O O
+吴 B-nam B-nam
+秋 I-nam I-nam
+香 I-nam I-nam
+、 O O
+
+
 raw: 新浪乐居北京地区客户总监叶晴
 sen pred gold
 新 B-com B-com
@@ -14823,7 +15499,7 @@ sen pred gold
 居 I-com I-com
 北 B-add B-add
 京 I-add I-add
-地 I-add I-add
+地 O I-add
 区 O I-add
 客 B-pos B-pos
 户 I-pos I-pos
@@ -14831,54 +15507,6 @@ sen pred gold
 监 I-pos I-pos
 叶 B-nam B-nam
 晴 I-nam I-nam
-
-
-raw: 如果说中环是香港最高档的地方，那么，置地广场就是中环最高档的商场，这里与其周边的历山大厦
-sen pred gold
-如 O O
-果 O O
-说 O O
-中 B-add B-add
-环 I-add I-add
-是 O O
-香 B-add B-add
-港 I-add I-add
-最 O O
-高 O O
-档 O O
-的 O O
-地 O O
-方 O O
-， O O
-那 O O
-么 O O
-， O O
-置 B-add B-add
-地 I-add I-add
-广 I-add I-add
-场 I-add I-add
-就 O O
-是 O O
-中 B-add B-add
-环 I-add I-add
-最 O O
-高 O O
-档 O O
-的 O O
-商 O O
-场 O O
-， O O
-这 O O
-里 O O
-与 O O
-其 O O
-周 O O
-边 O O
-的 O O
-历 B-sce B-add
-山 I-sce I-add
-大 I-sce I-add
-厦 I-sce I-add
 
 
 raw: 登别位于北海道的西南部，与北海道著名的工业城市室兰市、
@@ -14906,7 +15534,7 @@ sen pred gold
 业 O O
 城 O O
 市 O O
-室 B-add B-add
+室 I-add B-add
 兰 I-add I-add
 市 I-add I-add
 、 O O
@@ -14973,26 +15601,26 @@ s I-gam I-mov
 
 raw: PlayStationInformer》就紧接着公布了《古墓丽影(Tomb
 sen pred gold
-p B-boo O
-l I-boo O
-a I-boo O
-y I-boo O
-s I-boo O
-t I-boo O
-a I-boo O
-t I-boo O
-i I-boo O
-o I-boo O
-n I-boo O
-i I-boo O
-n I-boo O
-f I-boo O
-o I-boo O
-r I-boo O
-m I-boo O
-e I-boo O
-r I-boo O
-》 I-boo O
+p B-gam O
+l I-gam O
+a I-gam O
+y I-gam O
+s I-gam O
+t I-gam O
+a I-gam O
+t I-gam O
+i I-gam O
+o I-gam O
+n I-gam O
+i I-gam O
+n I-gam O
+f I-gam O
+o I-gam O
+r I-gam O
+m I-gam O
+e I-gam O
+r I-gam O
+》 I-gam O
 就 O O
 紧 O O
 接 O O
@@ -15018,10 +15646,10 @@ sen pred gold
 行 I-com I-com
 首 O O
 建 O O
-小 B-com O
-企 I-com O
-业 I-com O
-信 I-com O
+小 O O
+企 O O
+业 O O
+信 O O
 贷 I-com O
 中 I-com O
 心 I-com O
@@ -15091,9 +15719,9 @@ sen pred gold
 地 O O
 摊 O O
 的 O O
-古 O B-pos
+古 B-pos B-pos
 玩 O I-pos
-商 B-pos I-pos
+商 I-pos I-pos
 贩 I-pos I-pos
 家 O O
 里 O O
@@ -15103,8 +15731,8 @@ sen pred gold
 ， O O
 当 O O
 时 O O
-笔 B-pos B-pos
-者 I-pos I-pos
+笔 O B-pos
+者 O I-pos
 一 O O
 眼 O O
 就 O O
@@ -15159,8 +15787,8 @@ sen pred gold
 的 O O
 [UNK] O O
 青 O O
-藏 O O
-高 O O
+藏 I-add O
+高 I-add O
 原 O O
 [UNK] O O
 之 O O
@@ -15183,52 +15811,6 @@ sen pred gold
 区 I-add O
 [UNK] O O
 ， O O
-
-
-raw: 33歙县二区星期一10月29日08:41歙县二区晨会总结星期日10月28日22:48
-sen pred gold
-3 O O
-3 O O
-歙 B-add B-add
-县 I-add I-add
-二 I-add I-add
-区 I-add I-add
-星 O O
-期 O O
-一 O O
-1 O O
-0 O O
-月 O O
-2 O O
-9 O O
-日 O O
-0 O O
-8 O O
-: O O
-4 O O
-1 O O
-歙 B-add B-add
-县 I-add I-add
-二 O I-add
-区 O I-add
-晨 O O
-会 O O
-总 O O
-结 O O
-星 O O
-期 O O
-日 O O
-1 O O
-0 O O
-月 O O
-2 O O
-8 O O
-日 O O
-2 O O
-2 O O
-: O O
-4 O O
-8 O O
 
 
 raw: 年轻的建筑师业务工作范围更加国际化，不仅仅在日本有作品，在欧洲、美国，
@@ -15262,11 +15844,11 @@ sen pred gold
 品 O O
 ， O O
 在 O O
-欧 O O
-洲 O O
+欧 B-add O
+洲 I-add O
 、 O O
-美 O O
-国 O O
+美 B-add O
+国 I-add O
 ， O O
 
 
@@ -15291,8 +15873,8 @@ sen pred gold
 、 O O
 青 O B-pos
 年 O I-pos
-作 O I-pos
-者 O I-pos
+作 B-pos I-pos
+者 I-pos I-pos
 林 B-nam B-nam
 森 I-nam I-nam
 以 O O
@@ -15309,85 +15891,58 @@ sen pred gold
 。 O O
 
 
-raw: 集结了中国顶尖的团队与选手，包括DotA、星际II和CS分部。
+raw: 霍芬海vs比勒菲：霍芬海打弱旅很有心得，基本都能赢球，但比勒菲客场客场4平3负，战平对手的次数不少。
 sen pred gold
-集 O O
-结 O O
-了 O O
-中 O O
-国 O O
-顶 O O
-尖 O O
-的 O O
-团 O O
-队 O O
-与 O O
-选 B-pos O
-手 I-pos O
-， O O
-包 O O
-括 O O
-d B-gam B-gam
-o I-gam I-gam
-t I-gam I-gam
-a I-gam I-gam
-、 O O
-星 B-gam B-gam
-际 I-gam I-gam
-i I-gam I-gam
-i I-gam I-gam
-和 O O
-c B-gam B-gam
-s I-gam I-gam
-分 O O
-部 O O
-。 O O
-
-
-raw: 香港旺角电脑中心的经销商也确认智冠采取了“月卡收费模式”来发售星际争霸2，并表示：“
-sen pred gold
-香 B-add B-add
-港 I-add I-add
-旺 I-add I-add
-角 I-add I-add
-电 I-add I-add
-脑 I-add I-add
-中 I-add I-add
-心 I-add I-add
-的 O O
-经 B-pos O
-销 I-pos O
-商 I-pos O
-也 O O
-确 O O
-认 O O
-智 B-com B-com
-冠 I-com I-com
-采 O O
-取 O O
-了 O O
-[UNK] O O
-月 O O
-卡 O O
-收 O O
-费 O O
-模 O O
-式 O O
-[UNK] O O
-来 O O
-发 O O
-售 O O
-星 B-gam B-gam
-际 I-gam I-gam
-争 I-gam I-gam
-霸 I-gam I-gam
-2 I-gam I-gam
-， O O
-并 O O
-表 O O
-示 O O
+霍 B-nam B-org
+芬 I-nam I-org
+海 I-nam I-org
+v O O
+s O O
+比 B-org B-org
+勒 I-org I-org
+菲 I-org I-org
 ： O O
-[UNK] O O
+霍 B-org B-org
+芬 I-org I-org
+海 I-org I-org
+打 O O
+弱 O O
+旅 O O
+很 O O
+有 O O
+心 O O
+得 O O
+， O O
+基 O O
+本 O O
+都 O O
+能 O O
+赢 O O
+球 O O
+， O O
+但 O O
+比 B-org B-org
+勒 I-org I-org
+菲 I-org I-org
+客 O O
+场 O O
+客 O O
+场 O O
+4 O O
+平 O O
+3 O O
+负 O O
+， O O
+战 O O
+平 O O
+对 O O
+手 O O
+的 O O
+次 O O
+数 O O
+不 O O
+少 O O
+。 O O
 
 
 raw: 这些在我们看来更像是笑话的迷信，却在世界上经久不衰。一位美国人调查了驻华盛顿的所有外国使馆的代表，
@@ -15433,9 +15988,9 @@ sen pred gold
 的 O O
 所 O O
 有 O O
-外 O O
-国 O O
-使 B-gov O
+外 B-gov O
+国 I-gov O
+使 I-gov O
 馆 I-gov O
 的 O O
 代 B-pos B-pos
@@ -15518,18 +16073,18 @@ sen pred gold
 王 B-nam B-nam
 涌 I-nam I-nam
 彬 I-nam I-nam
-中 B-gov B-gov
-国 I-gov I-gov
-房 I-gov I-gov
-地 I-gov I-gov
-产 I-gov I-gov
-及 I-gov I-gov
-住 I-gov I-gov
-宅 I-gov I-gov
-研 I-gov I-gov
-究 I-gov I-gov
-会 I-gov I-gov
-人 I-gov I-gov
+中 O B-gov
+国 O I-gov
+房 O I-gov
+地 O I-gov
+产 O I-gov
+及 O I-gov
+住 O I-gov
+宅 O I-gov
+研 O I-gov
+究 O I-gov
+会 O I-gov
+人 O I-gov
 居 I-gov I-gov
 环 I-gov I-gov
 境 I-gov I-gov
@@ -15574,11 +16129,11 @@ sen pred gold
 话 O O
 委 O O
 托 O O
-彩 B-org O
-票 I-org O
-投 I-org O
-注 I-org O
-站 I-org O
+彩 O O
+票 O O
+投 O O
+注 O O
+站 O O
 老 B-pos B-pos
 板 I-pos I-pos
 帮 O O
@@ -15681,48 +16236,6 @@ sen pred gold
 、 O O
 
 
-raw: 而南半部是hakipuu山谷，以及拥有800年历史的古代夏威夷鱼塘和神秘岛。
-sen pred gold
-而 O O
-南 O O
-半 O O
-部 O O
-是 O O
-h B-sce B-sce
-a I-sce I-sce
-k I-sce I-sce
-i I-sce I-sce
-p I-sce I-sce
-u I-sce I-sce
-u I-sce I-sce
-山 I-sce I-sce
-谷 I-sce I-sce
-， O O
-以 O O
-及 O O
-拥 O O
-有 O O
-8 O O
-0 O O
-0 O O
-年 O O
-历 O O
-史 O O
-的 O O
-古 B-sce O
-代 I-sce O
-夏 B-sce B-sce
-威 I-sce I-sce
-夷 I-sce I-sce
-鱼 I-sce I-sce
-塘 I-sce I-sce
-和 O O
-神 B-sce B-sce
-秘 I-sce I-sce
-岛 I-sce I-sce
-。 O O
-
-
 raw: 安徒生孤本童话手稿月底将被拍卖
 sen pred gold
 安 B-nam B-boo
@@ -15773,10 +16286,10 @@ sen pred gold
 雍 B-add B-sce
 和 I-add I-sce
 宫 I-add I-sce
-星 O O
-光 O O
-现 O O
-场 O O
+星 I-add O
+光 I-add O
+现 I-add O
+场 I-add O
 里 O O
 [UNK] O O
 b O O
@@ -15786,46 +16299,6 @@ j O O
 i O O
 n O O
 g O O
-
-
-raw: 有深圳“断供第一案”之称的漾日湾畔断供案，昨日在深圳市中级人民法院开庭。
-sen pred gold
-有 O O
-深 O B-add
-圳 O I-add
-[UNK] O O
-断 O O
-供 O O
-第 O O
-一 O O
-案 O O
-[UNK] O O
-之 O O
-称 O O
-的 O O
-漾 B-add B-add
-日 I-add I-add
-湾 I-add I-add
-畔 I-add I-add
-断 O O
-供 O O
-案 O O
-， O O
-昨 O O
-日 O O
-在 O O
-深 B-gov B-gov
-圳 I-gov I-gov
-市 I-gov I-gov
-中 I-gov I-gov
-级 I-gov I-gov
-人 I-gov I-gov
-民 I-gov I-gov
-法 I-gov I-gov
-院 I-gov I-gov
-开 O O
-庭 O O
-。 O O
 
 
 raw: 张路足彩推荐：米兰状态不佳难胜那不勒主场称雄
@@ -15852,6 +16325,49 @@ sen pred gold
 场 O O
 称 O O
 雄 O O
+
+
+raw: 当年威尼斯的一些著名的场所都会在游戏中出现，比如达芬奇的工作间、圣马可大教堂、
+sen pred gold
+当 O O
+年 O O
+威 B-add B-add
+尼 I-add I-add
+斯 I-add I-add
+的 O O
+一 O O
+些 O O
+著 O O
+名 O O
+的 O O
+场 O O
+所 O O
+都 O O
+会 O O
+在 O O
+游 O O
+戏 O O
+中 O O
+出 O O
+现 O O
+， O O
+比 O O
+如 O O
+达 B-nam B-nam
+芬 I-nam I-nam
+奇 I-nam I-nam
+的 O O
+工 I-add O
+作 I-add O
+间 I-add O
+、 O O
+圣 B-sce B-sce
+马 I-sce I-sce
+可 I-sce I-sce
+大 I-sce I-sce
+教 I-sce I-sce
+堂 I-sce I-sce
+、 O O
 
 
 raw: 2.奥尔堡vs凯尔特人凯尔特人做客占优明显，首先，凯利指数计算结果和凯比值数据中，
@@ -15901,9 +16417,9 @@ s O O
 
 raw: SPL10-11总决赛现场世纪广场示意图
 sen pred gold
-s O B-org
-p O I-org
-l O I-org
+s B-org B-org
+p I-org I-org
+l I-org I-org
 1 O I-org
 0 O I-org
 - O I-org
@@ -15945,8 +16461,8 @@ sen pred gold
 博 B-nam B-nam
 瓦 I-nam I-nam
 德 I-nam I-nam
-（ B-nam O
-h B-nam B-nam
+（ I-nam O
+h I-nam B-nam
 e I-nam I-nam
 n I-nam I-nam
 r I-nam I-nam
@@ -16029,11 +16545,11 @@ sen pred gold
 ， O O
 e B-com B-com
 a I-com I-com
-m I-com I-com
-a I-com I-com
+m O I-com
+a O I-com
 x I-com I-com
-i I-com I-com
-s I-com I-com
+i O I-com
+s O I-com
 开 O I-com
 发 O I-com
 小 O I-com
@@ -16062,6 +16578,57 @@ s I-com I-com
 孢 I-gam I-gam
 子 I-gam I-gam
 ： I-gam I-gam
+
+
+raw: 卡帕莱的海底世界保证刷新你对海洋的认知，海龟、尼莫鱼、海星、斑点鱼、海狼，仿如一个海底总动员！
+sen pred gold
+卡 B-sce B-add
+帕 I-sce I-add
+莱 I-sce I-add
+的 O O
+海 O O
+底 O O
+世 O O
+界 O O
+保 O O
+证 O O
+刷 O O
+新 O O
+你 O O
+对 O O
+海 O O
+洋 O O
+的 O O
+认 O O
+知 O O
+， O O
+海 O O
+龟 O O
+、 O O
+尼 O O
+莫 O O
+鱼 O O
+、 O O
+海 O O
+星 O O
+、 O O
+斑 O O
+点 O O
+鱼 O O
+、 O O
+海 O O
+狼 O O
+， O O
+仿 O O
+如 O O
+一 O O
+个 O O
+海 O O
+底 O O
+总 O O
+动 O O
+员 O O
+！ O O
 
 
 raw: 尼日利亚一架海军直升机26日下午在尼南部地区坠毁，机上4人全部丧生。
@@ -16102,52 +16669,9 @@ sen pred gold
 。 O O
 
 
-raw: 综合来看平手盘似乎也成为了庄家唯一选择，历史交手多平局，但斯托克至少都能让球，
-sen pred gold
-综 O O
-合 O O
-来 O O
-看 O O
-平 O O
-手 O O
-盘 O O
-似 O O
-乎 O O
-也 O O
-成 O O
-为 O O
-了 O O
-庄 O B-pos
-家 O I-pos
-唯 O O
-一 O O
-选 O O
-择 O O
-， O O
-历 O O
-史 O O
-交 O O
-手 O O
-多 O O
-平 O O
-局 O O
-， O O
-但 O O
-斯 B-org B-org
-托 I-org I-org
-克 I-org I-org
-至 O O
-少 O O
-都 O O
-能 O O
-让 O O
-球 O O
-， O O
-
-
 raw: 贝蒂斯vs西班牙人
 sen pred gold
-贝 B-nam B-org
+贝 B-org B-org
 蒂 I-nam I-org
 斯 I-nam I-org
 v O O
@@ -16197,8 +16721,8 @@ sen pred gold
 美 O O
 的 O O
 军 B-sce B-sce
-舰 O I-sce
-岛 O I-sce
+舰 I-sce I-sce
+岛 I-sce I-sce
 ， O O
 
 
@@ -16315,8 +16839,8 @@ sen pred gold
 分 I-com I-com
 行 I-com I-com
 营 I-com O
-业 I-com O
-部 I-com O
+业 O O
+部 O O
 表 O O
 示 O O
 ， O O
@@ -16324,7 +16848,7 @@ sen pred gold
 商 I-com I-com
 银 I-com I-com
 行 I-com I-com
-总 I-com I-com
+总 O I-com
 行 I-com I-com
 仍 O O
 在 O O
@@ -16337,11 +16861,36 @@ sen pred gold
 。 O O
 
 
+raw: 他们的目标是成为巴西DotA界的龙头老大，
+sen pred gold
+他 O O
+们 O O
+的 O O
+目 O O
+标 O O
+是 O O
+成 O O
+为 O O
+巴 B-add O
+西 I-add O
+d B-gam B-gam
+o I-gam I-gam
+t I-gam I-gam
+a I-gam I-gam
+界 O O
+的 O O
+龙 O O
+头 O O
+老 O O
+大 O O
+， O O
+
+
 raw: 国务院总理温家宝9日主持召开国务院常务会议，分析当前粮食生产形势，在近期已出台扶持政策的基础上，
 sen pred gold
-国 B-gov B-gov
-务 I-gov I-gov
-院 I-gov I-gov
+国 B-pos B-gov
+务 I-pos I-gov
+院 I-pos I-gov
 总 B-pos B-pos
 理 I-pos I-pos
 温 B-nam B-nam
@@ -16354,8 +16903,8 @@ sen pred gold
 召 O O
 开 O O
 国 B-gov B-gov
-务 I-gov I-gov
-院 I-gov I-gov
+务 I-pos I-gov
+院 I-pos I-gov
 常 O I-gov
 务 O I-gov
 会 O I-gov
@@ -16393,15 +16942,15 @@ raw: banikostrava，港译：奥斯泰华）逼平，险些又从联盟杯中出
 sen pred gold
 b B-com O
 a I-com O
-n I-com O
+n I-org O
 i I-com O
-k I-com O
+k I-org O
 o I-com O
 s I-com O
-t I-com O
-r I-com O
+t I-org O
+r I-org O
 a I-com O
-v I-com O
+v I-org O
 a I-com O
 ， O O
 港 O O
@@ -16447,7 +16996,7 @@ sen pred gold
 明 O O
 式 O O
 皇 O O
-宫 O O
+宫 I-sce O
 椅 O O
 在 O O
 2 O O
@@ -16478,7 +17027,7 @@ sen pred gold
 据 O O
 连 B-nam B-com
 天 I-nam I-com
-红 I-nam I-com
+红 I-com I-com
 提 O O
 供 O O
 的 O O
@@ -16536,44 +17085,6 @@ sen pred gold
 ， O O
 
 
-raw: 一代大家曹雪芹笔下栩栩如生的众多人物，将在游戏《红楼梦》中一一出现，
-sen pred gold
-一 O O
-代 O O
-大 O O
-家 O O
-曹 B-nam B-nam
-雪 I-nam I-nam
-芹 I-nam I-nam
-笔 O O
-下 O O
-栩 O O
-栩 O O
-如 O O
-生 O O
-的 O O
-众 O O
-多 O O
-人 O O
-物 O O
-， O O
-将 O O
-在 O O
-游 O O
-戏 O O
-《 B-boo B-gam
-红 I-boo I-gam
-楼 I-boo I-gam
-梦 I-boo I-gam
-》 I-boo I-gam
-中 O O
-一 O O
-一 O O
-出 O O
-现 O O
-， O O
-
-
 raw: 与开发商命运颇为密切的“娘家人”建设部终于坐不住了。11月28日，在接受香港媒体代表团采访时，
 sen pred gold
 与 O O
@@ -16592,9 +17103,9 @@ sen pred gold
 家 O O
 人 O O
 [UNK] O O
-建 B-com B-gov
-设 I-com I-gov
-部 I-com I-gov
+建 B-gov B-gov
+设 I-gov I-gov
+部 I-gov I-gov
 终 O O
 于 O O
 坐 O O
@@ -16612,7 +17123,7 @@ sen pred gold
 在 O O
 接 O O
 受 O O
-香 B-add B-org
+香 O B-org
 港 O I-org
 媒 O I-org
 体 O I-org
@@ -16630,15 +17141,15 @@ sen pred gold
 得 O O
 益 O O
 于 O O
-f O B-org
-r O I-org
-i O I-org
-e O I-org
-z O I-org
-e O I-org
+f B-org B-org
+r I-org I-org
+i I-org I-org
+e I-org I-org
+z I-org I-org
+e I-org I-org
 艺 O I-org
 术 O I-org
-周 O I-org
+周 I-org I-org
 的 O O
 人 O O
 气 O O
@@ -16689,11 +17200,11 @@ sen pred gold
 城 I-sce I-sce
 堡 I-sce I-sce
 [UNK] O O
-阿 O O
-克 O O
-斯 O O
-胡 O O
-斯 O O
+阿 B-add O
+克 I-add O
+斯 I-add O
+胡 I-add O
+斯 I-add O
 [UNK] O O
 是 O O
 奥 B-add B-sce
@@ -16826,9 +17337,9 @@ sen pred gold
 [UNK] O O
 先 O O
 进 O O
-村 O O
-委 O O
-会 O O
+村 B-org O
+委 I-pos O
+会 I-org O
 [UNK] O O
 等 O O
 。 O O
@@ -16874,11 +17385,11 @@ sen pred gold
 
 raw: 中国艺术网理事会副理事长、美国哥伦比亚制作有限公司艺术总监、原中国书法研究院副院长——
 sen pred gold
-中 B-com B-org
-国 I-com I-org
-艺 I-com I-org
-术 I-com I-org
-网 I-com I-org
+中 B-org B-org
+国 I-org I-org
+艺 I-org I-org
+术 I-org I-org
+网 I-org I-org
 理 O I-org
 事 O I-org
 会 O I-org
@@ -16917,53 +17428,6 @@ sen pred gold
 长 I-pos I-pos
 [UNK] O O
 [UNK] O O
-
-
-raw: 杜琪峰还谈到3年前拍摄《文雀》时的想法，“当时拍紧戏看到天星码头被拆，看完觉得好感动，
-sen pred gold
-杜 B-nam B-nam
-琪 I-nam I-nam
-峰 I-nam I-nam
-还 O O
-谈 O O
-到 O O
-3 O O
-年 O O
-前 O O
-拍 O O
-摄 O O
-《 B-mov B-mov
-文 I-mov I-mov
-雀 I-mov I-mov
-》 I-mov I-mov
-时 O O
-的 O O
-想 O O
-法 O O
-， O O
-[UNK] O O
-当 O O
-时 O O
-拍 O O
-紧 O O
-戏 O O
-看 O O
-到 O O
-天 B-sce B-add
-星 I-sce I-add
-码 O I-add
-头 O I-add
-被 O O
-拆 O O
-， O O
-看 O O
-完 O O
-觉 O O
-得 O O
-好 O O
-感 O O
-动 O O
-， O O
 
 
 raw: 以及越南知名音乐艺术家带来的精彩演出和国际美食节等活动，向海内外来宾展示岘港之美。
@@ -17037,11 +17501,11 @@ sen pred gold
 工 O I-gov
 作 O I-gov
 的 O I-gov
-社 B-gov I-gov
-会 I-gov I-gov
+社 O I-gov
+会 O I-gov
 事 I-gov I-gov
 务 I-gov I-gov
-办 I-gov I-gov
+办 I-add I-gov
 公 O I-gov
 室 O I-gov
 主 B-pos B-pos
@@ -17069,11 +17533,11 @@ sen pred gold
 的 O O
 吉 B-add O
 朗 I-add O
-同 O O
-星 O O
-级 O O
-酒 O O
-店 O O
+同 I-add O
+星 I-add O
+级 I-add O
+酒 I-add O
+店 I-add O
 舒 O O
 服 O O
 的 O O
@@ -17253,19 +17717,19 @@ sen pred gold
 届 O O
 中 O B-add
 国 O I-add
-北 O I-add
+北 I-org I-add
 京 O I-add
 国 O O
 际 O O
 文 O O
-化 O O
-创 O O
-意 O O
-产 O O
-业 O O
-博 O O
-览 O O
-会 O O
+化 I-org O
+创 I-org O
+意 I-org O
+产 I-org O
+业 I-org O
+博 I-org O
+览 I-org O
+会 I-org O
 。 O O
 据 O O
 悉 O O
@@ -17326,6 +17790,73 @@ sen pred gold
 。 O O
 
 
+raw: 挪威缩影“挪威缩影”是挪威峡湾旅游公司推出的最为经典，也是最受游客欢迎的一条峡湾旅游线路，
+sen pred gold
+挪 B-sce B-sce
+威 I-sce I-sce
+缩 I-sce I-sce
+影 I-sce I-sce
+[UNK] B-sce O
+挪 I-sce B-sce
+威 I-sce I-sce
+缩 I-sce I-sce
+影 I-sce I-sce
+[UNK] O O
+是 O O
+挪 B-com B-com
+威 I-com I-com
+峡 I-com I-com
+湾 I-com I-com
+旅 I-com I-com
+游 I-com I-com
+公 I-com I-com
+司 I-com I-com
+推 O O
+出 O O
+的 O O
+最 O O
+为 O O
+经 O O
+典 O O
+， O O
+也 O O
+是 O O
+最 O O
+受 O O
+游 O O
+客 O O
+欢 O O
+迎 O O
+的 O O
+一 O O
+条 O O
+峡 O O
+湾 O O
+旅 O O
+游 O O
+线 O O
+路 O O
+， O O
+
+
+raw: 飞哥打cf用曲屏好还是直屏?
+sen pred gold
+飞 B-gam O
+哥 I-gam O
+打 O O
+c B-gam B-gam
+f I-gam I-gam
+用 O O
+曲 O O
+屏 O O
+好 O O
+还 O O
+是 O O
+直 O O
+屏 O O
+? O O
+
+
 raw: 并携带证件和银行卡到南京路某号办理磁条加密手续。
 sen pred gold
 并 O O
@@ -17352,6 +17883,92 @@ sen pred gold
 手 O O
 续 O O
 。 O O
+
+
+raw: 中国电信武汉分公司近日与公安、交管部门展开深入合作，在全国首推“天翼看交通”，
+sen pred gold
+中 B-com B-com
+国 I-com I-com
+电 I-com I-com
+信 I-com I-com
+武 I-com I-com
+汉 I-com I-com
+分 I-com I-com
+公 I-com I-com
+司 I-com I-com
+近 O O
+日 O O
+与 O O
+公 B-gov B-gov
+安 I-gov I-gov
+、 O O
+交 B-gov B-gov
+管 I-gov I-gov
+部 O I-gov
+门 O I-gov
+展 O O
+开 O O
+深 O O
+入 O O
+合 O O
+作 O O
+， O O
+在 O O
+全 O O
+国 O O
+首 O O
+推 O O
+[UNK] O O
+天 O O
+翼 O O
+看 O O
+交 O O
+通 O O
+[UNK] O O
+， O O
+
+
+raw: 预祝民营工作委员会今天的活动圆满成功，也祝黄教授和日本的同行在北京生活的愉快，
+sen pred gold
+预 O O
+祝 O O
+民 B-gov B-gov
+营 I-gov I-gov
+工 I-org I-gov
+作 I-org I-gov
+委 I-org I-gov
+员 I-org I-gov
+会 I-org I-gov
+今 O O
+天 O O
+的 O O
+活 O O
+动 O O
+圆 O O
+满 O O
+成 O O
+功 O O
+， O O
+也 O O
+祝 O O
+黄 O O
+教 B-pos B-pos
+授 I-pos I-pos
+和 O O
+日 O O
+本 O O
+的 O O
+同 O O
+行 O O
+在 O O
+北 B-add B-add
+京 I-add I-add
+生 O O
+活 O O
+的 O O
+愉 O O
+快 O O
+， O O
 
 
 raw: 也是刚才上午提到的软装饰了，这个完整家居的话，也是需要室内设计师和业主、软式的设计师进行详细的沟通，
@@ -17437,11 +18054,11 @@ e O O
 至 O I-boo
 尊 O I-boo
 邪 O I-boo
-少 O I-boo
-妃 O O
-倾 O O
-天 O O
-下 O O
+少 B-nam I-boo
+妃 I-boo O
+倾 I-boo O
+天 I-boo O
+下 I-boo O
 : O O
 绝 O O
 操 O O
@@ -17462,10 +18079,45 @@ e O O
 % O O
 
 
-raw: 笔夫
+raw: 美国飞行员就通过无线电中的俄语通话发现了苏联空军的介入，但并没有对此声张，
 sen pred gold
-笔 B-com B-nam
-夫 I-com I-nam
+美 B-add O
+国 I-add O
+飞 B-pos B-pos
+行 I-pos I-pos
+员 I-pos I-pos
+就 O O
+通 O O
+过 O O
+无 O O
+线 O O
+电 O O
+中 O O
+的 O O
+俄 O O
+语 O O
+通 O O
+话 O O
+发 O O
+现 O O
+了 O O
+苏 B-gov B-gov
+联 I-gov I-gov
+空 I-gov I-gov
+军 I-gov I-gov
+的 O O
+介 O O
+入 O O
+， O O
+但 O O
+并 O O
+没 O O
+有 O O
+对 O O
+此 O O
+声 O O
+张 O O
+， O O
 
 
 raw: 所讲述的老百姓自己的故事。《挽歌》改编自菲利普·罗斯的小说《垂死生物》，看起来是一个老套的不伦之恋，
@@ -17553,7 +18205,7 @@ sen pred gold
 昆 B-add B-add
 明 I-add I-add
 东 I-add I-add
-、 I-add O
+、 O O
 南 I-add B-add
 市 I-add I-add
 区 I-add I-add
@@ -17696,7 +18348,7 @@ sen pred gold
 出 O O
 的 O O
 夏 B-nam B-nam
-卡 O I-nam
+卡 I-nam I-nam
 尔 O I-nam
 《 B-boo B-boo
 动 I-boo I-boo
@@ -17765,6 +18417,104 @@ sen pred gold
 ， O O
 
 
+raw: 是我在还没开始做解说你拉我去1422做那个SF技巧的演讲的时候，她负责跟我联系，
+sen pred gold
+是 O O
+我 O O
+在 O O
+还 O O
+没 O O
+开 O O
+始 O O
+做 O O
+解 O B-pos
+说 I-pos I-pos
+你 O O
+拉 O O
+我 O O
+去 O O
+1 O O
+4 O O
+2 O O
+2 O O
+做 O O
+那 O O
+个 O O
+s B-gam O
+f I-gam O
+技 O O
+巧 O O
+的 O O
+演 O O
+讲 O O
+的 O O
+时 O O
+候 O O
+， O O
+她 O O
+负 O O
+责 O O
+跟 O O
+我 O O
+联 O O
+系 O O
+， O O
+
+
+raw: 美国空军报告9月13日在阿富汗西部地区损失了一架hq-9“死神”无人攻击机。但报告没有披露的真相是，
+sen pred gold
+美 B-gov B-gov
+国 I-gov I-gov
+空 I-gov I-gov
+军 I-gov I-gov
+报 O O
+告 O O
+9 O O
+月 O O
+1 O O
+3 O O
+日 O O
+在 O O
+阿 B-add B-add
+富 I-add I-add
+汗 I-add I-add
+西 I-add I-add
+部 O I-add
+地 O I-add
+区 O I-add
+损 O O
+失 O O
+了 O O
+一 O O
+架 O O
+h O O
+q O O
+- O O
+9 O O
+[UNK] O O
+死 O O
+神 O O
+[UNK] O O
+无 O O
+人 O O
+攻 O O
+击 O O
+机 O O
+。 O O
+但 O O
+报 O O
+告 O O
+没 O O
+有 O O
+披 O O
+露 O O
+的 O O
+真 O O
+相 O O
+是 O O
+， O O
+
+
 raw: 45金庸逝世江湖再无金大侠贝倍多贝倍多孕婴童用品连锁16:31Baby
 sen pred gold
 4 O O
@@ -17779,18 +18529,18 @@ sen pred gold
 无 O O
 金 O O
 大 O O
-侠 O O
+侠 I-nam O
 贝 B-com O
 倍 I-com O
 多 I-com O
 贝 B-com O
 倍 I-com O
 多 I-com O
-孕 O O
-婴 O O
-童 O O
-用 O O
-品 O O
+孕 I-com O
+婴 I-com O
+童 I-com O
+用 I-com O
+品 I-com O
 连 O O
 锁 O O
 1 O O
@@ -17817,8 +18567,8 @@ sen pred gold
 建 I-gov I-gov
 设 I-gov I-gov
 委 I-gov I-gov
-相 O B-pos
-关 O I-pos
+相 B-pos B-pos
+关 I-pos I-pos
 负 B-pos I-pos
 责 I-pos I-pos
 人 I-pos I-pos
@@ -17845,6 +18595,58 @@ sen pred gold
 。 O O
 
 
+raw: 去年，邱礼涛不但被选为香港国际电影节的“焦点导演”环节做重点介绍，也导演了《性工作者十日谈》、《
+sen pred gold
+去 O O
+年 O O
+， O O
+邱 B-nam B-nam
+礼 I-nam I-nam
+涛 I-nam I-nam
+不 O O
+但 O O
+被 O O
+选 O O
+为 O O
+香 O B-add
+港 O I-add
+国 O O
+际 O O
+电 O O
+影 O O
+节 O O
+的 O O
+[UNK] O O
+焦 O O
+点 O O
+导 B-pos B-pos
+演 I-pos I-pos
+[UNK] O O
+环 O O
+节 O O
+做 O O
+重 O O
+点 O O
+介 O O
+绍 O O
+， O O
+也 O O
+导 O O
+演 O O
+了 O O
+《 B-mov B-mov
+性 I-mov I-mov
+工 I-mov I-mov
+作 I-mov I-mov
+者 I-mov I-mov
+十 I-mov I-mov
+日 I-mov I-mov
+谈 I-mov I-mov
+》 I-mov I-mov
+、 O O
+《 O O
+
+
 raw: 要想小组出线本轮主场迎战来自荷兰的nec尼美根不容有失，平均主胜1.52亚盘给主队让一球中水盘口，
 sen pred gold
 要 O O
@@ -17861,8 +18663,8 @@ sen pred gold
 战 O O
 来 O O
 自 O O
-荷 B-org B-add
-兰 I-org I-add
+荷 O B-add
+兰 O I-add
 的 O O
 n B-org B-org
 e I-org I-org
@@ -17956,10 +18758,10 @@ raw: 工行深圳地区的客服代表告诉记者，8月17日前，
 sen pred gold
 工 B-com B-com
 行 I-com I-com
-深 I-com I-com
-圳 I-com I-com
-地 I-com I-com
-区 I-com I-com
+深 B-add I-com
+圳 I-add I-com
+地 O I-com
+区 O I-com
 的 O O
 客 B-pos B-pos
 服 I-pos I-pos
@@ -17977,45 +18779,6 @@ sen pred gold
 日 O O
 前 O O
 ， O O
-
-
-raw: 育碧公司在上周公布了《刺客信条2》(Assassin'sCreed2)
-sen pred gold
-育 B-com B-com
-碧 I-com I-com
-公 I-com I-com
-司 I-com I-com
-在 O O
-上 O O
-周 O O
-公 O O
-布 O O
-了 O O
-《 B-gam B-gam
-刺 I-gam I-gam
-客 I-gam I-gam
-信 I-gam I-gam
-条 I-gam I-gam
-2 I-gam I-gam
-》 I-gam I-gam
-( B-gam I-gam
-a B-gam I-gam
-s I-gam I-gam
-s I-gam I-gam
-a I-gam I-gam
-s I-gam I-gam
-s I-gam I-gam
-i I-gam I-gam
-n I-gam I-gam
-' I-gam I-gam
-s I-gam I-gam
-c I-gam I-gam
-r I-gam I-gam
-e I-gam I-gam
-e I-gam I-gam
-d I-gam I-gam
-2 I-gam I-gam
-) I-gam I-gam
 
 
 raw: 还有一些线路延伸至比较远的动物园或是圣基尔达海滩地区。
@@ -18218,7 +18981,7 @@ sen pred gold
 谦 I-nam I-nam
 撰 O O
 · O O
-详 B-boo B-boo
+详 O B-boo
 注 I-boo I-boo
 东 B-boo I-boo
 莱 I-boo I-boo
@@ -18293,14 +19056,56 @@ sen pred gold
 ， O O
 
 
-raw: 《变形金刚》
+raw: 知识分子和其他社会阶层的先进分子,这是根据党的性质规定的。中国共产党是为中国人民事业而奋斗的党,
 sen pred gold
-《 B-gam B-mov
-变 I-gam I-mov
-形 I-gam I-mov
-金 I-gam I-mov
-刚 I-gam I-mov
-》 I-gam I-mov
+知 B-pos O
+识 O O
+分 I-pos O
+子 O O
+和 O O
+其 O O
+他 O O
+社 O O
+会 O O
+阶 O O
+层 O O
+的 O O
+先 O O
+进 O O
+分 O O
+子 O O
+, O O
+这 O O
+是 O O
+根 O O
+据 O O
+党 O O
+的 O O
+性 O O
+质 O O
+规 O O
+定 O O
+的 O O
+。 O O
+中 B-gov B-gov
+国 I-gov I-gov
+共 I-gov I-gov
+产 I-gov I-gov
+党 I-gov I-gov
+是 O O
+为 O O
+中 O O
+国 O O
+人 O O
+民 O O
+事 O O
+业 O O
+而 O O
+奋 O O
+斗 O O
+的 O O
+党 O O
+, O O
 
 
 raw: 新浪房产讯（实习编辑张跃）新浪乐居携手京城各大楼盘置业顾问，共同发起“寻找售楼处的微笑天使，
@@ -18353,59 +19158,6 @@ sen pred gold
 ， O O
 
 
-raw: 不仅如此，对威尔·史密斯而言，这里既有因《独立日》正式晋级票房巨星的“封禅大典”，更有《黑衣人1》
-sen pred gold
-不 O O
-仅 O O
-如 O O
-此 O O
-， O O
-对 O O
-威 B-nam B-nam
-尔 I-nam I-nam
-· I-nam I-nam
-史 I-nam I-nam
-密 I-nam I-nam
-斯 I-nam I-nam
-而 O O
-言 O O
-， O O
-这 O O
-里 O O
-既 O O
-有 O O
-因 O O
-《 B-mov B-mov
-独 I-mov I-mov
-立 I-mov I-mov
-日 I-mov I-mov
-》 I-mov I-mov
-正 O O
-式 O O
-晋 O O
-级 O O
-票 O O
-房 O O
-巨 B-pos O
-星 I-pos O
-的 O O
-[UNK] O O
-封 O O
-禅 O O
-大 O O
-典 O O
-[UNK] O O
-， O O
-更 O O
-有 O O
-《 B-mov B-mov
-黑 I-mov I-mov
-衣 I-mov I-mov
-人 I-mov I-mov
-1 I-mov I-mov
-》 I-mov I-mov
-
-
 raw: G联赛：对即将到来的DOTA2怎么看呢？饼子对IF的这个新游戏有所期待么？
 sen pred gold
 g O B-org
@@ -18431,8 +19183,8 @@ a I-gam I-gam
 饼 O B-nam
 子 O I-nam
 对 O O
-i O B-gam
-f O I-gam
+i B-gam B-gam
+f I-gam I-gam
 的 O O
 这 O O
 个 O O
@@ -18445,6 +19197,53 @@ f O I-gam
 待 O O
 么 O O
 ？ O O
+
+
+raw: 美联物业市场研究部总监张大伟介绍：从23日营业税详细政策出台北京市场已经明显出现变化：
+sen pred gold
+美 B-com B-com
+联 I-com I-com
+物 I-com I-com
+业 I-com I-com
+市 O I-com
+场 O I-com
+研 O I-com
+究 O I-com
+部 I-com I-com
+总 B-pos B-pos
+监 I-pos I-pos
+张 B-nam B-nam
+大 I-nam I-nam
+伟 I-nam I-nam
+介 O O
+绍 O O
+： O O
+从 O O
+2 O O
+3 O O
+日 O O
+营 O O
+业 O O
+税 O O
+详 O O
+细 O O
+政 O O
+策 O O
+出 O O
+台 O O
+北 O O
+京 O O
+市 O O
+场 O O
+已 O O
+经 O O
+明 O O
+显 O O
+出 O O
+现 O O
+变 O O
+化 O O
+： O O
 
 
 raw: 但“局外人”所蕴含的疏离感与孤独感显然更明显。要知道，加缪的作品与乡愁并无多大瓜葛。再如《蜕变》
@@ -18551,47 +19350,6 @@ sen pred gold
 （ O O
 
 
-raw: E32009将于下月第一周在洛杉矶会展中心举行，并正式向普通民众开放参观，
-sen pred gold
-e O B-org
-3 O I-org
-2 O I-org
-0 O I-org
-0 O I-org
-9 O I-org
-将 O O
-于 O O
-下 O O
-月 O O
-第 O O
-一 O O
-周 O O
-在 O O
-洛 B-add B-add
-杉 I-add I-add
-矶 I-add I-add
-会 I-add I-add
-展 I-add I-add
-中 I-add I-add
-心 I-add I-add
-举 O O
-行 O O
-， O O
-并 O O
-正 O O
-式 O O
-向 O O
-普 O O
-通 O O
-民 O O
-众 O O
-开 O O
-放 O O
-参 O O
-观 O O
-， O O
-
-
 raw: 记者于是趁机给她上了堂关于atm机的课——atm机是各商业银行提供给广大持卡人的具有存款、取款、
 sen pred gold
 记 B-pos B-pos
@@ -18623,8 +19381,8 @@ m O O
 各 O O
 商 O B-com
 业 O I-com
-银 O I-com
-行 O I-com
+银 I-com I-com
+行 I-com I-com
 提 O O
 供 O O
 给 O O
@@ -18785,7 +19543,7 @@ sen pred gold
 钛 O B-add
 马 O I-add
 赫 O I-add
-别 B-pos I-add
+别 O I-add
 墅 I-pos I-add
 专 I-pos B-pos
 家 I-pos I-pos
@@ -18804,12 +19562,12 @@ sen pred gold
 会 I-add I-add
 所 I-add I-add
 [UNK] I-add O
-三 O O
-楼 O O
+三 I-add O
+楼 I-add O
 的 O O
-贵 O O
-宾 O O
-室 O O
+贵 I-add O
+宾 I-add O
+室 I-add O
 墙 O O
 壁 O O
 上 O O
@@ -18849,8 +19607,8 @@ sen pred gold
 
 raw: 山东某基层农商行一高管因为接受地方媒体采访，谈及体制改革，而被山东省农村信用联社（
 sen pred gold
-山 O O
-东 O O
+山 B-add O
+东 I-add O
 某 O O
 基 O O
 层 O O
@@ -18880,15 +19638,15 @@ sen pred gold
 ， O O
 而 O O
 被 O O
-山 B-com B-com
-东 I-com I-com
-省 I-com I-com
-农 I-com I-com
-村 I-com I-com
-信 I-com I-com
-用 I-com I-com
-联 I-com I-com
-社 I-com I-com
+山 B-org B-com
+东 I-org I-com
+省 I-org I-com
+农 I-org I-com
+村 I-org I-com
+信 I-org I-com
+用 I-org I-com
+联 I-org I-com
+社 I-org I-com
 （ O O
 
 
@@ -18915,55 +19673,9 @@ sen pred gold
 戈 I-sce I-sce
 壁 I-sce I-sce
 滩 I-sce I-sce
-胡 B-sce B-nam
+胡 I-sce B-nam
 杨 I-sce I-nam
 林 I-sce I-nam
-
-
-raw: 但丁的地狱》的恐怖气氛？这种恐惧的感受是否和《死亡空间》相同？如果不同，又有何不同？
-sen pred gold
-但 B-gam B-mov
-丁 I-gam I-mov
-的 I-gam I-mov
-地 I-gam I-mov
-狱 I-gam I-mov
-》 I-gam I-mov
-的 O O
-恐 O O
-怖 O O
-气 O O
-氛 O O
-？ O O
-这 O O
-种 O O
-恐 O O
-惧 O O
-的 O O
-感 O O
-受 O O
-是 O O
-否 O O
-和 O O
-《 B-gam B-mov
-死 I-gam I-mov
-亡 I-gam I-mov
-空 I-gam I-mov
-间 I-gam I-mov
-》 I-gam I-mov
-相 O O
-同 O O
-？ O O
-如 O O
-果 O O
-不 O O
-同 O O
-， O O
-又 O O
-有 O O
-何 O O
-不 O O
-同 O O
-？ O O
 
 
 raw: 但如今也带着一位年过38岁的女明星金佳妍(以及她的女儿)；他曾经是韩国星际争霸1第一位“
@@ -19092,16 +19804,63 @@ y O O
 内 O O
 销 B-pos B-pos
 售 I-pos I-pos
-精 O O
-英 O O
+精 I-pos O
+英 I-pos O
 2 O O
+
+
+raw: 更对实力派球队束手无策。夏季引援不足的波尔多和少帅布兰克的第二赛季也许将面临更多挑战。
+sen pred gold
+更 O O
+对 O O
+实 O O
+力 O O
+派 O O
+球 O O
+队 O O
+束 O O
+手 O O
+无 O O
+策 O O
+。 O O
+夏 O O
+季 O O
+引 O O
+援 O O
+不 O O
+足 O O
+的 O O
+波 B-org B-org
+尔 I-org I-org
+多 I-org I-org
+和 O O
+少 O B-pos
+帅 O I-pos
+布 B-nam B-nam
+兰 I-nam I-nam
+克 I-nam I-nam
+的 O O
+第 O O
+二 O O
+赛 O O
+季 O O
+也 O O
+许 O O
+将 O O
+面 O O
+临 O O
+更 O O
+多 O O
+挑 O O
+战 O O
+。 O O
 
 
 raw: 火山弹荟萃”及三婆庙，圣丹庙，天主教堂和汤显祖观海处等。
 sen pred gold
-火 B-sce B-sce
-山 I-sce I-sce
-弹 I-sce I-sce
+火 O B-sce
+山 O I-sce
+弹 O I-sce
 荟 O I-sce
 萃 O I-sce
 [UNK] O O
@@ -19273,6 +20032,106 @@ sen pred gold
 ， O O
 
 
+raw: 图为中国传统文化促进会副秘书长、中国风水策划院执行院长、中华周易研究会副会长兼秘书长、
+sen pred gold
+图 O O
+为 O O
+中 B-pos B-org
+国 I-pos I-org
+传 I-pos I-org
+统 I-pos I-org
+文 I-org I-org
+化 I-org I-org
+促 I-org I-org
+进 I-org I-org
+会 I-org I-org
+副 B-pos B-pos
+秘 I-pos I-pos
+书 I-pos I-pos
+长 I-pos I-pos
+、 O O
+中 B-org B-org
+国 I-org I-org
+风 I-org I-org
+水 I-org I-org
+策 I-org I-org
+划 I-org I-org
+院 I-org I-org
+执 B-pos B-pos
+行 I-pos I-pos
+院 I-pos I-pos
+长 I-pos I-pos
+、 O O
+中 B-org B-org
+华 I-pos I-org
+周 I-org I-org
+易 I-org I-org
+研 I-org I-org
+究 I-org I-org
+会 I-org I-org
+副 B-pos B-pos
+会 I-pos I-pos
+长 I-pos I-pos
+兼 O O
+秘 B-pos B-pos
+书 I-pos I-pos
+长 I-pos I-pos
+、 O O
+
+
+raw: 他一向是场面调度的能手——的《水晶骷髅王国》外，其余便真的再没一部能让我们看见有这方面的功架……”
+sen pred gold
+他 O O
+一 O O
+向 O O
+是 O O
+场 O O
+面 O O
+调 O O
+度 O O
+的 O O
+能 O O
+手 O O
+[UNK] O O
+[UNK] O O
+的 O O
+《 B-mov B-gam
+水 I-mov I-gam
+晶 I-mov I-gam
+骷 I-mov I-gam
+髅 I-mov I-gam
+王 I-mov I-gam
+国 I-mov I-gam
+》 I-mov I-gam
+外 O O
+， O O
+其 O O
+余 O O
+便 O O
+真 O O
+的 O O
+再 O O
+没 O O
+一 O O
+部 O O
+能 O O
+让 O O
+我 O O
+们 O O
+看 O O
+见 O O
+有 O O
+这 O O
+方 O O
+面 O O
+的 O O
+功 O O
+架 O O
+[UNK] O O
+[UNK] O O
+[UNK] O O
+
+
 raw: 日本乐活领域的先驱与领军人物、著名乐活杂志《sotokoto树下》主编小黑一三；《水知道答案》
 sen pred gold
 日 O B-com
@@ -19356,57 +20215,16 @@ sen pred gold
 不 O O
 只 O O
 与 O O
-u O O
-s O O
+u B-add O
+s I-add O
+g I-add O
+石 I-add O
+村 I-add O
+号 I-add O
+( I-add O
+u I-add O
+s I-add O
 g O O
-石 O O
-村 O O
-号 O O
-( O O
-u O O
-s O O
-g O O
-
-
-raw: 而发表在荷兰《人种药理学》杂志上的上述论文科研资金来源除与上述说法相同外，
-sen pred gold
-而 O O
-发 O O
-表 O O
-在 O O
-荷 O B-add
-兰 O I-add
-《 B-boo B-boo
-人 I-boo I-boo
-种 I-boo I-boo
-药 I-boo I-boo
-理 I-boo I-boo
-学 I-boo I-boo
-》 I-boo I-boo
-杂 O O
-志 O O
-上 O O
-的 O O
-上 O O
-述 O O
-论 O O
-文 O O
-科 O O
-研 O O
-资 O O
-金 O O
-来 O O
-源 O O
-除 O O
-与 O O
-上 O O
-述 O O
-说 O O
-法 O O
-相 O O
-同 O O
-外 O O
-， O O
 
 
 raw: 主持人：京城有很多楼盘，尤其是现在楼盘火热的开盘的时候，我们海棠有什么特色引领大家？
@@ -19415,8 +20233,8 @@ sen pred gold
 持 I-pos I-pos
 人 I-pos I-pos
 ： O O
-京 B-add O
-城 I-add O
+京 O O
+城 O O
 有 O O
 很 O O
 多 O O
@@ -19457,8 +20275,8 @@ sen pred gold
 
 raw: 澳彩初盘为平/半，临场维持该盘口，近期英超主队7胜3负。威廉客胜赔低于平赔，同赔率下，上赛季以来，
 sen pred gold
-澳 B-org O
-彩 I-org O
+澳 O O
+彩 O O
 初 O O
 盘 O O
 为 O O
@@ -19598,13 +20416,13 @@ r I-gam I-boo
 raw: 据开发商贝塞斯达表示，立方体迷阵是最令人深刻的MODS之一。
 sen pred gold
 据 O O
-开 O B-pos
-发 O I-pos
-商 O I-pos
+开 B-pos B-pos
+发 I-pos I-pos
+商 I-pos I-pos
 贝 B-com B-com
 塞 I-com I-com
-斯 I-com I-com
-达 I-com I-com
+斯 I-nam I-com
+达 I-nam I-com
 表 O O
 示 O O
 ， O O
@@ -19620,86 +20438,74 @@ sen pred gold
 深 O O
 刻 O O
 的 O O
-m B-gam O
-o I-gam O
-d I-gam O
-s I-gam O
+m O O
+o O O
+d O O
+s O O
 之 O O
 一 O O
 。 O O
 
 
-raw: 我是几年前开始玩这款游戏的，那时我在新加坡并以企业的形式成立Scythe游戏，
+raw: 玩dota，你会发现贴吧大神是王道玩imba，你会发现猫老湿才是王道
 sen pred gold
-我 O O
-是 O O
-几 O O
-年 O O
-前 O O
-开 O O
-始 O O
 玩 O O
-这 O O
-款 O O
-游 O O
-戏 O O
-的 O O
+d B-gam B-gam
+o I-gam I-gam
+t I-gam I-gam
+a I-gam I-gam
 ， O O
-那 O O
-时 O O
-我 O O
-在 O O
-新 B-add B-add
-加 I-add I-add
-坡 I-add I-add
-并 O O
-以 O O
-企 O O
-业 O O
-的 O O
-形 O O
-式 O O
-成 O O
-立 O O
-s B-gam B-com
-c I-gam I-com
-y I-gam I-com
-t I-gam I-com
-h I-gam I-com
-e I-gam I-com
-游 O I-com
-戏 O I-com
-， O O
-
-
-raw: 一名大股东扬言将于本周稍后向汇丰薪酬委员会提出这问题。
-sen pred gold
-一 O O
-名 O O
+你 O O
+会 O O
+发 O O
+现 O O
+贴 O O
+吧 O O
 大 O O
-股 B-pos B-pos
-东 I-pos I-pos
-扬 O O
-言 O O
-将 O O
-于 O O
-本 O O
-周 O O
-稍 O O
-后 O O
-向 O O
-汇 B-gov B-org
-丰 I-gov I-org
-薪 I-gov I-org
-酬 I-gov I-org
-委 I-gov I-org
-员 I-gov I-org
-会 I-gov I-org
-提 O O
-出 O O
-这 O O
-问 O O
-题 O O
+神 O O
+是 O O
+王 O O
+道 O O
+玩 O O
+i O B-gam
+m O I-gam
+b O I-gam
+a O I-gam
+， O O
+你 O O
+会 O O
+发 O O
+现 O O
+猫 O O
+老 O O
+湿 O O
+才 O O
+是 O O
+王 O O
+道 O O
+
+
+raw: 而且都贴有中国农业银行、银联等伪装标识。
+sen pred gold
+而 O O
+且 O O
+都 O O
+贴 O O
+有 O O
+中 B-com B-com
+国 I-com I-com
+农 I-com I-com
+业 I-com I-com
+银 I-com I-com
+行 I-com I-com
+、 O O
+银 B-org B-com
+联 I-org I-com
+等 O O
+伪 O O
+装 O O
+标 O O
+识 O O
 。 O O
 
 
@@ -19750,8 +20556,8 @@ sen pred gold
 要 O O
 打 O O
 造 O O
-崇 O O
-礼 O O
+崇 B-add O
+礼 I-add O
 中 O O
 国 O O
 的 O O
@@ -19762,13 +20568,13 @@ sen pred gold
 才 O O
 提 O O
 到 O O
-有 O O
-机 O O
-农 O O
-业 O O
-示 O O
-范 O O
-区 O O
+有 B-add O
+机 I-add O
+农 I-add O
+业 I-add O
+示 I-add O
+范 I-add O
+区 I-add O
 ， O O
 章 O O
 老 B-pos O
@@ -19840,6 +20646,60 @@ sen pred gold
 ； O O
 
 
+raw: 另外，因为红山世家这个项目紧邻三里河地区，这个地区的人群也有很强的购买力，他们的年龄可能会偏大一点，
+sen pred gold
+另 O O
+外 O O
+， O O
+因 O O
+为 O O
+红 B-sce B-add
+山 I-sce I-add
+世 I-sce I-add
+家 I-sce I-add
+这 O O
+个 O O
+项 O O
+目 O O
+紧 O O
+邻 O O
+三 B-add B-add
+里 I-add I-add
+河 I-add I-add
+地 I-add I-add
+区 I-add I-add
+， O O
+这 O O
+个 O O
+地 O O
+区 O O
+的 O O
+人 O O
+群 O O
+也 O O
+有 O O
+很 O O
+强 O O
+的 O O
+购 O O
+买 O O
+力 O O
+， O O
+他 O O
+们 O O
+的 O O
+年 O O
+龄 O O
+可 O O
+能 O O
+会 O O
+偏 O O
+大 O O
+一 O O
+点 O O
+， O O
+
+
 raw: 据此前中储粮黑龙江分公司的数据，黑龙江省国有粮库设计仓容1800万吨左右，
 sen pred gold
 据 O O
@@ -19858,9 +20718,9 @@ sen pred gold
 数 O O
 据 O O
 ， O O
-黑 O B-add
+黑 B-add B-add
 龙 O I-add
-江 O I-add
+江 I-add I-add
 省 O I-add
 国 O O
 有 O O
@@ -19986,8 +20846,8 @@ sen pred gold
 。 O O
 埃 B-gov B-pos
 及 I-gov I-pos
-文 B-pos I-pos
-化 I-pos I-pos
+文 I-gov I-pos
+化 I-gov I-pos
 部 I-pos I-pos
 长 I-pos I-pos
 胡 B-nam B-nam
@@ -20118,6 +20978,60 @@ sen pred gold
 ， O O
 
 
+raw: 四大行因网点遍布全国，因此特惠商户也布满了众多省市自治区，工行布局包括港澳台在内的34个省市自治区，
+sen pred gold
+四 B-com O
+大 I-com O
+行 I-com O
+因 O O
+网 O O
+点 O O
+遍 O O
+布 O O
+全 O O
+国 O O
+， O O
+因 O O
+此 O O
+特 O O
+惠 O O
+商 O O
+户 O O
+也 O O
+布 O O
+满 O O
+了 O O
+众 O O
+多 O O
+省 O O
+市 O O
+自 O O
+治 O O
+区 O O
+， O O
+工 B-com B-com
+行 I-com I-com
+布 O O
+局 O O
+包 O O
+括 O O
+港 O O
+澳 O O
+台 O O
+在 O O
+内 O O
+的 O O
+3 O O
+4 O O
+个 O O
+省 O O
+市 O O
+自 O O
+治 O O
+区 O O
+， O O
+
+
 raw: 绰斯甲观音寺位于金川县观音桥区，寺庙内供奉的是四臂观世音菩萨，是著名的藏传佛教圣地，
 sen pred gold
 绰 B-sce B-sce
@@ -20233,8 +21147,8 @@ sen pred gold
 我 O O
 要 O O
 拍 O O
-长 O B-sce
-城 O I-sce
+长 B-sce B-sce
+城 I-sce I-sce
 ， O O
 有 O O
 的 O O
@@ -20258,15 +21172,15 @@ sen pred gold
 
 raw: johnwalsh），黛博拉·格里本（deborahgribbon）以及迈克尔·布兰德（
 sen pred gold
-j B-nam B-nam
-o I-nam I-nam
-h I-nam I-nam
+j O B-nam
+o O I-nam
+h O I-nam
 n I-nam I-nam
 w I-nam I-nam
 a I-nam I-nam
 l I-nam I-nam
-s I-nam I-nam
-h I-nam I-nam
+s O I-nam
+h O I-nam
 ） O I-nam
 ， O O
 黛 B-nam B-nam
@@ -20276,8 +21190,8 @@ h I-nam I-nam
 格 I-nam I-nam
 里 I-nam I-nam
 本 I-nam I-nam
-（ B-nam I-nam
-d I-nam I-nam
+（ O I-nam
+d B-nam I-nam
 e I-nam I-nam
 b I-nam I-nam
 o I-nam I-nam
@@ -20291,7 +21205,7 @@ b I-nam I-nam
 b I-nam I-nam
 o I-nam I-nam
 n I-nam I-nam
-） I-nam I-nam
+） O I-nam
 以 O O
 及 O O
 迈 B-nam B-nam
@@ -20304,47 +21218,45 @@ n I-nam I-nam
 （ O O
 
 
-raw: 《红楼梦：林黛玉与北静王》是一款以古典名著《红楼梦》为题材的恋爱文字冒险游戏，
+raw: 2003年10月，stonecastle的董事及授权签署人stevenb.
 sen pred gold
-《 B-boo B-gam
-红 I-boo I-gam
-楼 I-boo I-gam
-梦 I-boo I-gam
-： I-boo I-gam
-林 I-boo I-gam
-黛 I-boo I-gam
-玉 I-boo I-gam
-与 I-boo I-gam
-北 I-boo I-gam
-静 I-boo I-gam
-王 I-boo I-gam
-》 I-boo I-gam
-是 O O
-一 O O
-款 O O
-以 O O
-古 O O
-典 O O
-名 O O
-著 O O
-《 B-boo B-boo
-红 I-boo I-boo
-楼 I-boo I-boo
-梦 I-boo I-boo
-》 I-boo I-boo
-为 O O
-题 O O
-材 O O
-的 O O
-恋 O O
-爱 O O
-文 O O
-字 O O
-冒 O O
-险 O O
-游 O O
-戏 O O
+2 O O
+0 O O
+0 O O
+3 O O
+年 O O
+1 O O
+0 O O
+月 O O
 ， O O
+s B-com B-com
+t I-com I-com
+o I-com I-com
+n I-com I-com
+e I-com I-com
+c I-com I-com
+a I-com I-com
+s I-com I-com
+t I-com I-com
+l I-com I-com
+e I-com I-com
+的 O O
+董 B-pos B-pos
+事 I-pos I-pos
+及 O O
+授 O O
+权 O O
+签 O O
+署 O O
+人 O O
+s O B-nam
+t O I-nam
+e O I-nam
+v O I-nam
+e O I-nam
+n O I-nam
+b O I-nam
+. O O
 
 
 raw: 本报记者也从外资法人行获悉，它们近期有望在内地或香港市场发行人民币债券，目前正在与监管进行细节沟通（
@@ -20374,7 +21286,7 @@ sen pred gold
 地 O O
 或 O O
 香 B-add B-add
-港 I-add I-add
+港 O I-add
 市 O O
 场 O O
 发 O O
@@ -20390,8 +21302,8 @@ sen pred gold
 正 O O
 在 O O
 与 O O
-监 B-gov O
-管 I-gov O
+监 O O
+管 O O
 进 O O
 行 O O
 细 O O
@@ -20425,9 +21337,9 @@ sen pred gold
 教 B-pos B-pos
 师 I-pos I-pos
 （ O O
-中 B-pos O
-小 O O
-学 O O
+中 B-org O
+小 I-org O
+学 I-org O
 心 B-pos B-pos
 理 I-pos I-pos
 辅 I-pos I-pos
@@ -20453,6 +21365,59 @@ sen pred gold
 能 O O
 力 O O
 。 O O
+
+
+raw: 中国电信武汉分公司近日与公安、交管部门展开深入合作，在全国首推“天翼看交通”3g信源复式合作模式，
+sen pred gold
+中 B-com B-com
+国 I-com I-com
+电 I-com I-com
+信 I-com I-com
+武 I-com I-com
+汉 I-com I-com
+分 I-com I-com
+公 I-com I-com
+司 I-com I-com
+近 O O
+日 O O
+与 O O
+公 B-gov B-gov
+安 I-gov I-gov
+、 O O
+交 B-gov B-gov
+管 I-gov I-gov
+部 O I-gov
+门 O I-gov
+展 O O
+开 O O
+深 O O
+入 O O
+合 O O
+作 O O
+， O O
+在 O O
+全 O O
+国 O O
+首 O O
+推 O O
+[UNK] O O
+天 O O
+翼 O O
+看 O O
+交 O O
+通 O O
+[UNK] O O
+3 O O
+g O O
+信 O O
+源 O O
+复 O O
+式 O O
+合 O O
+作 O O
+模 O O
+式 O O
+， O O
 
 
 raw: 房地产经纪公司的员工告诉记者，回龙观及天通苑附近的中介公司，几乎都碰到过满5年经适房房主前来咨询“
@@ -20482,10 +21447,10 @@ sen pred gold
 附 O O
 近 O O
 的 O O
-中 O O
-介 O O
-公 O O
-司 O O
+中 B-com O
+介 I-com O
+公 I-com O
+司 I-com O
 ， O O
 几 O O
 乎 O O
@@ -20506,6 +21471,54 @@ sen pred gold
 咨 O O
 询 O O
 [UNK] O O
+
+
+raw: 建设部等七部委联合发布的《经济适用住房管理办法》也指出，经济适用住房购房人拥有有限产权。
+sen pred gold
+建 B-gov B-gov
+设 I-gov I-gov
+部 I-gov I-gov
+等 O O
+七 O O
+部 I-gov O
+委 I-gov O
+联 O O
+合 O O
+发 O O
+布 O O
+的 O O
+《 B-boo B-boo
+经 I-boo I-boo
+济 I-boo I-boo
+适 I-boo I-boo
+用 I-boo I-boo
+住 I-boo I-boo
+房 I-boo I-boo
+管 I-boo I-boo
+理 I-boo I-boo
+办 I-boo I-boo
+法 I-boo I-boo
+》 I-boo I-boo
+也 O O
+指 O O
+出 O O
+， O O
+经 O O
+济 O O
+适 O O
+用 O O
+住 O O
+房 O O
+购 O O
+房 O O
+人 O O
+拥 O O
+有 O O
+有 O O
+限 O O
+产 O O
+权 O O
+。 O O
 
 
 raw: 都是主队拿到了3分。从赔率看，博彩公司多开出一三四的赔率组合，bwin、博天堂等都早早把主胜赔压低，
@@ -20565,12 +21578,12 @@ n I-com I-com
 raw: “澳大利亚政府奖学金计划”扩大了奖学金发放范围，使得更多学生能申领奖学金，加上留澳生活费用降低，
 sen pred gold
 [UNK] O O
-澳 B-gov O
-大 I-gov O
-利 I-gov O
+澳 O O
+大 O O
+利 O O
 亚 I-gov O
-政 I-gov O
-府 I-gov O
+政 O O
+府 O O
 奖 O O
 学 O O
 金 O O
@@ -20612,60 +21625,6 @@ sen pred gold
 降 O O
 低 O O
 ， O O
-
-
-raw: 完全可以在任9玩法上选择回避，正如上周《大赢家》在报纸上所提醒的那样：《乘虚而入，立陶宛可能爆冷》。
-sen pred gold
-完 O O
-全 O O
-可 O O
-以 O O
-在 O O
-任 O O
-9 O O
-玩 O O
-法 O O
-上 O O
-选 O O
-择 O O
-回 O O
-避 O O
-， O O
-正 O O
-如 O O
-上 O O
-周 O O
-《 B-boo B-boo
-大 I-boo I-boo
-赢 I-boo I-boo
-家 I-boo I-boo
-》 I-boo I-boo
-在 O O
-报 O O
-纸 O O
-上 O O
-所 O O
-提 O O
-醒 O O
-的 O O
-那 O O
-样 O O
-： O O
-《 B-mov B-boo
-乘 I-mov I-boo
-虚 I-mov I-boo
-而 I-mov I-boo
-入 I-mov I-boo
-， I-mov I-boo
-立 I-mov I-boo
-陶 I-mov I-boo
-宛 I-mov I-boo
-可 I-mov I-boo
-能 I-mov I-boo
-爆 I-mov I-boo
-冷 I-mov I-boo
-》 I-mov I-boo
-。 O O
 
 
 raw: 泗水县政府办今年3月份开始禁止私挖砭石，许多村庄还组织了巡逻队，发现盗挖情况立即阻止。
@@ -20881,10 +21840,10 @@ sen pred gold
 朋 O O
 友 O O
 在 O O
-英 B-add O
-国 I-add O
-画 I-add O
-廊 I-add O
+英 B-sce O
+国 I-sce O
+画 I-sce O
+廊 I-sce O
 买 O O
 下 O O
 以 O O
@@ -20904,10 +21863,10 @@ raw: 传奇霸业圈圈ooo:好爽大泽乡为什么会下雨:要不就是斗地�
 sen pred gold
 传 O B-gam
 奇 O I-gam
-霸 O I-gam
-业 O I-gam
-圈 O O
-圈 O O
+霸 B-nam I-gam
+业 I-nam I-gam
+圈 I-nam O
+圈 I-nam O
 o O O
 o O O
 o O O
@@ -21049,6 +22008,60 @@ sen pred gold
 ， O O
 
 
+raw: 新华网孟买12月5日电（记者聂云）印度海军5日宣布，海军已接收4架从俄罗斯购买的新型航母战斗机米格－
+sen pred gold
+新 B-com B-com
+华 I-com I-com
+网 I-com I-com
+孟 B-add B-add
+买 I-add I-add
+1 O O
+2 O O
+月 O O
+5 O O
+日 O O
+电 O O
+（ O O
+记 B-pos B-pos
+者 I-pos I-pos
+聂 B-nam B-nam
+云 I-nam I-nam
+） O O
+印 B-gov B-gov
+度 I-gov I-gov
+海 I-gov I-gov
+军 I-gov I-gov
+5 O O
+日 O O
+宣 O O
+布 O O
+， O O
+海 O B-gov
+军 I-gov I-gov
+已 O O
+接 O O
+收 O O
+4 O O
+架 O O
+从 O O
+俄 O O
+罗 O O
+斯 O O
+购 O O
+买 O O
+的 O O
+新 O O
+型 O O
+航 O O
+母 O O
+战 O O
+斗 O O
+机 O O
+米 O O
+格 O O
+－ O O
+
+
 raw: 台湾的银行业者对于银联卡的商机评估较乐观。台新银行信用卡处资深副总经理邱丰凯认为，开放银联卡后，
 sen pred gold
 台 B-add B-add
@@ -21077,9 +22090,9 @@ sen pred gold
 银 I-com O
 行 I-com O
 信 I-com O
-用 O O
-卡 O O
-处 O O
+用 I-com O
+卡 I-com O
+处 I-com O
 资 O O
 深 O O
 副 B-pos B-pos
@@ -21098,6 +22111,102 @@ sen pred gold
 联 O O
 卡 O O
 后 O O
+， O O
+
+
+raw: visa国际组织亚太有限公司北京代表处表示，此举是严格执行visa全球业务运作规章。
+sen pred gold
+v B-com B-com
+i I-com I-com
+s I-com I-com
+a I-com I-com
+国 I-com I-com
+际 I-com I-com
+组 I-com I-com
+织 I-com I-com
+亚 I-com I-com
+太 I-com I-com
+有 I-com I-com
+限 I-com I-com
+公 I-com I-com
+司 I-com I-com
+北 I-com I-com
+京 I-org I-com
+代 I-org I-com
+表 I-com I-com
+处 I-org I-com
+表 O O
+示 O O
+， O O
+此 O O
+举 O O
+是 O O
+严 O O
+格 O O
+执 O O
+行 O O
+v B-com B-com
+i I-com I-com
+s I-com I-com
+a I-com I-com
+全 O O
+球 O O
+业 O O
+务 O O
+运 O O
+作 O O
+规 O O
+章 O O
+。 O O
+
+
+raw: tomaszewski是华沙有名的海报设计家、卡通画家。在家时，filip会旁观父母的创作，
+sen pred gold
+t B-nam B-nam
+o I-nam I-nam
+m I-nam I-nam
+a I-nam I-nam
+s I-nam I-nam
+z I-nam I-nam
+e I-nam I-nam
+w I-nam I-nam
+s I-nam I-nam
+k I-nam I-nam
+i I-nam I-nam
+是 O O
+华 B-add B-add
+沙 I-add I-add
+有 O O
+名 O O
+的 O O
+海 O O
+报 O O
+设 I-pos B-pos
+计 I-pos I-pos
+家 I-pos I-pos
+、 O O
+卡 O O
+通 O O
+画 B-pos B-pos
+家 I-pos I-pos
+。 O O
+在 O O
+家 O O
+时 O O
+， O O
+f B-nam B-nam
+i I-nam I-nam
+l I-nam I-nam
+i I-nam I-nam
+p I-nam I-nam
+会 O O
+旁 O O
+观 O O
+父 O O
+母 O O
+的 O O
+创 O O
+作 O O
 ， O O
 
 
@@ -21153,9 +22262,9 @@ sen pred gold
 亏 O O
 损 O O
 、 O O
-投 O B-pos
-资 O I-pos
-理 B-pos I-pos
+投 B-pos B-pos
+资 I-pos I-pos
+理 I-pos I-pos
 财 I-pos I-pos
 顾 I-pos I-pos
 问 I-pos I-pos
@@ -21224,12 +22333,12 @@ sen pred gold
 我 O O
 们 O O
 新 O B-com
-浪 O I-com
-嘉 O I-com
-宾 O I-com
-聊 O I-com
-天 O I-com
-室 O I-com
+浪 I-add I-com
+嘉 I-add I-com
+宾 I-add I-com
+聊 I-add I-com
+天 I-add I-com
+室 I-add I-com
 参 O O
 与 O O
 我 O O
@@ -21246,13 +22355,13 @@ sen pred gold
 
 raw: Studios，这个曾因开发《帝国时代》系列而闻名的游戏小组将被重新编入微软其他的工作室，
 sen pred gold
-s B-org O
-t I-org O
-u I-org O
-d I-org O
-i I-org O
-o I-org O
-s I-org O
+s B-gam O
+t I-gam O
+u I-gam O
+d I-gam O
+i I-gam O
+o I-gam O
+s I-gam O
 ， O O
 这 O O
 个 O O
@@ -21348,6 +22457,44 @@ p O I-org
 ） O O
 
 
+raw: 统计局、农业部和商务部三部委发布的食品价格监测均表明，进入1月以来，
+sen pred gold
+统 B-gov B-gov
+计 I-gov I-gov
+局 I-gov I-gov
+、 O O
+农 B-gov B-gov
+业 I-gov I-gov
+部 I-gov I-gov
+和 O O
+商 B-org B-gov
+务 I-gov I-gov
+部 I-gov I-gov
+三 O O
+部 O O
+委 O O
+发 O O
+布 O O
+的 O O
+食 O O
+品 O O
+价 O O
+格 O O
+监 O O
+测 O O
+均 O O
+表 O O
+明 O O
+， O O
+进 O O
+入 O O
+1 O O
+月 O O
+以 O O
+来 O O
+， O O
+
+
 raw: 日头将依旧东起西落,书红书绿,寒交暑,昼替夜,聚复散,谁没有了谁不行。匡匡《时有女子》
 sen pred gold
 日 O O
@@ -21438,6 +22585,16 @@ sen pred gold
 、 O O
 
 
+raw: 笔山路区域。
+sen pred gold
+笔 B-add B-add
+山 I-add I-add
+路 I-add I-add
+区 I-add O
+域 I-add O
+。 O O
+
+
 raw: 而大满贯荣誉选手，有世界DotA第一人之称的，现任EHOME俱乐部DOTA分部队长，
 sen pred gold
 而 O O
@@ -21473,12 +22630,12 @@ e I-org I-org
 俱 I-org I-org
 乐 I-org I-org
 部 I-org I-org
-d B-gam I-org
-o I-gam I-org
-t I-gam I-org
-a I-gam I-org
-分 O I-org
-部 O I-org
+d B-org I-org
+o I-org I-org
+t I-org I-org
+a I-org I-org
+分 I-org I-org
+部 I-org I-org
 队 B-pos B-pos
 长 I-pos I-pos
 ， O O
@@ -21492,20 +22649,20 @@ sen pred gold
 快 O O
 讯 O O
 ： O O
-石 O B-org
-油 O I-org
-输 O I-org
-出 O I-org
-国 O I-org
-组 O I-org
-织 O I-org
+石 B-org B-org
+油 I-org I-org
+输 I-org I-org
+出 I-com I-org
+国 I-com I-org
+组 I-com I-org
+织 I-com I-org
 （ O O
-欧 B-org B-org
+欧 I-org B-org
 佩 I-org I-org
 克 I-org I-org
 ） O O
-部 O B-pos
-长 O I-pos
+部 B-pos B-pos
+长 I-pos I-pos
 级 O O
 会 O O
 议 O O
@@ -21567,6 +22724,52 @@ sen pred gold
 。 O O
 
 
+raw: 10月8日17点，在《叶问》导演叶伟信、片中饰演叶问夫妇的甄子丹、熊黛林将做客新浪，
+sen pred gold
+1 O O
+0 O O
+月 O O
+8 O O
+日 O O
+1 O O
+7 O O
+点 O O
+， O O
+在 O O
+《 B-mov B-mov
+叶 I-mov I-mov
+问 I-mov I-mov
+》 I-mov I-mov
+导 B-pos B-pos
+演 I-pos I-pos
+叶 B-nam B-nam
+伟 I-nam I-nam
+信 I-nam I-nam
+、 O O
+片 O O
+中 O O
+饰 O O
+演 O O
+叶 B-nam B-nam
+问 I-nam I-nam
+夫 O O
+妇 O O
+的 O O
+甄 B-nam B-nam
+子 I-nam I-nam
+丹 I-nam I-nam
+、 O O
+熊 B-nam B-nam
+黛 I-nam I-nam
+林 I-nam I-nam
+将 O O
+做 O O
+客 O O
+新 O B-com
+浪 O I-com
+， O O
+
+
 raw: 炮台山路易港城区的最高点，在这里能俯瞰这个路易港，炮台山座山面海，上去后正对大海，
 sen pred gold
 炮 B-sce B-sce
@@ -21575,8 +22778,8 @@ sen pred gold
 路 B-add B-add
 易 I-add I-add
 港 I-add I-add
-城 I-add I-add
-区 I-add I-add
+城 O I-add
+区 O I-add
 的 O O
 最 O O
 高 O O
@@ -21590,9 +22793,9 @@ sen pred gold
 瞰 O O
 这 O O
 个 O O
-路 B-sce B-add
-易 I-sce I-add
-港 I-sce I-add
+路 B-add B-add
+易 I-add I-add
+港 I-add I-add
 ， O O
 炮 B-sce B-sce
 台 I-sce I-sce
@@ -21658,8 +22861,8 @@ sen pred gold
 因 O O
 为 O O
 六 B-org O
-合 O O
-彩 O O
+合 I-org O
+彩 I-org O
 ， O O
 覃 B-nam B-nam
 化 I-nam I-nam
@@ -21764,7 +22967,7 @@ sen pred gold
 广 I-add I-add
 场 I-add I-add
 或 I-add O
-南 B-add B-add
+南 I-add B-add
 京 I-add I-add
 东 I-add I-add
 路 I-add I-add
@@ -21791,40 +22994,6 @@ sen pred gold
 2 O O
 0 O O
 、 O O
-
-
-raw: 孙晶：新浪网友们好，我是澳际出国留学澳新亚留学中心总监孙晶。
-sen pred gold
-孙 B-nam B-nam
-晶 I-nam I-nam
-： O O
-新 O O
-浪 O O
-网 O O
-友 O O
-们 O O
-好 O O
-， O O
-我 O O
-是 O O
-澳 B-com B-org
-际 I-com I-org
-出 I-com I-org
-国 I-com I-org
-留 I-com I-org
-学 I-com I-org
-澳 I-com I-org
-新 I-com I-org
-亚 I-com I-org
-留 I-com I-org
-学 I-com I-org
-中 I-com I-org
-心 I-com I-org
-总 B-pos B-pos
-监 I-pos I-pos
-孙 B-nam B-nam
-晶 I-nam I-nam
-。 O O
 
 
 raw: 三里屯优衣库试衣间不雅.
@@ -21863,7 +23032,7 @@ sen pred gold
 参 O O
 演 O O
 的 O O
-步 B-pos B-pos
+步 O B-pos
 兵 O I-pos
 及 O O
 装 O O
@@ -21890,86 +23059,6 @@ sen pred gold
 地 I-add I-add
 区 I-add I-add
 ， O O
-
-
-raw: 为了帮助本报辨别李连达和吴理茂对造假事件是否知情，波兰《药理学通报》
-sen pred gold
-为 O O
-了 O O
-帮 O O
-助 O O
-本 O O
-报 O O
-辨 O O
-别 O O
-李 B-nam B-nam
-连 I-nam I-nam
-达 I-nam I-nam
-和 O O
-吴 B-nam B-nam
-理 I-nam I-nam
-茂 I-nam I-nam
-对 O O
-造 O O
-假 O O
-事 O O
-件 O O
-是 O O
-否 O O
-知 O O
-情 O O
-， O O
-波 B-add B-add
-兰 O I-add
-《 B-boo B-boo
-药 I-boo I-boo
-理 I-boo I-boo
-学 I-boo I-boo
-通 I-boo I-boo
-报 I-boo I-boo
-》 I-boo I-boo
-
-
-raw: 上海和广州三大城市开展。项目包括DOTA、实况足球（2011）、CS1.6、
-sen pred gold
-上 B-add B-add
-海 I-add I-add
-和 O O
-广 B-add B-add
-州 I-add I-add
-三 O O
-大 O O
-城 O O
-市 O O
-开 O O
-展 O O
-。 O O
-项 O O
-目 O O
-包 O O
-括 O O
-d B-gam B-gam
-o I-gam I-gam
-t I-gam I-gam
-a I-gam I-gam
-、 O O
-实 B-gam B-gam
-况 I-gam I-gam
-足 I-gam I-gam
-球 I-gam I-gam
-（ I-gam I-gam
-2 I-gam I-gam
-0 I-gam I-gam
-1 I-gam I-gam
-1 I-gam I-gam
-） O I-gam
-、 O O
-c B-gam B-gam
-s I-gam I-gam
-1 I-gam I-gam
-. I-gam I-gam
-6 I-gam I-gam
-、 O O
 
 
 raw: 然而，银行理财师提醒，信用卡免息分期还款并不是免费的午餐，其手续费率可能比同期贷款利率要高，
@@ -22035,7 +23124,7 @@ sen pred gold
 具 O I-add
 店 O I-add
 的 O O
-负 B-pos B-pos
+负 O B-pos
 责 O I-pos
 人 O I-pos
 姚 O O
@@ -22167,6 +23256,60 @@ sen pred gold
 。 O O
 
 
+raw: 03n播放列表定时关闭间阴间商人订阅专辑3.7万人订阅声音简介15.5万次播放2017-07-13【
+sen pred gold
+0 O O
+3 O O
+n O O
+播 O O
+放 O O
+列 O O
+表 O O
+定 O O
+时 O O
+关 O O
+闭 O O
+间 B-boo O
+阴 I-boo B-boo
+间 I-boo I-boo
+商 I-boo I-boo
+人 I-boo I-boo
+订 O O
+阅 O O
+专 O O
+辑 O O
+3 O O
+. O O
+7 O O
+万 O O
+人 O O
+订 O O
+阅 O O
+声 O O
+音 O O
+简 O O
+介 O O
+1 O O
+5 O O
+. O O
+5 O O
+万 O O
+次 O O
+播 O O
+放 O O
+2 O O
+0 O O
+1 O O
+7 O O
+- O O
+0 O O
+7 O O
+- O O
+1 O O
+3 O O
+【 O O
+
+
 raw: 我提前到达了比赛场地，就在金融街地下一层的大厅中间，周末的这个时间购物中心略显冷清，
 sen pred gold
 我 O O
@@ -22185,10 +23328,10 @@ sen pred gold
 金 B-add B-add
 融 I-add I-add
 街 I-add I-add
-地 I-add I-add
-下 I-add I-add
-一 I-add I-add
-层 I-add I-add
+地 O I-add
+下 O I-add
+一 O I-add
+层 O I-add
 的 O O
 大 O O
 厅 O O
@@ -22202,9 +23345,9 @@ sen pred gold
 个 O O
 时 O O
 间 O O
-购 B-add O
-物 I-add O
-中 I-add O
+购 O O
+物 O O
+中 O O
 心 I-add O
 略 O O
 显 O O
@@ -22218,8 +23361,8 @@ sen pred gold
 来 O O
 看 O O
 ， O O
-主 B-pos B-pos
-创 I-pos I-pos
+主 O B-pos
+创 O I-pos
 者 O I-pos
 已 O O
 经 O O
@@ -22290,8 +23433,8 @@ sen pred gold
 来 O O
 到 O O
 了 O O
-大 B-sce B-sce
-理 I-sce I-sce
+大 B-add B-sce
+理 I-add I-sce
 或 O O
 是 O O
 丽 B-add B-sce
@@ -22299,55 +23442,134 @@ sen pred gold
 ， O O
 
 
-raw: 该计划由清华大学心理学系和北京纽瀚斯心理机构共同策划执行，由清华大学心理学系副主任、博士生导师，
+raw: 北京大学法学院教授彭冰表示，此案件涉及的是密码取款，取证比较困难。
 sen pred gold
-该 O O
-计 O O
-划 O O
-由 O O
-清 B-org B-org
-华 I-org I-org
-大 I-org I-org
-学 I-org I-org
-心 I-org I-org
-理 I-org I-org
-学 I-org I-org
-系 I-org I-org
-和 O O
 北 B-org B-org
 京 I-org I-org
-纽 I-org I-org
-瀚 I-org I-org
-斯 I-org I-org
-心 I-org I-org
-理 I-org I-org
-机 I-org I-org
-构 I-org I-org
-共 O O
-同 O O
-策 O O
-划 O O
-执 O O
-行 O O
-， O O
-由 O O
-清 B-org B-org
-华 I-org I-org
 大 I-org I-org
 学 I-org I-org
-心 O I-org
-理 O I-org
-学 O I-org
-系 O I-org
-副 B-pos B-pos
-主 I-pos I-pos
-任 I-pos I-pos
-、 O O
-博 B-pos B-pos
-士 I-pos I-pos
-生 I-pos I-pos
-导 I-pos I-pos
-师 I-pos I-pos
+法 I-org I-org
+学 I-org I-org
+院 I-org I-org
+教 I-pos B-pos
+授 I-pos I-pos
+彭 B-nam B-nam
+冰 I-nam I-nam
+表 O O
+示 O O
+， O O
+此 O O
+案 O O
+件 O O
+涉 O O
+及 O O
+的 O O
+是 O O
+密 O O
+码 O O
+取 O O
+款 O O
+， O O
+取 O O
+证 O O
+比 O O
+较 O O
+困 O O
+难 O O
+。 O O
+
+
+raw: 主持人张向东：一睁眼，一闭眼50年过去了，我们看海渔广场还是不是地标，刚才田申申小姐说金角银边，
+sen pred gold
+主 B-pos B-pos
+持 I-pos I-pos
+人 I-pos I-pos
+张 B-nam B-nam
+向 I-nam I-nam
+东 I-nam I-nam
+： O O
+一 O O
+睁 O O
+眼 O O
+， O O
+一 O O
+闭 O O
+眼 O O
+5 O O
+0 O O
+年 O O
+过 O O
+去 O O
+了 O O
+， O O
+我 O O
+们 O O
+看 O O
+海 B-sce B-sce
+渔 I-sce I-sce
+广 I-sce I-sce
+场 I-sce I-sce
+还 O O
+是 O O
+不 O O
+是 O O
+地 O O
+标 O O
+， O O
+刚 O O
+才 O O
+田 B-nam B-nam
+申 I-nam I-nam
+申 I-nam I-nam
+小 O O
+姐 O O
+说 O O
+金 B-sce O
+角 I-sce O
+银 I-sce O
+边 I-sce O
+， O O
+
+
+raw: CPL2011中国区第一阶段线上选拔赛WAR3项目终于决出16强名单。自此，
+sen pred gold
+c B-org O
+p I-org O
+l I-org O
+2 O O
+0 O O
+1 O O
+1 O O
+中 O O
+国 O O
+区 O O
+第 O O
+一 O O
+阶 O O
+段 O O
+线 O O
+上 O O
+选 O O
+拔 O O
+赛 O O
+w B-gam B-gam
+a I-gam I-gam
+r I-gam I-gam
+3 I-gam I-gam
+项 O O
+目 O O
+终 O O
+于 O O
+决 O O
+出 O O
+1 O O
+6 O O
+强 O O
+名 O O
+单 O O
+。 O O
+自 O O
+此 O O
 ， O O
 
 
@@ -22388,17 +23610,17 @@ sen pred gold
 ： O O
 北 B-add B-add
 京 I-add I-add
-石 I-add I-add
-化 I-add I-add
-新 I-add I-add
-材 I-add I-add
-料 I-add I-add
-科 I-add I-add
-技 I-add I-add
-产 I-add I-add
-业 I-add I-add
-基 I-add I-add
-地 I-add I-add
+石 I-org I-add
+化 I-com I-add
+新 I-org I-add
+材 I-com I-add
+料 I-org I-add
+科 I-com I-add
+技 I-com I-add
+产 I-org I-add
+业 I-org I-add
+基 I-org I-add
+地 I-com I-add
 （ O I-add
 
 
@@ -22406,7 +23628,7 @@ raw: 奥斯卡战线同样喧嚣：威尼斯电影节的“无冕之王”《赎
 sen pred gold
 奥 B-org B-org
 斯 I-org I-org
-卡 O I-org
+卡 I-org I-org
 战 O I-org
 线 O I-org
 同 O O
@@ -22431,7 +23653,7 @@ sen pred gold
 赎 I-mov I-mov
 罪 I-mov I-mov
 》 I-mov I-mov
-（ I-mov I-mov
+（ B-mov I-mov
 a I-mov I-mov
 t I-mov I-mov
 o I-mov I-mov
@@ -22441,7 +23663,7 @@ m I-mov I-mov
 e I-mov I-mov
 n I-mov I-mov
 t I-mov I-mov
-） O I-mov
+） I-mov I-mov
 、 O O
 罗 B-add B-org
 马 I-add I-org
@@ -22466,8 +23688,8 @@ sen pred gold
 相 O O
 关 O O
 负 O O
-责 O O
-人 O O
+责 I-pos O
+人 I-pos O
 介 O O
 绍 O O
 ， O O
@@ -22478,10 +23700,10 @@ sen pred gold
 合 O O
 中 O O
 ， O O
-宁 O B-com
+宁 B-com B-com
 波 O I-com
-金 O I-com
-融 O I-com
+金 I-com I-com
+融 I-com I-com
 i O O
 c O O
 卡 O O
@@ -22591,7 +23813,7 @@ sen pred gold
 泾 I-add I-add
 基 I-add I-add
 地 I-add I-add
-a I-add I-add
+a O I-add
 地 O I-add
 块 O I-add
 。 O O
@@ -22695,10 +23917,10 @@ o I-sce I-sce
 m I-sce I-sce
 a I-sce I-sce
 、 O O
-泰 B-com B-sce
-特 I-com I-sce
-现 I-com I-sce
-代 I-com I-sce
+泰 B-sce B-sce
+特 I-sce I-sce
+现 I-sce I-sce
+代 I-sce I-sce
 、 O O
 赫 B-sce B-sce
 什 I-sce I-sce
@@ -22726,39 +23948,25 @@ a I-sce I-sce
 ， O O
 
 
-raw: 上期小单中二等奖：陆慧明必发火线：皇马建议防平佛罗伦萨分心欧战
+raw: 《轻率漠视重力》体验高空坠体的刺激
 sen pred gold
-上 O O
-期 O O
-小 O O
-单 O O
-中 O O
-二 O O
-等 O O
-奖 O O
-： O O
-陆 B-nam B-nam
-慧 I-nam I-nam
-明 I-nam I-nam
-必 O O
-发 O O
-火 O O
-线 O O
-： O O
-皇 B-org B-org
-马 I-org I-org
-建 O O
-议 O O
-防 O O
-平 O O
-佛 B-org B-org
-罗 I-org I-org
-伦 I-org I-org
-萨 I-org I-org
-分 O O
-心 O O
-欧 B-org O
-战 I-org O
+《 B-gam B-gam
+轻 I-mov I-gam
+率 I-mov I-gam
+漠 I-mov I-gam
+视 I-mov I-gam
+重 I-mov I-gam
+力 I-mov I-gam
+》 I-gam I-gam
+体 O O
+验 O O
+高 O O
+空 O O
+坠 O O
+体 O O
+的 O O
+刺 O O
+激 O O
 
 
 raw: 全国人大常委会在2008年把消费者权益保护法修改工作列为5年立法规划项目之一。
@@ -22833,14 +24041,14 @@ sen pred gold
 坞 I-add I-add
 动 O B-pos
 作 O I-pos
-影 B-pos I-pos
+影 O I-pos
 星 I-pos I-pos
 文 B-nam B-nam
 迪 I-nam I-nam
 索 I-nam I-nam
 尔 I-nam I-nam
 ( O O
-v B-nam O
+v I-nam O
 i I-nam O
 n I-nam O
 
@@ -22878,8 +24086,8 @@ sen pred gold
 3 O O
 拿 O O
 下 O O
-k B-org O
-r I-org O
+k B-gam O
+r I-gam O
 的 O O
 胜 O O
 利 O O
@@ -22921,56 +24129,13 @@ c O O
 片 O O
 [UNK] O O
 南 B-mov O
-十 I-mov O
-字 I-mov O
-星 I-mov O
-[UNK] I-mov O
+十 O O
+字 O O
+星 O O
+[UNK] O O
 更 O O
 新 O O
 后 O O
-， O O
-
-
-raw: “最关键的还是配套设施的建设。”叶老桂对新业务如此简明扼要地评论。叶老桂介绍，
-sen pred gold
-[UNK] O O
-最 O O
-关 O O
-键 O O
-的 O O
-还 O O
-是 O O
-配 O O
-套 O O
-设 O O
-施 O O
-的 O O
-建 O O
-设 O O
-。 O O
-[UNK] O O
-叶 B-nam B-nam
-老 I-nam I-nam
-桂 I-nam I-nam
-对 O O
-新 O O
-业 O O
-务 O O
-如 O O
-此 O O
-简 O O
-明 O O
-扼 O O
-要 O O
-地 O O
-评 O O
-论 O O
-。 O O
-叶 O B-nam
-老 O I-nam
-桂 O I-nam
-介 O O
-绍 O O
 ， O O
 
 
@@ -23022,7 +24187,7 @@ sen pred gold
 就 O O
 会 O O
 到 O O
-达 O B-add
+达 B-add B-add
 塔 B-add I-add
 州 I-add I-add
 极 O O
@@ -23036,19 +24201,103 @@ sen pred gold
 地 O O
 塔 B-add B-add
 玛 I-add I-add
-谷 I-add I-add
-t B-add I-add
-a I-add I-add
-m I-add I-add
-a I-add I-add
-r I-add I-add
-v I-add I-add
-a I-add I-add
-l I-add I-add
-l I-add I-add
-e I-add I-add
-y I-add I-add
+谷 I-sce I-add
+t B-sce I-add
+a I-sce I-add
+m I-sce I-add
+a I-sce I-add
+r I-sce I-add
+v I-sce I-add
+a I-sce I-add
+l I-sce I-add
+l I-sce I-add
+e I-sce I-add
+y I-sce I-add
 。 O O
+
+
+raw: 而美国历史学家塞尔比在谈到此次拍卖时说道，“篮球是一项纯粹的发明。它是真正的发明，
+sen pred gold
+而 O O
+美 B-add O
+国 I-add O
+历 B-pos B-pos
+史 I-pos I-pos
+学 I-pos I-pos
+家 I-pos I-pos
+塞 B-nam B-nam
+尔 I-nam I-nam
+比 I-nam I-nam
+在 O O
+谈 O O
+到 O O
+此 O O
+次 O O
+拍 O O
+卖 O O
+时 O O
+说 O O
+道 O O
+， O O
+[UNK] O O
+篮 O O
+球 O O
+是 O O
+一 O O
+项 O O
+纯 O O
+粹 O O
+的 O O
+发 O O
+明 O O
+。 O O
+它 O O
+是 O O
+真 O O
+正 O O
+的 O O
+发 O O
+明 O O
+， O O
+
+
+raw: 新浪科技讯北京时间3月31日消息，最新一期的《商业周刊》杂志评选出了“
+sen pred gold
+新 B-com B-com
+浪 I-com I-com
+科 I-com I-com
+技 I-com I-com
+讯 I-com O
+北 O O
+京 O O
+时 O O
+间 O O
+3 O O
+月 O O
+3 O O
+1 O O
+日 O O
+消 O O
+息 O O
+， O O
+最 O O
+新 O O
+一 O O
+期 O O
+的 O O
+《 B-boo B-boo
+商 I-boo I-boo
+业 I-boo I-boo
+周 I-boo I-boo
+刊 I-boo I-boo
+》 I-boo I-boo
+杂 O O
+志 O O
+评 O O
+选 O O
+出 O O
+了 O O
+[UNK] O O
 
 
 raw: 其中多为斗牛士或南部塞维利亚女郎。
@@ -23057,18 +24306,18 @@ sen pred gold
 中 O O
 多 O O
 为 O O
-斗 B-pos B-pos
-牛 I-pos I-pos
-士 I-pos I-pos
+斗 B-org B-pos
+牛 I-org I-pos
+士 I-org I-pos
 或 O O
-南 O O
-部 O O
-塞 O B-add
-维 O I-add
-利 O I-add
-亚 O I-add
-女 B-pos O
-郎 I-pos O
+南 B-add O
+部 I-add O
+塞 I-add B-add
+维 I-add I-add
+利 I-add I-add
+亚 I-add I-add
+女 O O
+郎 O O
 。 O O
 
 
@@ -23169,51 +24418,56 @@ s I-com I-com
 ( O I-gam
 
 
-raw: 该校位于蕲春县漕河镇芝麻山。2000年，该校在蕲春县城蕲春大道、蕲阳大道交会处的东侧，
+raw: 结对认亲交朋友,四讲四爱好生活一民航助力打赢脱贫攻坚战役”主题活动。66民航西藏区局强基办主任、
 sen pred gold
-该 O O
-校 O O
-位 O O
-于 O O
-蕲 B-add B-add
-春 I-add I-add
-县 I-add I-add
-漕 I-add I-add
-河 I-add I-add
-镇 I-add I-add
-芝 I-add I-add
-麻 I-add I-add
-山 I-add I-add
+结 O O
+对 O O
+认 O O
+亲 O O
+交 O O
+朋 O O
+友 O O
+, O O
+四 O O
+讲 O O
+四 O O
+爱 O O
+好 O O
+生 O O
+活 O O
+一 O O
+民 O B-com
+航 O I-com
+助 O O
+力 O O
+打 O O
+赢 O O
+脱 O O
+贫 O O
+攻 O O
+坚 O O
+战 O O
+役 O O
+[UNK] O O
+主 O O
+题 O O
+活 O O
+动 O O
 。 O O
-2 O O
-0 O O
-0 O O
-0 O O
-年 O O
-， O O
-该 O O
-校 O O
-在 O O
-蕲 B-add B-add
-春 I-add I-add
-县 I-add I-add
-城 I-add I-add
-蕲 I-add I-add
-春 I-add I-add
-大 I-add I-add
-道 I-add I-add
-、 I-add I-add
-蕲 B-add I-add
-阳 I-add I-add
-大 I-add I-add
-道 I-add I-add
-交 I-add I-add
-会 I-add I-add
-处 I-add I-add
-的 I-add I-add
-东 I-add I-add
-侧 I-add I-add
-， O O
+6 O O
+6 O O
+民 B-gov B-gov
+航 I-gov I-gov
+西 I-gov I-gov
+藏 I-gov I-gov
+区 I-gov I-gov
+局 I-gov I-gov
+强 I-gov I-gov
+基 I-gov I-gov
+办 I-gov I-gov
+主 B-pos B-pos
+任 I-pos I-pos
+、 O O
 
 
 raw: 趁乱绑架了军政要员，并且占领了美军基地，将军事级别的核原料运送到中东……
@@ -23254,60 +24508,6 @@ sen pred gold
 东 I-add I-add
 [UNK] O O
 [UNK] O O
-
-
-raw: 某股份制商业银行信用卡客户经理对本报表示，银行实行的积分换礼活动从根本上来说，是为了鼓励持卡人消费，
-sen pred gold
-某 B-com O
-股 I-com O
-份 I-com O
-制 I-com O
-商 I-com O
-业 I-com O
-银 I-com O
-行 I-com O
-信 O O
-用 O O
-卡 O O
-客 B-pos B-pos
-户 I-pos I-pos
-经 I-pos I-pos
-理 I-pos I-pos
-对 O O
-本 O O
-报 O O
-表 O O
-示 O O
-， O O
-银 O O
-行 O O
-实 O O
-行 O O
-的 O O
-积 O O
-分 O O
-换 O O
-礼 O O
-活 O O
-动 O O
-从 O O
-根 O O
-本 O O
-上 O O
-来 O O
-说 O O
-， O O
-是 O O
-为 O O
-了 O O
-鼓 O O
-励 O O
-持 O O
-卡 O O
-人 O O
-消 O O
-费 O O
-， O O
 
 
 raw: 江苏长江商业银行开业农村金融再添新成员
@@ -23378,13 +24578,47 @@ q I-com I-com
 》 I-gam I-gam
 
 
+raw: 国内直飞毛里求斯的航班是毛里求斯航空，各地出发飞行时间是9.
+sen pred gold
+国 O O
+内 O O
+直 O O
+飞 O O
+毛 B-sce B-add
+里 I-sce I-add
+求 I-sce I-add
+斯 I-add I-add
+的 O O
+航 O O
+班 O O
+是 O O
+毛 B-com B-com
+里 I-com I-com
+求 I-com I-com
+斯 I-com I-com
+航 I-com I-com
+空 I-com I-com
+， O O
+各 O O
+地 O O
+出 O O
+发 O O
+飞 O O
+行 O O
+时 O O
+间 O O
+是 O O
+9 O O
+. O O
+
+
 raw: 古墓丽影》算是打出了一片天下，但随之第二部就惨淡收场，
 sen pred gold
 古 B-gam B-mov
 墓 I-gam I-mov
 丽 I-gam I-mov
 影 I-gam I-mov
-》 I-gam I-mov
+》 I-mov I-mov
 算 O O
 是 O O
 打 O O
@@ -23470,12 +24704,12 @@ sen pred gold
 前 O O
 往 O O
 青 B-add B-org
-山 I-add I-org
-区 I-add I-org
-房 I-add I-org
-产 I-add I-org
-管 I-add I-org
-理 I-add I-org
+山 I-gov I-org
+区 I-gov I-org
+房 I-gov I-org
+产 I-gov I-org
+管 I-gov I-org
+理 I-gov I-org
 局 I-add I-org
 一 I-add O
 楼 I-add O
@@ -23547,27 +24781,27 @@ sen pred gold
 
 raw: Stars星际2表演赛MoonvsNada比赛开始前一小时宣布，
 sen pred gold
-s B-gam O
-t I-gam O
-a O O
-r O O
-s O O
+s B-org O
+t I-org O
+a I-org O
+r I-org O
+s I-org O
 星 B-gam B-gam
 际 I-gam I-gam
 2 I-gam I-gam
 表 O O
 演 O O
 赛 O O
-m O B-nam
-o O I-nam
-o O I-nam
-n O I-nam
-v O O
-s O O
-n O B-nam
-a O I-nam
-d O I-nam
-a O I-nam
+m B-org B-nam
+o I-org I-nam
+o I-org I-nam
+n I-org I-nam
+v I-org O
+s I-org O
+n I-org B-nam
+a I-org I-nam
+d I-org I-nam
+a I-org I-nam
 比 O O
 赛 O O
 开 O O
@@ -23579,58 +24813,6 @@ a O I-nam
 宣 O O
 布 O O
 ， O O
-
-
-raw: 其实即使武西尼奇不能上场，上轮意甲对切沃打入致胜一球，人称“齐达内接班人”的梅内兹（menez）
-sen pred gold
-其 O O
-实 O O
-即 O O
-使 O O
-武 B-nam B-nam
-西 I-nam I-nam
-尼 I-nam I-nam
-奇 I-nam I-nam
-不 O O
-能 O O
-上 O O
-场 O O
-， O O
-上 O O
-轮 O O
-意 B-org B-org
-甲 I-org I-org
-对 O O
-切 B-org B-org
-沃 I-org I-org
-打 O O
-入 O O
-致 O O
-胜 O O
-一 O O
-球 O O
-， O O
-人 O O
-称 O O
-[UNK] O O
-齐 B-nam B-nam
-达 I-nam I-nam
-内 I-nam I-nam
-接 O O
-班 O O
-人 O O
-[UNK] O O
-的 O O
-梅 B-nam B-nam
-内 I-nam I-nam
-兹 I-nam I-nam
-（ O O
-m B-nam B-nam
-e I-nam I-nam
-n I-nam I-nam
-e I-nam I-nam
-z I-nam I-nam
-） I-nam O
 
 
 raw: w岛把圆形发挥得淋漓尽致，全岛bose音响，24小时播放歌曲，还有dj在餐厅、
@@ -23668,11 +24850,64 @@ e O I-com
 ， O O
 还 O O
 有 O O
-d O B-pos
+d B-nam B-pos
 j O I-pos
 在 O O
 餐 O O
 厅 O O
+、 O O
+
+
+raw: 今年3月发布的2010胡润中国艺术榜，2009年作品成交额前50名中国在世艺术家，赵无极、吴冠中、
+sen pred gold
+今 O O
+年 O O
+3 O O
+月 O O
+发 O O
+布 O O
+的 O O
+2 O O
+0 O O
+1 O O
+0 O O
+胡 O B-com
+润 O I-com
+中 O O
+国 O O
+艺 O O
+术 O O
+榜 O O
+， O O
+2 O O
+0 O O
+0 O O
+9 O O
+年 O O
+作 O O
+品 O O
+成 O O
+交 O O
+额 O O
+前 O O
+5 O O
+0 O O
+名 O O
+中 O O
+国 O O
+在 O O
+世 O O
+艺 B-pos B-pos
+术 I-pos I-pos
+家 I-pos I-pos
+， O O
+赵 B-nam B-nam
+无 I-nam I-nam
+极 I-nam I-nam
+、 O O
+吴 B-nam B-nam
+冠 I-nam I-nam
+中 I-nam I-nam
 、 O O
 
 
@@ -23839,8 +25074,8 @@ sen pred gold
 目 O O
 标 O O
 ， O O
-有 O O
-关 O O
+有 B-pos O
+关 I-pos O
 负 B-pos O
 责 I-pos O
 人 I-pos O
@@ -24005,55 +25240,6 @@ m I-gam I-gam
 ， O O
 
 
-raw: 很多dota打的非常不错的选手是从来没有使用过这件装备的。在路人战中，这件装备几乎看不到，
-sen pred gold
-很 O O
-多 O O
-d B-gam B-gam
-o I-gam I-gam
-t I-gam I-gam
-a I-gam I-gam
-打 O O
-的 O O
-非 O O
-常 O O
-不 O O
-错 O O
-的 O O
-选 B-pos O
-手 O O
-是 O O
-从 O O
-来 O O
-没 O O
-有 O O
-使 O O
-用 O O
-过 O O
-这 O O
-件 O O
-装 O O
-备 O O
-的 O O
-。 O O
-在 O O
-路 O O
-人 O O
-战 O O
-中 O O
-， O O
-这 O O
-件 O O
-装 O O
-备 O O
-几 O O
-乎 O O
-看 O O
-不 O O
-到 O O
-， O O
-
-
 raw: 全国房地产诚信是两年，这也是经过建设部有关领导批的，这是一个重要的建设工作。齐部长很关注这个事件。
 sen pred gold
 全 O O
@@ -24107,10 +25293,62 @@ sen pred gold
 。 O O
 
 
+raw: 一些经适房的房主竟然打起了“卖房给自己”的主意。记者昨日从中大恒基（中大恒基博客）市场部了解到，
+sen pred gold
+一 O O
+些 O O
+经 O O
+适 O O
+房 O O
+的 O O
+房 O O
+主 O O
+竟 O O
+然 O O
+打 O O
+起 O O
+了 O O
+[UNK] O O
+卖 O O
+房 O O
+给 O O
+自 O O
+己 O O
+[UNK] O O
+的 O O
+主 O O
+意 O O
+。 O O
+记 B-pos B-pos
+者 I-pos I-pos
+昨 O O
+日 O O
+从 O O
+中 B-com B-com
+大 I-com I-com
+恒 I-com I-com
+基 I-com I-com
+（ I-com O
+中 B-com B-com
+大 I-com I-com
+恒 I-com I-com
+基 I-com I-com
+博 O O
+客 O O
+） O O
+市 I-com O
+场 I-com O
+部 I-com O
+了 O O
+解 O O
+到 O O
+， O O
+
+
 raw: 齐大电影《悟空传》关注华晨宇>作曲:华晨宇作词:今何在/丁彦雪/房昊制作人:
 sen pred gold
-齐 B-nam O
-大 I-nam O
+齐 O O
+大 O O
 电 O O
 影 O O
 《 B-mov B-mov
@@ -24162,7 +25400,7 @@ sen pred gold
 [UNK] O O
 胡 B-nam B-nam
 文 I-nam I-nam
-和 I-nam I-nam
+和 O I-nam
 唯 O O
 一 O O
 的 O O
@@ -24177,7 +25415,7 @@ sen pred gold
 人 O O
 爱 O O
 上 O O
-四 B-add B-add
+四 O B-add
 川 O I-add
 大 O O
 地 O O
@@ -24249,23 +25487,23 @@ sen pred gold
 料 O O
 ， O O
 武 B-add B-gov
-汉 I-add I-gov
-市 I-add I-gov
-青 I-add I-gov
-山 I-add I-gov
-区 I-add I-gov
-房 I-add I-gov
-产 I-add I-gov
-管 I-add I-gov
-理 I-add I-gov
+汉 I-gov I-gov
+市 I-gov I-gov
+青 I-gov I-gov
+山 I-gov I-gov
+区 I-gov I-gov
+房 I-gov I-gov
+产 I-gov I-gov
+管 I-gov I-gov
+理 I-gov I-gov
 局 I-add I-gov
 一 I-add O
-楼 O O
+楼 I-add O
 的 O O
-房 B-com O
-屋 I-com O
-中 I-com O
-介 I-com O
+房 O O
+屋 I-org O
+中 I-org O
+介 I-org O
 对 O O
 其 O O
 表 O O
@@ -24315,8 +25553,8 @@ d B-gam B-pos
 o I-gam I-pos
 t I-gam I-pos
 a I-gam I-pos
-e I-gam I-pos
-r I-gam I-pos
+e O I-pos
+r O I-pos
 们 O O
 ， O O
 问 O O
@@ -24386,24 +25624,6 @@ sen pred gold
 ， O O
 
 
-raw: 花旗：资金加速流入中资股基金
-sen pred gold
-花 B-com B-com
-旗 I-com I-com
-： O O
-资 O O
-金 O O
-加 O O
-速 O O
-流 O O
-入 O O
-中 B-com O
-资 I-com O
-股 O O
-基 O O
-金 O O
-
-
 raw: 实际上这已经是《时间之轮》第二次游戏化了，第一次是在1999年，由GT
 sen pred gold
 实 O O
@@ -24440,7 +25660,7 @@ sen pred gold
 ， O O
 由 O O
 g B-com O
-t I-com O
+t O O
 
 
 raw: 建设部住宅建设及产业现代化技术专家委员会专家委员、
@@ -24563,9 +25783,9 @@ sen pred gold
 raw: 据韩联社21日报道，朝鲜海军司令部当天通过发言人称，最近，
 sen pred gold
 据 O O
-韩 B-org B-gov
+韩 B-gov B-gov
 联 I-org I-gov
-社 I-org I-gov
+社 I-gov I-gov
 2 O O
 1 O O
 日 O O
@@ -24596,10 +25816,10 @@ sen pred gold
 raw: 在day4去完马达巴之后，前往尼泊山看先知摩西的纪念馆，耶稣和门徒经常出现的加利利湖，
 sen pred gold
 在 O O
-d B-gam O
-a I-gam O
-y I-gam O
-4 I-gam O
+d O O
+a O O
+y O O
+4 O O
 去 O O
 完 O O
 马 B-sce B-sce
@@ -24614,11 +25834,11 @@ y I-gam O
 泊 I-sce I-sce
 山 I-sce I-sce
 看 O O
-先 B-sce B-sce
+先 O B-sce
 知 O I-sce
-摩 B-sce I-sce
-西 I-sce I-sce
-的 I-sce I-sce
+摩 B-nam I-sce
+西 I-nam I-sce
+的 O I-sce
 纪 I-sce I-sce
 念 I-sce I-sce
 馆 I-sce I-sce
@@ -24737,50 +25957,93 @@ sen pred gold
 ， O O
 
 
-raw: 《幻想三国志4》标准版预计于2009年1月16日上市。《幻想三国志4》是“幻想三国志”
+raw: danielbraaten，前锋，转会图卢兹）的离去耿耿于怀，认为博尔顿非买人不可，
 sen pred gold
-《 B-gam B-gam
-幻 I-gam I-gam
-想 I-gam I-gam
-三 I-gam I-gam
-国 I-gam I-gam
-志 I-gam I-gam
-4 I-gam I-gam
-》 I-gam I-gam
-标 O O
-准 O O
-版 O O
-预 O O
-计 O O
+d B-nam B-nam
+a I-nam I-nam
+n I-nam I-nam
+i I-nam I-nam
+e I-nam I-nam
+l I-nam I-nam
+b I-nam I-nam
+r I-nam I-nam
+a I-nam I-nam
+a I-nam I-nam
+t I-nam I-nam
+e I-nam I-nam
+n I-nam I-nam
+， O O
+前 O B-pos
+锋 O I-pos
+， O O
+转 O O
+会 O O
+图 B-add B-org
+卢 I-add I-org
+兹 I-add I-org
+） O O
+的 O O
+离 O O
+去 O O
+耿 O O
+耿 O O
 于 O O
-2 O O
-0 O O
-0 O O
-9 O O
-年 O O
-1 O O
-月 O O
-1 O O
+怀 O O
+， O O
+认 O O
+为 O O
+博 B-org B-org
+尔 I-org I-org
+顿 I-org I-org
+非 O O
+买 O O
+人 O O
+不 O O
+可 O O
+， O O
+
+
+raw: 这座总面积不过5560平方公里的小岛，“供奉”着1250座印度教神庙，“神庙多”
+sen pred gold
+这 O O
+座 O O
+总 O O
+面 O O
+积 O O
+不 O O
+过 O O
+5 O O
+5 O O
 6 O O
-日 O O
-上 O O
-市 O O
-。 O O
-《 B-gam B-gam
-幻 I-gam I-gam
-想 I-gam I-gam
-三 I-gam I-gam
-国 I-gam I-gam
-志 I-gam I-gam
-4 I-gam I-gam
-》 I-gam I-gam
-是 O O
+0 O O
+平 O O
+方 O O
+公 O O
+里 O O
+的 O O
+小 O O
+岛 O O
+， O O
 [UNK] O O
-幻 B-gam O
-想 I-gam O
-三 I-gam O
-国 I-gam O
-志 I-gam O
+供 O O
+奉 O O
+[UNK] O O
+着 O O
+1 O O
+2 O O
+5 O O
+0 O O
+座 O O
+印 O B-sce
+度 I-sce I-sce
+教 I-sce I-sce
+神 O I-sce
+庙 O I-sce
+， O O
+[UNK] O O
+神 O O
+庙 O O
+多 O O
 [UNK] O O
 
 
@@ -24944,7 +26207,7 @@ sen pred gold
 泰 I-nam I-nam
 次 I-nam I-nam
 郎 I-nam I-nam
-原 O O
+原 I-nam O
 作 O O
 为 O O
 蓝 O O
@@ -25034,7 +26297,7 @@ raw: 给学员们带去了丰富多彩的心理活动，使老师们不仅学习
 sen pred gold
 给 O O
 学 B-pos O
-员 O O
+员 I-pos O
 们 O O
 带 O O
 去 O O
@@ -25075,6 +26338,58 @@ sen pred gold
 的 O O
 能 O O
 力 O O
+， O O
+
+
+raw: 今年年初，坐在柏林国际电影节的大剧场里，林熙蕾第一次看到《文雀》全片。她才知道原来戏份还不算少，
+sen pred gold
+今 O O
+年 O O
+年 O O
+初 O O
+， O O
+坐 O O
+在 O O
+柏 O B-add
+林 O I-add
+国 O O
+际 O O
+电 O O
+影 O O
+节 O O
+的 O O
+大 O O
+剧 O O
+场 O O
+里 O O
+， O O
+林 B-nam B-nam
+熙 I-nam I-nam
+蕾 I-nam I-nam
+第 O O
+一 O O
+次 O O
+看 O O
+到 O O
+《 B-mov B-mov
+文 I-mov I-mov
+雀 I-mov I-mov
+》 I-mov I-mov
+全 O O
+片 O O
+。 O O
+她 O O
+才 O O
+知 O O
+道 O O
+原 O O
+来 O O
+戏 O O
+份 O O
+还 O O
+不 O O
+算 O O
+少 O O
 ， O O
 
 
@@ -25125,7 +26440,7 @@ sen pred gold
 姜 B-nam B-mov
 哲 I-nam I-mov
 中 I-nam I-mov
-： B-mov I-mov
+： I-mov I-mov
 公 I-mov I-mov
 共 I-mov I-mov
 之 I-mov I-mov
@@ -25209,79 +26524,118 @@ sen pred gold
 ， O O
 
 
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-|      | addr | book | comp | game | gove | movi | name | orga | posi | scen | O   |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| addr | 237  | 0    | 3    | 0    | 0    | 0    | 1    | 6    | 0    | 26   | 100 |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| book | 1    | 124  | 3    | 8    | 0    | 2    | 0    | 0    | 0    | 0    | 16  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| comp | 1    | 3    | 320  | 0    | 2    | 0    | 9    | 0    | 0    | 0    | 43  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| game | 0    | 2    | 0    | 259  | 0    | 5    | 0    | 0    | 0    | 0    | 29  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| gove | 0    | 0    | 4    | 1    | 215  | 0    | 0    | 3    | 1    | 0    | 23  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| movi | 0    | 3    | 0    | 16   | 0    | 116  | 0    | 0    | 0    | 0    | 16  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| name | 0    | 0    | 3    | 0    | 0    | 1    | 418  | 2    | 0    | 1    | 40  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| orga | 0    | 0    | 7    | 3    | 12   | 0    | 7    | 298  | 0    | 2    | 38  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| posi | 0    | 0    | 0    | 1    | 3    | 0    | 1    | 0    | 356  | 0    | 72  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| scen | 30   | 0    | 2    | 0    | 0    | 0    | 0    | 0    | 0    | 151  | 26  |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-| O    | 114  | 20   | 61   | 46   | 41   | 17   | 57   | 60   | 94   | 36   | 0   |
-+------+------+------+------+------+------+------+------+------+------+------+-----+
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-|      | O      | I-sc   | B-co  | I-na   | B-na   | I-go   | B-ad  | B-po   | I-ga   | I-or   | I-po   | I-ad   | B-ga  | I-co   | I-bo   | B-or  | B-sc   | I-mo   | B-bo  | B-mo   | B-go   |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| O    | 0.020  | 0      | 0.050 | 0.040  | 0      | 0.030  | 0     | 0.060  | -0.100 | -0.100 | -0.100 | -0.100 | 0.050 | 0.010  | 0      | 0.050 | 0      | -0.100 | 0     | 0      | 0.090  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-sc | 0.070  | 0      | 0     | 0.020  | 0.010  | 0      | 0     | 0      | 0.050  | 0      | 0      | 0      | 0     | -0.100 | 0.070  | 0     | 0.030  | 0.040  | 0     | 0.080  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-co | 0      | -0.100 | 0.010 | 0      | 0      | 0      | 0     | 0.020  | 0      | 0.030  | -0.100 | 0      | 0     | 0      | 0.020  | 0     | 0      | 0      | 0     | 0.010  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-na | 0      | 0.050  | 0.040 | 0.070  | 0.080  | 0.060  | 0     | 0      | 0.050  | 0      | 0.050  | 0.050  | 0.080 | -0.100 | 0      | 0     | -0.100 | 0      | 0.010 | 0      | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-na | 0.030  | -0.100 | 0.070 | 0      | 0.050  | 0.020  | 0.060 | 0.020  | 0      | 0.040  | 0      | 0.060  | 0     | 0.030  | 0      | 0     | 0      | 0      | 0     | 0      | 0.060  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-go | 0.050  | 0      | 0.030 | -0.100 | 0.010  | 0.040  | 0.040 | 0      | 0      | 0      | 0      | 0      | 0     | 0.060  | 0.050  | 0     | 0      | 0      | 0.080 | 0.050  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-ad | 0.030  | 0      | 0     | 0      | 0      | 0.040  | 0.030 | 0      | 0.030  | -0.100 | 0.020  | 0      | 0.020 | 0      | 0      | 0     | 0      | 0.020  | 0     | 0      | 0.040  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-po | 0      | 0      | 0.060 | 0.020  | 0.070  | 0      | 0.060 | 0      | 0.040  | 0.020  | 0      | 0.040  | 0     | 0      | 0      | 0     | 0      | 0      | 0     | 0      | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-ga | 0      | 0.020  | 0     | -0.100 | 0      | 0      | 0.080 | 0.010  | 0.070  | 0.020  | 0.050  | 0.070  | 0     | 0      | 0      | 0     | 0      | 0      | 0     | 0      | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-or | -0.100 | 0.020  | 0.020 | 0      | 0      | 0      | 0.010 | 0.050  | 0      | 0      | 0.020  | 0      | 0.040 | 0.050  | 0      | 0     | -0.100 | 0      | 0.070 | 0      | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-po | 0      | 0      | 0.060 | 0      | 0.010  | -0.100 | 0     | -0.100 | 0      | 0      | 0      | 0.050  | 0     | 0      | 0.020  | 0     | -0.100 | 0      | 0     | 0      | -0.100 |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-ad | 0      | 0.030  | 0.020 | 0.010  | 0      | 0      | 0     | 0      | 0.020  | 0.020  | 0.020  | 0.080  | 0     | 0      | 0      | 0.070 | 0.020  | 0      | 0     | 0      | 0.080  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-ga | 0      | 0      | 0.050 | 0.070  | 0      | 0.030  | 0     | 0      | 0.060  | 0.040  | 0      | 0      | 0     | 0      | 0.020  | 0     | 0      | 0      | 0     | 0.070  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-co | 0      | 0      | 0     | 0.020  | 0.070  | 0      | 0     | 0.070  | -0.100 | 0.050  | 0      | 0.040  | 0     | 0.100  | 0.030  | 0     | -0.100 | 0      | 0.040 | -0.100 | 0.050  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-bo | 0      | 0      | 0     | 0.050  | 0.020  | 0      | 0     | 0.040  | 0.070  | 0      | -0.100 | 0      | 0.040 | 0      | 0      | 0     | 0      | 0      | 0.080 | 0      | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-or | 0      | 0      | 0.070 | 0      | 0      | 0.050  | 0.040 | 0      | 0.060  | 0      | 0.040  | 0.050  | 0.020 | 0      | 0.060  | 0     | 0.020  | 0.070  | 0     | 0      | 0.060  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-sc | -0.100 | 0.080  | 0     | 0      | 0      | 0      | 0     | 0.080  | 0.050  | 0      | 0.010  | 0.040  | 0     | -0.100 | 0      | 0     | 0      | -0.100 | 0.070 | 0      | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| I-mo | 0      | 0      | 0     | 0      | 0.050  | 0.040  | 0.060 | 0.010  | 0      | 0      | 0      | -0.100 | 0     | 0.070  | -0.100 | 0.070 | 0      | 0      | 0.040 | 0.080  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-bo | 0      | 0      | 0.020 | 0.020  | 0      | 0      | 0     | 0.040  | 0      | 0      | 0.050  | -0.100 | 0     | 0.030  | 0.030  | 0     | 0      | 0.040  | 0     | 0.040  | 0.010  |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-mo | 0      | -0.100 | 0     | 0.020  | -0.100 | 0.010  | 0     | 0      | 0.040  | -0.100 | 0      | 0      | 0     | 0      | 0      | 0     | -0.100 | 0      | 0     | 0.050  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
-| B-go | 0.040  | 0      | 0     | 0      | 0.070  | 0.030  | 0     | 0      | 0      | 0      | 0      | -0.100 | 0     | -0.100 | 0.060  | 0     | 0.070  | 0      | 0.060 | 0.010  | 0      |
-+------+--------+--------+-------+--------+--------+--------+-------+--------+--------+--------+--------+--------+-------+--------+--------+-------+--------+--------+-------+--------+--------+
+raw: 另外意大利的PlayGeneration杂志也刚刚给出了92%的高分。
+sen pred gold
+另 O O
+外 O O
+意 B-add O
+大 I-add O
+利 I-add O
+的 O O
+p B-boo B-boo
+l I-boo I-boo
+a I-boo I-boo
+y I-boo I-boo
+g I-boo I-boo
+e I-boo I-boo
+n I-boo I-boo
+e I-boo I-boo
+r I-boo I-boo
+a I-boo I-boo
+t I-boo I-boo
+i I-boo I-boo
+o I-boo I-boo
+n I-boo I-boo
+杂 O O
+志 O O
+也 O O
+刚 O O
+刚 O O
+给 O O
+出 O O
+了 O O
+9 O O
+2 O O
+% O O
+的 O O
+高 O O
+分 O O
+。 O O
 
-Reference f1 detail: {'address': 0.6305818673883626, 'book': 0.8145695364238411, 'company': 0.820580474934037, 'game': 0.8229508196721312, 'government': 0.8265107212475633, 'movie': 0.793103448275862, 'name': 0.8790496760259179, 'organization': 0.804630969609262, 'position': 0.8064516129032258, 'scene': 0.7146401985111662};
- F1:0.7913069324991369
+
++------+------+------+------+------+------+------+------+------+------+------+----+
+|      | addr | book | comp | game | gove | movi | name | orga | posi | scen | O  |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| addr | 244  | 0    | 1    | 0    | 0    | 0    | 0    | 3    | 0    | 28   | 97 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| book | 1    | 126  | 3    | 7    | 0    | 1    | 0    | 0    | 0    | 0    | 16 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| comp | 2    | 2    | 299  | 0    | 2    | 0    | 10   | 4    | 0    | 0    | 59 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| game | 0    | 0    | 0    | 255  | 0    | 6    | 0    | 0    | 0    | 0    | 34 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| gove | 1    | 0    | 3    | 0    | 208  | 0    | 0    | 5    | 2    | 0    | 28 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| movi | 0    | 3    | 0    | 8    | 0    | 119  | 0    | 0    | 0    | 0    | 21 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| name | 0    | 0    | 2    | 0    | 0    | 2    | 410  | 2    | 0    | 0    | 49 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| orga | 2    | 0    | 4    | 3    | 11   | 0    | 6    | 292  | 2    | 2    | 45 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| posi | 0    | 0    | 0    | 0    | 3    | 0    | 2    | 1    | 347  | 0    | 80 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| scen | 27   | 0    | 1    | 0    | 0    | 0    | 0    | 0    | 0    | 145  | 36 |
++------+------+------+------+------+------+------+------+------+------+------+----+
+| O    | 151  | 19   | 102  | 50   | 51   | 24   | 65   | 90   | 108  | 49   | 0  |
++------+------+------+------+------+------+------+------+------+------+------+----+
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+|      | O      | I-sc   | B-co   | I-na   | B-na   | I-go   | B-ad   | B-po   | I-ga   | I-or   | I-po   | I-ad   | B-ga   | I-co   | I-bo   | B-or   | B-sc   | I-mo   | B-bo   | B-mo   | B-go   |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| O    | -0.039 | 0.045  | 0      | -0.086 | 0.084  | -0.006 | 0.077  | -0.064 | -0.109 | -0.148 | -0.002 | -0.140 | 0.077  | 0.015  | 0.039  | -0.048 | 0.041  | -0.080 | -0.038 | -0.024 | -0.009 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-sc | 0.015  | 0.084  | 0.081  | 0.067  | 0.003  | 0.019  | 0.055  | 0.084  | 0.070  | 0.028  | -0.015 | -0.016 | 0.086  | -0.108 | -0.107 | -0.072 | -0.089 | 0.025  | -0.009 | -0.098 | -0.017 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-co | -0.150 | -0.086 | 0.044  | 0.059  | 0.035  | 0.055  | -0.024 | -0.099 | -0.015 | 0.010  | -0.119 | -0.065 | -0.061 | 0.023  | -0.098 | -0.065 | -0.110 | 0.003  | 0.078  | 0.025  | 0.019  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-na | -0.036 | -0.096 | 0.063  | 0.096  | -0.008 | -0.106 | -0.018 | -0.034 | 0.066  | -0.013 | 0.056  | 0.010  | 0.061  | -0.075 | -0.112 | 0.025  | -0.026 | -0.001 | -0.044 | 0.016  | -0.012 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-na | 0.026  | 0.015  | -0.034 | 0.054  | 0.034  | -0.042 | -0.058 | 0.031  | 0.045  | 0.050  | 0.052  | -0.047 | -0.103 | -0.087 | -0.029 | 0.047  | 0.017  | 0.036  | -0.017 | -0.099 | 0.017  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-go | -0.096 | -0.073 | -0.046 | -0.004 | -0.002 | 0.002  | -0.018 | 0.015  | 0.062  | -0.098 | -0.118 | 0.059  | -0.064 | -0.102 | -0.054 | 0.011  | -0.106 | -0.020 | 0.020  | 0.007  | -0.116 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-ad | -0.007 | 0.031  | -0.029 | 0.000  | -0.004 | -0.049 | 0.036  | -0.076 | 0.050  | -0.041 | -0.127 | 0.134  | 0.004  | -0.074 | 0.070  | -0.002 | -0.078 | 0.000  | -0.010 | -0.074 | -0.015 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-po | -0.007 | -0.068 | -0.015 | -0.040 | 0.014  | -0.116 | 0.035  | -0.057 | 0.013  | -0.032 | 0.076  | -0.110 | -0.056 | -0.040 | 0.051  | -0.078 | -0.079 | 0.083  | -0.070 | 0.003  | 0.010  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-ga | -0.086 | -0.015 | 0.028  | 0.032  | 0.015  | 0.081  | 0.025  | 0.018  | 0.028  | -0.063 | -0.027 | -0.039 | -0.079 | -0.102 | -0.047 | 0.049  | 0.001  | -0.042 | 0.038  | 0.048  | 0.072  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-or | 0.030  | -0.097 | -0.017 | 0.022  | 0.096  | -0.125 | 0.037  | 0.015  | -0.041 | -0.005 | 0.041  | 0.002  | 0.010  | 0.053  | -0.071 | 0.008  | 0.086  | -0.117 | 0.029  | -0.010 | 0.045  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-po | 0.069  | -0.107 | -0.062 | 0.063  | -0.078 | -0.122 | -0.079 | 0.022  | -0.006 | -0.113 | -0.066 | 0.034  | -0.071 | -0.120 | -0.091 | 0.026  | -0.068 | -0.039 | -0.028 | -0.051 | -0.019 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-ad | 0.038  | -0.136 | -0.086 | -0.008 | 0.044  | 0.029  | 0.056  | 0.066  | -0.032 | 0.043  | -0.067 | 0.061  | 0.090  | -0.071 | 0.043  | -0.047 | -0.045 | 0.041  | -0.036 | 0.075  | -0.083 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-ga | 0.028  | 0.031  | 0.055  | 0.011  | -0.041 | -0.013 | 0.081  | 0.039  | 0.092  | -0.094 | 0.039  | -0.108 | -0.035 | -0.064 | 0.015  | 0.039  | -0.096 | -0.108 | -0.105 | -0.091 | 0.091  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-co | 0.042  | 0.079  | -0.119 | 0.049  | 0.085  | -0.105 | -0.015 | 0.104  | -0.090 | 0.050  | 0.015  | -0.015 | -0.029 | -0.020 | -0.122 | 0.061  | 0.043  | 0.048  | 0.024  | -0.091 | -0.059 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-bo | 0.032  | 0.014  | 0.011  | 0.065  | -0.047 | -0.032 | -0.050 | -0.034 | -0.045 | 0.052  | -0.112 | -0.034 | -0.098 | 0.039  | -0.072 | 0.073  | -0.002 | -0.105 | -0.020 | -0.093 | 0.059  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-or | -0.030 | -0.040 | -0.115 | 0.006  | 0.070  | 0.026  | -0.037 | -0.001 | -0.026 | 0.107  | 0.022  | -0.003 | -0.026 | -0.144 | 0.036  | -0.020 | 0.010  | 0.024  | 0.063  | 0.013  | 0.075  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-sc | -0.087 | -0.024 | -0.019 | -0.073 | 0.049  | 0.028  | -0.099 | 0.018  | -0.092 | -0.011 | 0.005  | 0.024  | -0.051 | -0.082 | -0.015 | 0.042  | 0      | 0.007  | 0.072  | 0.075  | 0.042  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| I-mo | 0.036  | -0.116 | 0.046  | -0.033 | 0.025  | -0.046 | 0.067  | 0.005  | -0.007 | 0.046  | -0.115 | 0.075  | -0.009 | -0.019 | -0.028 | 0.086  | -0.058 | 0.085  | -0.048 | 0.007  | 0.058  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-bo | -0.011 | 0.023  | 0.044  | -0.130 | 0.049  | 0.019  | 0.041  | 0.012  | 0.006  | -0.064 | 0.057  | 0.044  | -0.008 | -0.112 | 0.121  | -0.035 | 0.062  | 0.044  | -0.103 | -0.089 | 0.051  |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-mo | -0.113 | -0.081 | 0.055  | -0.054 | -0.045 | -0.089 | -0.042 | -0.068 | -0.014 | -0.001 | 0.011  | 0.008  | -0.009 | -0.107 | -0.037 | -0.037 | 0.055  | 0.067  | 0.001  | 0.029  | -0.099 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| B-go | 0.047  | -0.053 | 0.071  | -0.031 | -0.070 | 0.083  | 0.072  | -0.102 | 0.016  | -0.067 | -0.121 | -0.038 | -0.018 | -0.063 | -0.113 | 0.071  | -0.026 | 0.069  | -0.110 | -0.057 | -0.038 |
++------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+
+Reference f1 detail: {'address': 0.6102564102564103, 'book': 0.8333333333333333, 'company': 0.7554980595084089, 'game': 0.826086956521739, 'government': 0.7945736434108527, 'movie': 0.7840531561461793, 'name': 0.8627027027027027, 'organization': 0.7596685082872928, 'position': 0.7790432801822323, 'scene': 0.6731234866828087};
+ F1:0.7678339537031961
 BCP_path: None
 clip_grad: 10
 continue_training: False
@@ -25295,7 +26649,7 @@ label_path: dataset/tool_data/label.txt
 lamb: 1.0
 load_bert: None
 load_checkpoint: None
-log_name: turn4
+log_name: nocons_turn1
 lr: 3e-05
 mask: False
 model: BertCrf
@@ -25310,6 +26664,6 @@ tags_path: dataset/tool_data/label.txt
 test_batch_size: 2048
 train_batch_size: 8
 train_bert: True
-use_cons: True
+use_cons: False
 use_gpu: True
 warmup: 400

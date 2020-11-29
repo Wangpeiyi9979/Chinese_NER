@@ -24702,6 +24702,6 @@ tags_path: dataset/tool_data/label.txt
 test_batch_size: 2048
 train_batch_size: 8
 train_bert: True
-use_cons: False
+use_cons: True
 use_gpu: True
 warmup: 400

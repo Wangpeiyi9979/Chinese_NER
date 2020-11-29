@@ -25133,7 +25133,7 @@ Reference f1 detail: {'address': 0.6532374100719425, 'book': 0.8327645051194539,
 BCP_path: None
 clip_grad: 10
 continue_training: False
-crf_lr: 0.003
+crf_lr: 3e-5
 data_dir: dataset/
 dev_batch_size: 500
 early_stop: 3
@@ -25158,6 +25158,6 @@ tags_path: dataset/tool_data/label.txt
 test_batch_size: 2048
 train_batch_size: 8
 train_bert: True
-use_cons: False
+use_cons: True
 use_gpu: True
 warmup: 400
