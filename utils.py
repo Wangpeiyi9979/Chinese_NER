@@ -5,8 +5,10 @@ import numpy as np
 import time
 import logging
 
+
 def now():
     return str(time.strftime("%Y-%m-%d %H:%M:%S"))
+
 
 class RunningAverage():
     """A simple class that maintains the running average of a quantity
@@ -29,6 +31,9 @@ class RunningAverage():
 
     def __call__(self):
         return self.total / float(self.steps)
+    def clear(self):
+        self.steps = 0
+        self.total = 0
 
 def set_logger(log_path):
     """Set the logger to log info in terminal and file `log_path`.
@@ -61,7 +66,15 @@ def create_label_dict(path, reverse=False):
     with open(path, 'r') as f:
         lines = f.readlines()
         for idx, line in enumerate(lines):
-            res[line.strip()] = idx
+            res[line.strip().split('@')[0]] = idx
     if reverse:
         res = {int(j):i for i,j in res.items()}
+    return res
+
+def create_id2describe(path):
+    res = {}
+    with open(path, 'r') as f:
+        lines = f.readlines()
+        for idx, line in enumerate(lines):
+            res[idx] = line.strip().split('@')[1]
     return res

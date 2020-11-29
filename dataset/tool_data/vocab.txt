@@ -1,7 +1,7 @@
 [PAD]
-[unused1]
-[unused2]
-[unused3]
+*
+[B]
+[I]
 [unused4]
 [unused5]
 [unused6]

@@ -56,7 +56,7 @@ class CRF(nn.Module):
     .. _Viterbi algorithm: https://en.wikipedia.org/wiki/Viterbi_algorithm
     """
 
-    def __init__(self, num_tags: int, batch_first: bool = False, constraints=None, start_tags=None, device="cpu") -> None:
+    def __init__(self, num_tags: int, batch_first: bool = False, constraints=None, start_tags=None, lamb=1.) -> None:
         if num_tags <= 0:
             raise ValueError(f'invalid number of tags: {num_tags}')
         super().__init__()
@@ -68,18 +68,21 @@ class CRF(nn.Module):
         # _constraint_mask indicates valid transitions (based on supplied constraints).
         if constraints is None:
             # All transitions are valid.
-            self.constraint_mask = torch.Tensor(num_tags, num_tags).fill_(1.0).to(device)
+            self.constraint_mask = torch.Tensor(num_tags, num_tags).fill_(1.0)
         else:
-            self.constraint_mask = torch.Tensor(num_tags, num_tags).fill_(0.0).to(device)
+            self.constraint_mask = torch.Tensor(num_tags, num_tags).fill_(0.0)
             for i, j in constraints:
                 self.constraint_mask[i, j] = 1.0
+        self.constraint_mask = nn.Parameter(self.constraint_mask, requires_grad=False)
+        self.lamb = lamb
 
         if start_tags is None:
-            self._start_tags = torch.Tensor(num_tags).fill_(1.0).to(device)
+            self._start_tags = torch.Tensor(num_tags).fill_(1.0)
         else:
-            self._start_tags = torch.Tensor(num_tags).fill_(0.0).to(device)
+            self._start_tags = torch.Tensor(num_tags).fill_(0.0)
             for i in start_tags:
                 self._start_tags[i] = 1.0
+        self._start_tags = nn.Parameter(self._start_tags, requires_grad=False)
 
         self.reset_parameters()
 
@@ -215,7 +218,7 @@ class CRF(nn.Module):
         # Start transition score and first emission
         # shape: (batch_size,)
         multi = tags != 0
-        multi = 1 * multi + 1
+        multi = (self.lamb - 1) * multi + 1
         score = self.start_transitions[tags[0]] * multi[0]
         score += emissions[0, torch.arange(batch_size), tags[0]] * multi[0]
 

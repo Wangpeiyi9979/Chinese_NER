@@ -5,6 +5,8 @@
 @Site : 
 @File : __init__.py.py
 """
-from .BERT_LSTM_CRFConfig import BERT_LSTM_CRFConfig
+from .BertCrfConfig import BertCrfConfig
 from .BertConfig import BertConfig
-
+from .BCPConfig import BCPConfig
+from .BCLabelInfoConfig import BCLabelInfoConfig
+from .BCPSingleConfig import BCPSingleConfig

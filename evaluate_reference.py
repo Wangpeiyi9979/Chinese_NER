@@ -33,8 +33,7 @@ def get_f1_score_label(pre_lines, gold_lines, label="organization"):
     return f
 
 
-def get_f1_score(pre_file, gold_file):
-    pre_lines = [json.loads(line.strip()) for line in open(pre_file) if line.strip()]
+def get_f1_score(pre_lines, gold_file):
     gold_lines = [json.loads(line.strip()) for line in open(gold_file) if line.strip()]
     f_score = {}
     labels = ['address', 'book', 'company', 'game', 'government', 'movie', 'name', 'organization', 'position', 'scene']
@@ -47,8 +46,3 @@ def get_f1_score(pre_file, gold_file):
     return f_score, avg
 
 
-if __name__ == "__main__":
-    # f_score, avg = get_f1_score(pre_file="test_predict.json", gold_file="test_gold.json")
-    f_score, avg = get_f1_score(pre_file="data/dev_pred.json", gold_file="data/dev.json")
-
-    print(f_score, avg)

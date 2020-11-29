@@ -125,17 +125,17 @@ def f1_score(y_true, y_pred, average='macro',suffix=False):
         r_scpres = {}
         labels = ['address', 'book', 'company', 'game', 'government', 'movie', 'name', 'organization', 'position', 'scene']
         for label in labels:
-            true_entities4label = set()
-            pred_entities4label = set()
+            true_entities4a_label = set()
+            pred_entities4a_label = set()
             for te in true_entities:
                 if te[0] == label:
-                    true_entities4label.add(te)
+                    true_entities4a_label.add(te)
             for pe in pred_entities:
                 if pe[0] == label:
-                    pred_entities4label.add(pe)
-            nb_correct = len(true_entities4label & pred_entities4label)
-            nb_pred = len(pred_entities4label)
-            nb_true = len(true_entities4label)
+                    pred_entities4a_label.add(pe)
+            nb_correct = len(true_entities4a_label & pred_entities4a_label)
+            nb_pred = len(pred_entities4a_label)
+            nb_true = len(true_entities4a_label)
 
             p = 100 * nb_correct / nb_pred if nb_pred > 0 else 0
             r = 100 * nb_correct / nb_true if nb_true > 0 else 0
@@ -146,4 +146,35 @@ def f1_score(y_true, y_pred, average='macro',suffix=False):
         p = round(sum(p_scores.values()) / len(p_scores),2)
         r = round(sum(r_scpres.values()) / len(r_scpres),2)
         f1 = round(sum(f_scores.values()) / len(f_scores),2)
-        return f_scores, p_scores, r_scpres, p, r, f1
+        return p_scores, r_scpres, f_scores, p, r, f1
+
+from sklearn.metrics import confusion_matrix
+from texttable import Texttable
+def ner_confusion_matrix(golden, pred, suffix=False):
+    labels = ['address', 'book', 'company', 'game', 'government', 'movie', 'name', 'organization', 'position', 'scene', 'O']
+    true_entities = set(get_entities(golden, suffix))
+    pred_entities = set(get_entities(pred, suffix))
+    true_span2type = {(i, j): k for k, i, j in true_entities}
+    pred_span2type = {(i, j): k for k, i, j in pred_entities}
+
+    add_span = set()
+    pred_label = []
+    true_label = []
+    # 根据span判断pred和golden的对应预测标签，如果span在golden中，但是没在pred中，那么认为pred为O
+    for span, label in true_span2type.items():
+        true_label.append(label)
+        pred_label.append(pred_span2type.get(span, 'O'))
+        add_span.add(span)
+    # span在pred中没在gold中，那么认为gold为O
+    for span, label in pred_span2type.items():
+        if span in add_span:
+            continue
+        pred_label.append(label)
+        true_label.append(true_span2type.get(span, 'O'))
+    cf_matrix =  confusion_matrix(true_label, pred_label, labels=labels)
+    table = Texttable()
+    table.add_row([" "] + [i[:4] for i in labels])
+    table.set_max_width(2000)
+    for idx, r in enumerate(cf_matrix):
+        table.add_row([labels[idx][:4]] + [str(i) for i in cf_matrix[idx]])
+    return table.draw()
