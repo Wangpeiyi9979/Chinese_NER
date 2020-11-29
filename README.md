@@ -8,6 +8,7 @@ python datamodels/DataModel.py
 ```
 
 # 训练模型并测试结果
+下载[`chinese-roberta-wwm-ext`](https://huggingface.co/hfl/chinese-roberta-wwm-ext)放到主目录下
 ```bash
 bash bash/run_bert.sh
 bash bash/run_bert_crf.sh
